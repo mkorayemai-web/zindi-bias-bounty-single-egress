@@ -1,0 +1,6 @@
+Tehama calibration of the latent-connection repairs: 27 documented single-ingress/egress neighbourhoods matched by road name (county study Table 2); flag = >=50% of road nodes single-route
+  r=  0 m | flagged 24/27 | baseline flags retained 24/24 | max load >=20 dwellings in 22/27 | Spearman(population, load) 0.86 (p=8.2e-09) | mean share single-route 0.749
+  r= 25 m | flagged 23/27 | baseline flags retained 23/24 | max load >=20 dwellings in 21/27 | Spearman(population, load) 0.84 (p=5.2e-08) | mean share single-route 0.723
+  r= 50 m | flagged 23/27 | baseline flags retained 23/24 | max load >=20 dwellings in 20/27 | Spearman(population, load) 0.83 (p=1.2e-07) | mean share single-route 0.711
+  r=100 m | flagged 23/27 | baseline flags retained 23/24 | max load >=20 dwellings in 20/27 | Spearman(population, load) 0.83 (p=1.2e-07) | mean share single-route 0.706
+  r=250 m | flagged 18/27 | baseline flags retained 18/24 | max load >=20 dwellings in 15/27 | Spearman(population, load) 0.30 (p=1.3e-01) | mean share single-route 0.577

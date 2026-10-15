@@ -1,0 +1,7 @@
+place,region,tract,road,dwellings,cluster,fire,ems,police,hospital,no_fire_ems
+"Walden Rd, Lake Conroe TX",south-central-tx,48339694305,Walden Road,4291,1536935,1,0,0,0,0
+"Cranes Mill Rd, Canyon Lake TX",south-central-tx,48091310608,Cranes Mill Road,2840,264252,0,0,1,0,1
+"Queen Isabella Causeway, South Padre TX",south-central-tx,48061012305,Queen Isabella Causeway,1736,1115810,0,0,0,0,1
+"E 310 Rd, Grand Lake OK",eastern-ok,40041375804,East 310 Road,1072,743767,0,0,0,0,1
+"Alpine Meadows Rd, Olympic Valley CA",northern-ca,06061022014,Alpine Meadows Road,679,37928,0,0,0,0,1
+"Mountainaire Rd, Flagstaff AZ",maricopa-az,04005001500,Mountainaire Road,538,183819,0,0,0,0,1

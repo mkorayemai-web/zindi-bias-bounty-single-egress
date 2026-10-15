@@ -1,0 +1,31 @@
+group,spec,term,pp,lo,hi,unit,n
+pooled,without density,seas,3.008763545660086,1.6368743223194724,4.380652769000699,pp S30 per +10 pp seasonal share,9704
+pooled,without density,mh_share,1.3583166554804755,0.5827755276881763,2.1338577832727745,pp S30 per +10 pp mobile-home share,9704
+pooled,with log road density,seas,3.9422087515078763,2.5834837645432507,5.3009337384725015,pp S30 per +10 pp seasonal share,9704
+pooled,with log road density,mh_share,1.1556312544990908,0.34929790869159677,1.9619646003065847,pp S30 per +10 pp mobile-home share,9704
+pooled,with log road density,lkm100,-9.57846619645247,-11.296908563903237,-7.860023829001703,pp S30 per +1 log-unit road density,9704
+northern-ca,without density,seas,2.169973319678437,0.9260310977575594,3.413915541599315,pp S30 per +10 pp seasonal share,591
+northern-ca,without density,mh_share,2.1441936441646625,-0.0181257584986233,4.306513046827948,pp S30 per +10 pp mobile-home share,591
+northern-ca,with log road density,seas,2.7650994708998127,2.145354794627647,3.384844147171979,pp S30 per +10 pp seasonal share,591
+northern-ca,with log road density,mh_share,2.509886016050335,0.23423153354892062,4.785540498551749,pp S30 per +10 pp mobile-home share,591
+northern-ca,with log road density,lkm100,-8.33637144263068,-11.989438059696395,-4.683304825564965,pp S30 per +1 log-unit road density,591
+eastern-ok,without density,seas,9.00961597897037,6.155111254242246,11.864120703698493,pp S30 per +10 pp seasonal share,1181
+eastern-ok,without density,mh_share,0.7301174519378317,-0.218740432604871,1.6789753364805344,pp S30 per +10 pp mobile-home share,1181
+eastern-ok,with log road density,seas,10.107707354849683,7.45056563853942,12.764849071159949,pp S30 per +10 pp seasonal share,1181
+eastern-ok,with log road density,mh_share,0.7252529660293785,-0.22819510261475426,1.6787010346735114,pp S30 per +10 pp mobile-home share,1181
+eastern-ok,with log road density,lkm100,-10.847990150452999,-12.742381544085651,-8.953598756820345,pp S30 per +1 log-unit road density,1181
+maricopa-az,without density,seas,0.4859922063413815,-0.9396870996572761,1.9116715123400394,pp S30 per +10 pp seasonal share,1563
+maricopa-az,without density,mh_share,0.730648191067107,-0.26468249206191646,1.7259788741961304,pp S30 per +10 pp mobile-home share,1563
+maricopa-az,with log road density,seas,1.5307198185787543,0.45244524988105983,2.6089943872764487,pp S30 per +10 pp seasonal share,1563
+maricopa-az,with log road density,mh_share,0.5473589429350154,-0.5122645666408777,1.6069824525109087,pp S30 per +10 pp mobile-home share,1563
+maricopa-az,with log road density,lkm100,-9.722712920191597,-12.917995930003723,-6.527429910379475,pp S30 per +1 log-unit road density,1563
+south-central-tx,without density,seas,5.361932848543991,3.3386513629118237,7.385214334176158,pp S30 per +10 pp seasonal share,5957
+south-central-tx,without density,mh_share,2.0213653790801898,1.3020422626887935,2.7406884954715864,pp S30 per +10 pp mobile-home share,5957
+south-central-tx,with log road density,seas,6.151916087579106,3.913401547092619,8.390430628065593,pp S30 per +10 pp seasonal share,5957
+south-central-tx,with log road density,mh_share,1.7819164936450065,1.1183626839409642,2.4454703033490492,pp S30 per +10 pp mobile-home share,5957
+south-central-tx,with log road density,lkm100,-10.195272279247135,-12.697195320545918,-7.693349237948352,pp S30 per +1 log-unit road density,5957
+eastern-wa,without density,seas,2.3286462914339885,0.7757752473217644,3.8815173355462127,pp S30 per +10 pp seasonal share,412
+eastern-wa,without density,mh_share,1.0971334020334562,0.2607557947345317,1.9335110093323804,pp S30 per +10 pp mobile-home share,412
+eastern-wa,with log road density,seas,2.990886555233281,1.4510259045553455,4.530747205911217,pp S30 per +10 pp seasonal share,412
+eastern-wa,with log road density,mh_share,0.9709451006255865,0.24952192556916816,1.6923682756820047,pp S30 per +10 pp mobile-home share,412
+eastern-wa,with log road density,lkm100,-6.229458254778591,-10.880545389935783,-1.5783711196214003,pp S30 per +1 log-unit road density,412

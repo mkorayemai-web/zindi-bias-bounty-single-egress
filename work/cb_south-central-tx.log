@@ -1,0 +1,7 @@
+[    1s] baseline S30 dwellings 1120868 of near 10627851 = share 0.1055
+[    1s] conc {'region': 'south-central-tx', 'base_S30_dw': np.float64(1120867.835), 'base_den': np.float64(10627851.32), 'plus_S30_dw': np.float64(1018700.022), 'plus_den': np.float64(10675549.495), 'r25_S30_dw': np.float64(1085874.478), 'r25_den': np.float64(10627851.32), 'flips_plus_dw': np.float64(240475.017), 'new_plus_dw': np.float64(138307.203), 'flips_r25_dw': np.float64(36230.045), 'new_r25_dw': np.float64(1236.687), 'robust_all_dw': np.float64(853531.979), 'flips_either_dw': np.float64(267335.856)}
+[    2s] dataset mix (near candidates): {'OpenStreetMap': 0.518, 'Microsoft ML Buildings': 0.458, 'Esri Community Maps': 0.013, 'Google Open Buildings': 0.012}
+[    3s] prov tracts 6001
+[   24s] S30 link segments 23142 via DFS re-run + variants nodes.npz sub_eq
+[   51s] link strata 27579 | S30 link km 6819.8 | other km 562647.8
+[   51s] done

@@ -1,0 +1,7 @@
+[    0s] baseline S30 dwellings 284281 of near 2906037 = share 0.0978
+[    0s] conc {'region': 'maricopa-az', 'base_S30_dw': np.float64(284281.334), 'base_den': np.float64(2906037.055), 'plus_S30_dw': np.float64(209949.647), 'plus_den': np.float64(2915910.755), 'r25_S30_dw': np.float64(269955.503), 'r25_den': np.float64(2906037.055), 'flips_plus_dw': np.float64(104245.502), 'new_plus_dw': np.float64(29913.816), 'flips_r25_dw': np.float64(14841.175), 'new_r25_dw': np.float64(515.344), 'robust_all_dw': np.float64(170975.478), 'flips_either_dw': np.float64(113305.855)}
+[    1s] dataset mix (near candidates): {'OpenStreetMap': 0.822, 'Microsoft ML Buildings': 0.143, 'Esri Community Maps': 0.027, 'Google Open Buildings': 0.007}
+[    1s] prov tracts 1592
+[    6s] S30 link segments 6460 via DFS re-run + variants nodes.npz sub_eq
+[   16s] link strata 6958 | S30 link km 1576.5 | other km 121418.5
+[   16s] done

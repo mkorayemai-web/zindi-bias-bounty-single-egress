@@ -1,0 +1,33 @@
+community,neighborhood,est_population,fire_hazard_priority,name_regex,matched_pieces,matched_nodes,share_nodes_single_route,max_cluster_load_dwell,named_roads,flag
+Cottonwood,Lake California,2500,Very High,^Lake California,22,23.0,0.8260869565217391,1316.9320068359375,Lake California Drive,True
+Cottonwood,Adams,600,Very High,^Adams\b,10,11.0,0.8181818181818182,116.9440689086914,Adams Road,True
+Cottonwood,Broadhurst,500,Very High,^Broadhurst,4,5.0,0.6,72.23016357421875,Broadhurst Road,True
+Cottonwood,Laurel,400,Very High,^Laurel\b,19,20.0,0.95,58.96339797973633,Laurel Way,True
+Red Bluff,Surrey Village/Adobe Rd.,400,Very High,^(Surrey Village|Adobe)\b,43,45.0,0.5111111111111111,82.05459594726562,Adobe Court;Adobe Road;Surrey Village Drive,True
+Cottonwood,Phyllis,300,Very High,^Phyllis,4,5.0,1.0,78.12650299072266,Phyllis Road,True
+Cottonwood,Oak Hollow,300,Very High,^Oak Hollow,0,,,,,False
+Red Bluff,Saddlebrook,300,Very High,^Saddlebrook,3,4.0,0.5,62.6370964050293,Saddlebrook Drive,True
+Red Bluff,Oak Knoll,300,Very High,^Oak Knoll,4,5.0,0.4,56.37338638305664,Oak Knoll Drive,False
+Red Bluff,Penner,300,Very High,^Penner,10,11.0,0.9090909090909091,71.7648696899414,Penner Drive,True
+Cottonwood,Eighmy,200,Very High,^Eighmy,17,19.0,0.8947368421052632,33.41259002685547,Eighmy Road,True
+Cottonwood,View,200,Very High,^View\b,5,7.0,0.42857142857142855,15.780804634094238,View Acres Drive;View Point Drive,False
+Cottonwood,Wildridge,200,Very High,^Wildridge,11,13.0,0.9230769230769231,19.654464721679688,Wildridge Road,True
+Cottonwood,Farquhar,200,Very High,^Farquhar,20,22.0,0.3181818181818182,29.481698989868164,Farquhar Road,False
+Cottonwood,Del Norte,200,Very High,^Del Norte,11,12.0,0.9166666666666666,28.49897575378418,Del Norte Drive,True
+Cottonwood,Terry,200,Very High,^Terry\b,6,8.0,0.75,23.585359573364258,Terry Lane;Terry Road,True
+Cottonwood,Saddleback Ridge,200,Very High,^Saddleback Ridge,9,9.0,0.8888888888888888,25.059444427490234,Saddleback Ridge Loop;Saddleback Ridge Road,True
+Cottonwood,Prentice,200,Very High,^Prentice,0,,,,,False
+Cottonwood,Plateau,200,Very High,^Plateau,3,5.0,0.6,15.232211112976074,Plateau Drive,True
+Red Bluff,Via Del Roble,200,Very High,^Via Del Roble,1,2.0,0.5,34.450401306152344,Via Del Roble,True
+Red Bluff,Noble Oaks,200,Very High,^Noble Oaks,15,16.0,0.9375,40.08774185180664,Noble Oaks Drive,True
+Red Bluff,Sacramento,200,Moderate,^Sacramento\b,15,16.0,0.625,35.392635345458984,Sacramento Avenue,True
+Red Bluff,Quercus Lobata,200,Very High,^Quercus Lobata,7,8.0,0.875,30.065805435180664,Quercus Lobata Byway,True
+Red Bluff,Meadowgate,200,Very High,^Meadowgate,3,4.0,0.75,29.439434051513672,Meadowgate Drive,True
+Red Bluff,Kinney,200,Very High,^Kinney,3,4.0,0.75,24.428466796875,Kinney Avenue,True
+Red Bluff,Mater,200,Very High,^Mater\b,0,,,,,False
+Cottonwood,North Granite,100,Very High,^North Granite,0,,,,,False
+Cottonwood,Starr,100,Very High,^Starr\b,7,8.0,0.875,18.671741485595703,Starr Drive,True
+Cottonwood,Bo,100,Very High,^Bo\b,3,4.0,0.75,13.758126258850098,Bo Lane,True
+Red Bluff,Ranchero,100,Very High,^Ranchero,3,4.0,1.0,23.802095413208008,Ranchero Drive,True
+Red Bluff,Pleasant Valley,100,Very High,^Pleasant Valley,0,,,,,False
+Red Bluff,Peppertree,100,Very High,^Peppertree,11,12.0,0.9166666666666666,20.04387092590332,Peppertree Lane,True

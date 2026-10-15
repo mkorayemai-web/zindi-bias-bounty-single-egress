@@ -1,0 +1,6 @@
+matched 27/32; flagged 24/27 = 0.889; placebo mean 0.679 (95% 0.519-0.852)
+Spearman(documented est. population, graph cluster load in dwellings) = 0.86 (p=8.2e-09, n=27)
+max cluster load >= 20 dwellings: documented 0.815 (22/27) vs base rate 0.307 over 830 named roads (>=3 pieces) in the same two town boxes
+max cluster load >= 30 dwellings: documented 0.519 (14/27) vs base rate 0.242 over 830 named roads (>=3 pieces) in the same two town boxes
+max cluster load >= 50 dwellings: documented 0.333 (9/27) vs base rate 0.182 over 830 named roads (>=3 pieces) in the same two town boxes
+share of road nodes single-route >= 0.5: documented 0.889 vs base rate 0.501

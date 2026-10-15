@@ -1,0 +1,8 @@
+work/*
+!work/.gitkeep
+!work/*_tract.parquet
+!work/*_tracts.parquet
+!work/cb_*
+!work/*_drv_A_nodes.npz
+__pycache__/
+data/

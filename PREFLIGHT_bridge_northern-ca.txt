@@ -1,0 +1,47 @@
+PREFLIGHT_bridge_northern-ca.txt = output of: PY=<python> sh egress/preflight_bridge.sh northern-ca
+run 2026-10-15 05:14-05:16Z on the lane host (Apple M2, macOS), scratch copy of the lane (APFS clone); the lane itself was not written.
+----
+scripts in the copy that still point at the real lane: 0
+files deleted: 30; left of them: 0
+--- python build_edges.py northern-ca drvplus  [05:14:00]
+--- python pipeline.py northern-ca drvplus --force  [05:14:02]
+--- python variants.py northern-ca drvplus A --minload 20  [05:14:48]
+--- python variants.py northern-ca drvplus B --minload 100  [05:14:54]
+--- python facilities2.py northern-ca drvplus A  [05:15:01]
+--- python variants.py northern-ca drv A --repair 25  [05:15:03]
+--- python coverage_bridge.py northern-ca  [05:15:06]
+--- python sens_nearmiss2.py northern-ca 50 100 250  [05:15:15]
+robustness chain: 124 s
+  tables/fac_clusters_northern-ca_drvplus_A.csv              identical
+  tables/fac_northern-ca_drvplus_A.csv                       identical
+  tables/northern-ca_drv_A_r25_summary.csv                   identical
+  tables/northern-ca_drvplus_A_links.csv                     identical
+  tables/northern-ca_drvplus_A_summary.csv                   identical
+  tables/northern-ca_drvplus_B_links.csv                     identical
+  tables/northern-ca_drvplus_B_summary.csv                   identical
+  tables/sens_nearmiss2_northern-ca.csv                      identical
+  work/cb_northern-ca_conc.csv                               identical
+  work/cb_northern-ca_link.parquet                           identical
+  work/cb_northern-ca_prov.parquet                           identical
+  work/northern-ca_drv_A_r25_bres.parquet                    identical
+  work/northern-ca_drv_A_r25_nodes.npz                       identical
+  work/northern-ca_drv_A_r25_tract.parquet                   identical
+  work/northern-ca_drvplus_A_bres.parquet                    identical
+  work/northern-ca_drvplus_A_nodes.npz                       identical
+  work/northern-ca_drvplus_A_tract.parquet                   identical
+  work/northern-ca_drvplus_B_bres.parquet                    identical
+  work/northern-ca_drvplus_B_nodes.npz                       identical
+  work/northern-ca_drvplus_B_tract.parquet                   identical
+  work/northern-ca_drvplus_pieces.parquet                    identical
+  work/northern-ca_drvplus_segs.parquet                      identical
+  work/northern-ca_drvplus_snap.parquet                      identical
+  work/northern-ca_nm0_bld.parquet                           identical
+  work/northern-ca_nm100_bld.parquet                         identical
+  work/northern-ca_nm100_pairs.parquet                       identical
+  work/northern-ca_nm250_bld.parquet                         identical
+  work/northern-ca_nm250_pairs.parquet                       identical
+  work/northern-ca_nm50_bld.parquet                          identical
+  work/northern-ca_nm50_pairs.parquet                        identical
+deleted before the run: 30; re-written and compared: 30; identical: 30; problems: 0; command failures: none
+not re-written by this chain, not compared (0): 
+BRIDGE-PREFLIGHT PASS

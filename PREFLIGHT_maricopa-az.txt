@@ -1,0 +1,40 @@
+PREFLIGHT_maricopa-az.txt = output of: PY=<python> sh egress/preflight.sh maricopa-az
+run 2026-10-15 03:29-03:32Z on the lane host (Apple M2, macOS), scratch copy of the lane (APFS clone); the lane itself was not written.
+----
+scripts in the copy that still point at the real lane: 0
+region artifacts left: 2; validation tables left: 0
+--- python build_edges.py maricopa-az drv  [03:29:03]
+--- python buildings_prep.py maricopa-az  [03:29:06]
+--- python pipeline.py maricopa-az drv --force  [03:29:11]
+--- python variants.py maricopa-az drv A --minload 20  [03:31:02]
+--- python facilities2.py maricopa-az drv A  [03:31:10]
+region chain: 129 s
+--- validate_tehama.py  [03:31:12]
+--- validate_hays.py  [03:31:27]
+--- validate_hays_repair.py  [03:31:29]
+--- validate_tehama_repair.py  [03:31:31]
+validations: 66 s
+  tables/fac_clusters_maricopa-az_drv_A.csv                  identical
+  tables/fac_maricopa-az_drv_A.csv                           identical
+  tables/maricopa-az_drv_A_links.csv                         identical
+  tables/maricopa-az_drv_A_summary.csv                       identical
+  tables/validation_hays.csv                                 identical
+  tables/validation_hays_repair.csv                          identical
+  tables/validation_hays_repair_metrics.csv                  identical
+  tables/validation_hays_repair_summary.txt                  identical
+  tables/validation_hays_summary.txt                         identical
+  tables/validation_tehama.csv                               identical
+  tables/validation_tehama_repair.csv                        identical
+  tables/validation_tehama_repair_summary.txt                identical
+  tables/validation_tehama_summary.txt                       identical
+  work/maricopa-az_bldg.parquet                              identical
+  work/maricopa-az_drv_A_bres.parquet                        identical
+  work/maricopa-az_drv_A_nodes.npz                           identical
+  work/maricopa-az_drv_A_tract.parquet                       identical
+  work/maricopa-az_drv_pieces.parquet                        identical
+  work/maricopa-az_drv_segs.parquet                          identical
+  work/maricopa-az_drv_snap.parquet                          identical
+  work/maricopa-az_tracts.parquet                            identical
+deleted before the run: 69; re-written and compared: 21; identical: 21; problems: 0; command failures: none
+not produced by this chain (later pipeline stages: drvplus variants, named lists, pinholes, response times ...), not compared: 48
+PREFLIGHT PASS

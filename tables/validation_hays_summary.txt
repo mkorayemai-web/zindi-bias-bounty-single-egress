@@ -1,0 +1,9 @@
+Hays County validation: 57 neighbourhoods from Ramos & Yuan 2024 Table 1 (CC BY 4.0); published 'adjusted exits' = independent label (NG9-1-1 neighbourhood roads vs non-neighbourhood roads).
+2x2 (rows: published one-exit / multi-exit; cols: graph flags single-route share>=0.5 yes/no): [[17,9],[1,30]]  sensitivity 0.654  specificity 0.968  PPV 0.944  Fisher exact p=3.17e-07
+threshold-free: AUC of graph share_single for 'published one-exit' = 0.854 (Mann-Whitney p=2.53e-06; n=26 vs 31)
+base rate: 0.265 of random Hays County neighbourhoods (same K distribution, n=3000) are flagged single-route by the graph; one-exit neighbourhoods flagged 0.654 = 2.5x the base rate; binomial p(>= 17/26 | p=0.265) = 3.65e-05
+  adjusted exits 1: n=26  mean graph share single-route 0.684  flagged 0.654  S30-flagged 0.577  median graph load 135 dwellings (published median houses 300)
+  adjusted exits 2: n=15  mean graph share single-route 0.225  flagged 0.000  S30-flagged 0.000  median graph load 13 dwellings (published median houses 693)
+  adjusted exits >=3: n=16  mean graph share single-route 0.154  flagged 0.062  S30-flagged 0.000  median graph load 14 dwellings (published median houses 1018)
+Spearman(published adjusted exits, graph share single-route) = -0.62 (p=2.8e-07, n=57)
+among one-exit neighbourhoods: Spearman(published house count, graph dwellings behind the worst single link) = 0.14 (p=0.49, n=26); median ratio graph/published = 0.49

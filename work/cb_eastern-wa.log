@@ -1,0 +1,7 @@
+[    0s] baseline S30 dwellings 52721 of near 701378 = share 0.0752
+[    0s] conc {'region': 'eastern-wa', 'base_S30_dw': np.float64(52721.187), 'base_den': np.float64(701378.44), 'plus_S30_dw': np.float64(38957.536), 'plus_den': np.float64(707694.466), 'r25_S30_dw': np.float64(50249.949), 'r25_den': np.float64(701378.44), 'flips_plus_dw': np.float64(18930.045), 'new_plus_dw': np.float64(5166.394), 'flips_r25_dw': np.float64(2536.397), 'new_r25_dw': np.float64(65.159), 'robust_all_dw': np.float64(31760.433), 'flips_either_dw': np.float64(20960.754)}
+[    0s] dataset mix (near candidates): {'OpenStreetMap': 0.577, 'Microsoft ML Buildings': 0.382, 'Esri Community Maps': 0.041}
+[    0s] prov tracts 415
+[    2s] S30 link segments 1438 via DFS re-run + variants nodes.npz sub_eq
+[    7s] link strata 2058 | S30 link km 683.0 | other km 78286.9
+[    7s] done

@@ -1,0 +1,3 @@
+Tehama County CA: 32 documented single-access areas
+Spearman 0.86 (n=27); 22 of 27 have 20+ dwellings behind one link
+Hays County TX: 57 neighbourhoods; AUC 0.854, Fisher p=3e-7

@@ -1,0 +1,7 @@
+[    0s] baseline S30 dwellings 113684 of near 1749368 = share 0.065
+[    0s] conc {'region': 'eastern-ok', 'base_S30_dw': np.float64(113684.375), 'base_den': np.float64(1749368.06), 'plus_S30_dw': np.float64(99368.387), 'plus_den': np.float64(1758447.56), 'r25_S30_dw': np.float64(110018.977), 'r25_den': np.float64(1749368.06), 'flips_plus_dw': np.float64(20730.385), 'new_plus_dw': np.float64(6414.397), 'flips_r25_dw': np.float64(3764.545), 'new_r25_dw': np.float64(99.147), 'robust_all_dw': np.float64(90537.182), 'flips_either_dw': np.float64(23147.192)}
+[    1s] dataset mix (near candidates): {'Microsoft ML Buildings': 0.735, 'OpenStreetMap': 0.159, 'Esri Community Maps': 0.105}
+[    1s] prov tracts 1192
+[    6s] S30 link segments 3083 via DFS re-run + variants nodes.npz sub_eq
+[   13s] link strata 5743 | S30 link km 910.1 | other km 208456.1
+[   13s] done

@@ -1,0 +1,10 @@
+Hays calibration of the latent-connection repairs: 57 neighbourhoods (26 published one-exit, 31 multi-exit); flag = share of the neighbourhood's buildings with a single route >= 0.5
+repair radius | one-exit flagged (true positives) | multi-exit flagged (false positives) | AUC (share_single vs published one-exit) | mean share_single one-exit / multi-exit
+  r=  0 m | 17/26 | 1/31 | AUC 0.854 (p=2.5e-06) | 0.684 / 0.189
+  r= 25 m | 17/26 | 1/31 | AUC 0.854 (p=2.5e-06) | 0.683 / 0.187
+  r= 50 m | 16/26 | 1/31 | AUC 0.842 (p=5.0e-06) | 0.649 / 0.174
+  r=100 m | 11/26 | 1/31 | AUC 0.820 (p=1.8e-05) | 0.514 / 0.124
+  r=250 m | 10/26 | 0/31 | AUC 0.806 (p=3.8e-05) | 0.495 / 0.104
+GOLDENWOOD (published 3 exits): share single-route by radius r0=0.62, r25=0.62, r50=0.62, r100=0.61, r250=0.37
+  baseline false positive GOLDENWOOD (exits 3): r0=0.62, r25=0.62, r50=0.62, r100=0.61, r250=0.37
+documented one-exit neighbourhoods flagged at baseline that fall below 0.5 at r=250 m: 7: HIGHPOINTE, CEDAR OAKS MESA, ARROWHEAD RANCH, BUNKER RANCH, HERITAGE OAKS, LA CIMA, MEADOW PARK

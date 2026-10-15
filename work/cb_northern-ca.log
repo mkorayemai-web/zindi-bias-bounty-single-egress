@@ -1,0 +1,7 @@
+[    0s] baseline S30 dwellings 109090 of near 1024013 = share 0.1065
+[    0s] conc {'region': 'northern-ca', 'base_S30_dw': np.float64(109089.501), 'base_den': np.float64(1024012.965), 'plus_S30_dw': np.float64(78874.243), 'plus_den': np.float64(1029577.417), 'r25_S30_dw': np.float64(100809.48), 'r25_den': np.float64(1024012.965), 'flips_plus_dw': np.float64(39664.574), 'new_plus_dw': np.float64(9449.316), 'flips_r25_dw': np.float64(8506.11), 'new_r25_dw': np.float64(226.089), 'robust_all_dw': np.float64(63758.621), 'flips_either_dw': np.float64(45330.88)}
+[    0s] dataset mix (near candidates): {'Microsoft ML Buildings': 0.51, 'OpenStreetMap': 0.468, 'Esri Community Maps': 0.022}
+[    0s] prov tracts 591
+[    3s] S30 link segments 2774 via DFS re-run + variants nodes.npz sub_eq
+[    9s] link strata 2713 | S30 link km 961.7 | other km 74916.9
+[    9s] done

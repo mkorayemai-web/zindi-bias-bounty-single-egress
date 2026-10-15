@@ -1,0 +1,33 @@
+community,neighborhood,est_population,fire_hazard_priority,name_regex
+Cottonwood,Lake California,2500,Very High,^Lake California
+Cottonwood,Adams,600,Very High,^Adams\b
+Cottonwood,Broadhurst,500,Very High,^Broadhurst
+Cottonwood,Laurel,400,Very High,^Laurel\b
+Red Bluff,Surrey Village/Adobe Rd.,400,Very High,^(Surrey Village|Adobe)\b
+Cottonwood,Phyllis,300,Very High,^Phyllis
+Cottonwood,Oak Hollow,300,Very High,^Oak Hollow
+Red Bluff,Saddlebrook,300,Very High,^Saddlebrook
+Red Bluff,Oak Knoll,300,Very High,^Oak Knoll
+Red Bluff,Penner,300,Very High,^Penner
+Cottonwood,Eighmy,200,Very High,^Eighmy
+Cottonwood,View,200,Very High,^View\b
+Cottonwood,Wildridge,200,Very High,^Wildridge
+Cottonwood,Farquhar,200,Very High,^Farquhar
+Cottonwood,Del Norte,200,Very High,^Del Norte
+Cottonwood,Terry,200,Very High,^Terry\b
+Cottonwood,Saddleback Ridge,200,Very High,^Saddleback Ridge
+Cottonwood,Prentice,200,Very High,^Prentice
+Cottonwood,Plateau,200,Very High,^Plateau
+Red Bluff,Via Del Roble,200,Very High,^Via Del Roble
+Red Bluff,Noble Oaks,200,Very High,^Noble Oaks
+Red Bluff,Sacramento,200,Moderate,^Sacramento\b
+Red Bluff,Quercus Lobata,200,Very High,^Quercus Lobata
+Red Bluff,Meadowgate,200,Very High,^Meadowgate
+Red Bluff,Kinney,200,Very High,^Kinney
+Red Bluff,Mater,200,Very High,^Mater\b
+Cottonwood,North Granite,100,Very High,^North Granite
+Cottonwood,Starr,100,Very High,^Starr\b
+Cottonwood,Bo,100,Very High,^Bo\b
+Red Bluff,Ranchero,100,Very High,^Ranchero
+Red Bluff,Pleasant Valley,100,Very High,^Pleasant Valley
+Red Bluff,Peppertree,100,Very High,^Peppertree
