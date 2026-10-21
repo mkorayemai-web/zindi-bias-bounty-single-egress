@@ -1,0 +1,134 @@
+scripts in the copy that still point at the <repo>: 0
+region artifacts left: 0; validation tables left: 0
+--- python build_edges.py northern-ca drv  [16:12:06]
+step build_edges.py: 3 s; exit 0; log step_build_edges.py.log
+--- python buildings_prep.py northern-ca  [16:12:09]
+step buildings_prep.py: 2 s; exit 0; log step_buildings_prep.py.log
+--- python pipeline.py northern-ca drv --force  [16:12:11]
+step pipeline.py: 76 s; exit 0; log step_pipeline.py.log
+--- python variants.py northern-ca drv A --minload 20  [16:13:27]
+step variants.py: 9 s; exit 0; log step_variants.py.log
+--- python facilities2.py northern-ca drv A  [16:13:36]
+step facilities2.py: 2 s; exit 0; log step_facilities2.py.log
+region chain: 92 s
+validations skipped (northern-ca / south-central-tx not built)
+validations: 0 s
+Value policy: integer counts / identifiers exact; floats rel 1e-09 / abs 1e-12; no relaxed tolerances.
+  tables/fac_clusters_northern-ca_drv_A.csv: bytes IDENTICAL; values PASS
+  tables/fac_northern-ca_drv_A.csv: bytes DIFFERENT (informational); values FAIL
+    dist_m: float; changed=656; outside tolerance=3; max abs diff=7.22393522778475e-09; FAIL
+      row/index 32: expected 12.560478560097991; computed 12.560478561502702
+      row/index 34: expected 25.607338106503253; computed 25.607338106369017
+      row/index 45: expected 14.472062273111268; computed 14.472062270794353
+  tables/northern-ca_drv_A_links.csv: bytes DIFFERENT (informational); values FAIL
+    len_m: float; changed=842; outside tolerance=0; max abs diff=5.4351687595044496e-09; PASS
+    lon: float; changed=26; outside tolerance=0; max abs diff=5.684341886080802e-14; PASS
+    lat: float; changed=405; outside tolerance=0; max abs diff=5.684341886080802e-14; PASS
+    tract: exact; changed=1; outside tolerance=1; max abs diff=None; FAIL
+      row/index 2052: expected 06067005803; computed nan
+  tables/northern-ca_drv_A_summary.csv: bytes DIFFERENT (informational); values PASS
+    den: float; changed=1; outside tolerance=0; max abs diff=8.498318493366241e-09; PASS
+    isl: float; changed=1; outside tolerance=0; max abs diff=3.9256835629442044e-13; PASS
+    spof: float; changed=1; outside tolerance=0; max abs diff=1.3744561044859438e-13; PASS
+    s10: float; changed=1; outside tolerance=0; max abs diff=1.7733037260825313e-13; PASS
+    persons_s10: float; changed=1; outside tolerance=0; max abs diff=5.345791578292847e-07; PASS
+    dwell_s10: float; changed=1; outside tolerance=0; max abs diff=1.798616722226143e-07; PASS
+    s30: float; changed=1; outside tolerance=0; max abs diff=3.6530500846509995e-13; PASS
+    persons_s30: float; changed=1; outside tolerance=0; max abs diff=9.250943548977375e-07; PASS
+    dwell_s30: float; changed=1; outside tolerance=0; max abs diff=3.729655873030424e-07; PASS
+    s60: float; changed=1; outside tolerance=0; max abs diff=1.788430514793049e-13; PASS
+    persons_s60: float; changed=1; outside tolerance=0; max abs diff=3.5398988984525204e-07; PASS
+    dwell_s60: float; changed=1; outside tolerance=0; max abs diff=1.8248101696372032e-07; PASS
+    s100: float; changed=1; outside tolerance=0; max abs diff=7.042977312465837e-14; PASS
+    persons_s100: float; changed=1; outside tolerance=0; max abs diff=1.2412783689796925e-07; PASS
+    dwell_s100: float; changed=1; outside tolerance=0; max abs diff=7.17336661182344e-08; PASS
+    s300: float; changed=1; outside tolerance=0; max abs diff=3.563642436699155e-14; PASS
+    persons_s300: float; changed=1; outside tolerance=0; max abs diff=6.635309546254575e-08; PASS
+    dwell_s300: float; changed=1; outside tolerance=0; max abs diff=3.637978807091713e-08; PASS
+    s1000: float; changed=1; outside tolerance=0; max abs diff=2.5953631604958005e-15; PASS
+    persons_s1000: float; changed=1; outside tolerance=0; max abs diff=6.129084795247763e-09; PASS
+    dwell_s1000: float; changed=1; outside tolerance=0; max abs diff=2.6677753339754418e-09; PASS
+  work/northern-ca_drv_A_nodes.npz: bytes DIFFERENT (informational); values FAIL
+    top_ar: float; changed=9; outside tolerance=9; max abs diff=9.5367431640625e-07; FAIL
+      row/index 7283: expected 5.563966; computed 5.5639653
+      row/index 159874: expected 13.000839; computed 13.000838
+      row/index 182888: expected 8.30944; computed 8.309439
+    sub_eq: float; changed=397; outside tolerance=397; max abs diff=28.732257843017578; FAIL
+      row/index 1587: expected 9.230769; computed 5.769231
+      row/index 2708: expected 7.7797456; computed 10.805202
+      row/index 2817: expected 263.84616; computed 263.46155
+    sub_pers: float; changed=397; outside tolerance=397; max abs diff=65.3948621749878; FAIL
+      row/index 1587: expected 18.241503; computed 11.400939
+      row/index 2708: expected 17.741007; computed 24.640287
+      row/index 2817: expected 521.40295; computed 520.6429
+  work/northern-ca_drv_A_tract.parquet: bytes DIFFERENT (informational); values FAIL
+    ar_den: float; changed=106; outside tolerance=0; max abs diff=8.494907888234593e-09; PASS
+    ar_isl: float; changed=43; outside tolerance=1; max abs diff=1.54667015306309e-10; FAIL
+      row/index 0: expected 0.016788511578953776; computed 0.016788511579255944
+      row/index 3: expected 0.01947679828429723; computed 0.019476798283285992
+      row/index 5: expected 0.007647001084383721; computed 0.007647001084621689
+    ar_spof: float; changed=108; outside tolerance=0; max abs diff=5.5107057805869886e-11; PASS
+    ar_s10: float; changed=108; outside tolerance=1; max abs diff=5.6381968538410376e-11; FAIL
+      row/index 0: expected 0.26744908044686033; computed 0.2674490804336768
+      row/index 3: expected 0.18443302694419056; computed 0.1844330269346146
+      row/index 5: expected 0.2532217948800216; computed 0.2532217948567799
+    ar_s30: float; changed=86; outside tolerance=1; max abs diff=6.242523165056468e-11; FAIL
+      row/index 0: expected 0.06229278522668919; computed 0.062292785209812636
+      row/index 3: expected 0.105429024659284; computed 0.10542902465381017
+      row/index 5: expected 0.159283165161406; computed 0.15928316513524113
+    ar_s60: float; changed=64; outside tolerance=0; max abs diff=5.745812159396735e-11; PASS
+    ar_s100: float; changed=35; outside tolerance=0; max abs diff=6.169510041731385e-11; PASS
+    ar_s300: float; changed=6; outside tolerance=0; max abs diff=2.2939983246317297e-11; PASS
+    ar_s1000: float; changed=1; outside tolerance=0; max abs diff=1.5453194279757554e-12; PASS
+    ar_pden: float; changed=105; outside tolerance=0; max abs diff=1.7790171114029363e-08; PASS
+    ar_pspof: float; changed=108; outside tolerance=0; max abs diff=5.510714107259673e-11; PASS
+    ar_ps10: float; changed=108; outside tolerance=1; max abs diff=5.638206568292503e-11; FAIL
+      row/index 0: expected 0.26744908044686055; computed 0.2674490804336761
+      row/index 3: expected 0.18443302694419064; computed 0.18443302693461452
+      row/index 5: expected 0.2532217948800207; computed 0.25322179485677937
+    ar_nps10: float; changed=108; outside tolerance=1; max abs diff=2.6869611247093417e-07; FAIL
+      row/index 0: expected 802.1338294563296; computed 802.1338294150902
+      row/index 3: expected 727.3308185274028; computed 727.3308184911939
+      row/index 5: expected 820.2632384645538; computed 820.2632383879637
+    ar_nds10: float; changed=108; outside tolerance=1; max abs diff=1.2379030067677377e-07; FAIL
+      row/index 0: expected 405.9047327640147; computed 405.90473274314667
+      row/index 3: expected 307.519643427949; computed 307.5196434126394
+      row/index 5: expected 357.7539431967557; computed 357.75394316335087
+    ar_ps30: float; changed=86; outside tolerance=1; max abs diff=6.242494021702072e-11; FAIL
+      row/index 0: expected 0.06229278522668922; computed 0.062292785209812636
+      row/index 3: expected 0.10542902465928408; computed 0.10542902465381003
+      row/index 5: expected 0.15928316516140567; computed 0.15928316513524096
+    ar_nps30: float; changed=86; outside tolerance=1; max abs diff=2.7959617909800727e-07; FAIL
+      row/index 0: expected 186.8286489446834; computed 186.82864889367195
+      row/index 3: expected 415.7703209262336; computed 415.77032090553524
+      row/index 5: expected 515.9671384135175; computed 515.9671383279416
+    ar_nds30: float; changed=86; outside tolerance=1; max abs diff=1.2881156408184324e-07; FAIL
+      row/index 0: expected 94.5411227375273; computed 94.54112271171374
+      row/index 3: expected 175.79007733788487; computed 175.79007732913354
+      row/index 5: expected 225.0366341821115; computed 225.03663414478774
+    ar_ps60: float; changed=64; outside tolerance=0; max abs diff=5.745848241645035e-11; PASS
+    ar_nps60: float; changed=64; outside tolerance=0; max abs diff=3.078044983340078e-07; PASS
+    ar_nds60: float; changed=64; outside tolerance=0; max abs diff=1.418069359715446e-07; PASS
+    ar_ps100: float; changed=35; outside tolerance=0; max abs diff=6.169526001187364e-11; PASS
+    ar_nps100: float; changed=35; outside tolerance=0; max abs diff=3.3050116599042667e-07; PASS
+    ar_nds100: float; changed=35; outside tolerance=0; max abs diff=1.5226365235321282e-07; PASS
+    ar_ps300: float; changed=6; outside tolerance=0; max abs diff=2.294009426861976e-11; PASS
+    ar_nps300: float; changed=6; outside tolerance=0; max abs diff=4.624689609045163e-08; PASS
+    ar_nds300: float; changed=6; outside tolerance=0; max abs diff=2.1739879230153747e-08; PASS
+    ar_ps1000: float; changed=1; outside tolerance=0; max abs diff=1.546762717907768e-12; PASS
+    ar_nps1000: float; changed=1; outside tolerance=0; max abs diff=6.129084795247763e-09; PASS
+    ar_nds1000: float; changed=1; outside tolerance=0; max abs diff=2.6677753339754418e-09; PASS
+  work/northern-ca_tracts.parquet: bytes IDENTICAL; values PASS
+Headline values (expected = committed summary, eq; also REPRODUCE.md step 1 for Eastern WA):
+  dwellings          expected 1,024,013 | computed 1,024,013 | abs diff 0 | PASS
+  islands %          expected 0.30 | computed 0.30 | abs diff 0 | PASS
+  single route %     expected 27.35 | computed 27.35 | abs diff 0 | PASS
+  S10 %              expected 18.73 | computed 18.73 | abs diff 0 | PASS
+  S30 %              expected 10.65 | computed 10.65 | abs diff 0 | PASS
+  S30 dwellings      expected 109,090 | computed 109,090 | abs diff 0 | PASS
+  S30 persons        expected 244,794 | computed 244,794 | abs diff 0 | PASS
+  S100 %             expected 4.31 | computed 4.31 | abs diff 0 | PASS
+  S300 %             expected 1.24 | computed 1.24 | abs diff 0 | PASS
+Deleted 38; re-written and compared 7; bytes identical 2; values PASS 3; missing 0; commands failed False
+Not produced by this chain, explicitly not compared (31): tables/fac_clusters_northern-ca_drvplus_A.csv, tables/fac_northern-ca_drvplus_A.csv, tables/named_northern-ca_drv_A.md, tables/northern-ca_drv_A_r25_summary.csv, tables/northern-ca_drv_B_links.csv, tables/northern-ca_drv_B_summary.csv, tables/northern-ca_drvplus_A_links.csv, tables/northern-ca_drvplus_A_summary.csv, tables/northern-ca_drvplus_B_links.csv, tables/northern-ca_drvplus_B_summary.csv, tables/pinholes_northern-ca_r50.csv, tables/resp_northern-ca_broad.csv, tables/resp_northern-ca.csv, tables/sens_nearmiss2_northern-ca.csv, tables/validation_hays.csv, tables/validation_hays_repair.csv, tables/validation_hays_repair_metrics.csv, tables/validation_hays_repair_summary.txt, tables/validation_hays_summary.txt, tables/validation_tehama.csv, tables/validation_tehama_repair.csv, tables/validation_tehama_repair_summary.txt, tables/validation_tehama_summary.txt, work/cb_northern-ca_conc.csv, work/cb_northern-ca_link.parquet, work/cb_northern-ca.log, work/cb_northern-ca_prov.parquet, work/northern-ca_drv_A_r25_tract.parquet, work/northern-ca_drv_B_tract.parquet, work/northern-ca_drvplus_A_tract.parquet, work/northern-ca_drvplus_B_tract.parquet
+PREFLIGHT FAIL

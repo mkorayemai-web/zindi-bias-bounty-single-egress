@@ -1,0 +1,16 @@
+{
+  "scope": "quick eastern-wa: printed region draft / REPRODUCE / sensitivity cells ONLY; no pooled or other-region claim",
+  "region": "eastern-wa",
+  "total": 71,
+  "passed": 71,
+  "failed": 0,
+  "unverified": 0,
+  "all_pass": true,
+  "required_configurations": [
+    "eastern-wa_drv_A",
+    "eastern-wa_drv_A_r25",
+    "eastern-wa_drv_B",
+    "eastern-wa_drvplus_A",
+    "eastern-wa_drvplus_B"
+  ]
+}

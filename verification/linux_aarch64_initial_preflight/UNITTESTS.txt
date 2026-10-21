@@ -1,0 +1,25 @@
+test_all_ok_pass (test_finding_audit.FindingAuditTests.test_all_ok_pass) ... ok
+test_dependency_inventory (test_finding_audit.FindingAuditTests.test_dependency_inventory) ... ok
+test_one_changed_pixel (test_finding_audit.FindingAuditTests.test_one_changed_pixel) ... ok
+test_size_mismatch_not_identical (test_finding_audit.FindingAuditTests.test_size_mismatch_not_identical) ... ok
+test_skipped_is_not_passed (test_finding_audit.FindingAuditTests.test_skipped_is_not_passed) ... ok
+test_bytes_informational_and_missing_identifiers_fail (test_preflight_compare.ValueComparisonTests.test_bytes_informational_and_missing_identifiers_fail) ... ok
+test_float_tolerance (test_preflight_compare.ValueComparisonTests.test_float_tolerance) ... ok
+test_integer_and_float_stored_counts_exact (test_preflight_compare.ValueComparisonTests.test_integer_and_float_stored_counts_exact) ... ok
+test_missing_nonfinite_and_schema (test_preflight_compare.ValueComparisonTests.test_missing_nonfinite_and_schema) ... ok
+test_parquet_index_and_npz_counts (test_preflight_compare.ValueComparisonTests.test_parquet_index_and_npz_counts) ... ok
+test_drvplus_failure_propagates_and_no_done_marker (test_rebuild_runners.RebuildRunnerTests.test_drvplus_failure_propagates_and_no_done_marker) ... ok
+test_prepare_refuses_source_or_existing_scratch (test_rebuild_runners.RebuildRunnerTests.test_prepare_refuses_source_or_existing_scratch) ... ok
+test_all_shipped_region_cells_and_required_configuration_plan (test_two_tier_preflight.TwoTierTests.test_all_shipped_region_cells_and_required_configuration_plan) ... ok
+test_corrupt_last_configuration_is_detected (test_two_tier_preflight.TwoTierTests.test_corrupt_last_configuration_is_detected) ... ok
+test_empty_does_not_pass (test_two_tier_preflight.TwoTierTests.test_empty_does_not_pass) ... ok
+test_failed_or_skipped_headline_controls_exit (test_two_tier_preflight.TwoTierTests.test_failed_or_skipped_headline_controls_exit) ... ok
+test_guard_never_erases_source_or_unmarked_directory (test_two_tier_preflight.TwoTierTests.test_guard_never_erases_source_or_unmarked_directory) ... ok
+test_missing_outputs_and_command_failure_not_hidden (test_two_tier_preflight.TwoTierTests.test_missing_outputs_and_command_failure_not_hidden) ... ok
+test_printed_precision (test_two_tier_preflight.TwoTierTests.test_printed_precision) ... ok
+test_strict_differences_do_not_fail_headline (test_two_tier_preflight.TwoTierTests.test_strict_differences_do_not_fail_headline) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.105s
+
+OK

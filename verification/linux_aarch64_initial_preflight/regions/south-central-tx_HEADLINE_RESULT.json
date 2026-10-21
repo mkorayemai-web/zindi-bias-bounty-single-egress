@@ -1,0 +1,15 @@
+{
+  "scope": "quick south-central-tx: printed region draft / REPRODUCE / sensitivity cells ONLY; no pooled or other-region claim",
+  "region": "south-central-tx",
+  "total": 51,
+  "passed": 51,
+  "failed": 0,
+  "unverified": 0,
+  "all_pass": true,
+  "required_configurations": [
+    "south-central-tx_drv_A",
+    "south-central-tx_drv_A_r25",
+    "south-central-tx_drv_B",
+    "south-central-tx_drvplus_A"
+  ]
+}

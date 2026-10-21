@@ -1,0 +1,334 @@
+{
+  "utc": "2026-10-21T17:48:52Z",
+  "checks": {
+    "PASS": 193,
+    "UNVERIFIED": 9
+  },
+  "unknown": [
+    {
+      "id": "Q.01",
+      "draft_text": "4.0 persons per occupied second-home or visitor unit",
+      "source": "Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9) [source document not distributed with the repository: fetch it as listed in SOURCES.md]",
+      "cause": "External citation document not distributed; no network access; not a recomputed analysis value."
+    },
+    {
+      "id": "Q.02",
+      "draft_text": "occupied 49 % of the year",
+      "source": "Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9) [source document not distributed with the repository: fetch it as listed in SOURCES.md]",
+      "cause": "External citation document not distributed; no network access; not a recomputed analysis value."
+    },
+    {
+      "id": "Q.03",
+      "draft_text": "34,265 persons",
+      "source": "Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9) [source document not distributed with the repository: fetch it as listed in SOURCES.md]",
+      "cause": "External citation document not distributed; no network access; not a recomputed analysis value."
+    },
+    {
+      "id": "Q.04",
+      "draft_text": "7,259 residents",
+      "source": "Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9) [source document not distributed with the repository: fetch it as listed in SOURCES.md]",
+      "cause": "External citation document not distributed; no network access; not a recomputed analysis value."
+    },
+    {
+      "id": "Q.05",
+      "draft_text": "51-64 % for condominiums and 43-75 % for mobile homes",
+      "source": "SW Florida RPC Hurricane Evacuation Study Update 1987 (SOURCES.md row 10) [source document not distributed with the repository: fetch it as listed in SOURCES.md]",
+      "cause": "External citation document not distributed; no network access; not a recomputed analysis value."
+    },
+    {
+      "id": "I.04",
+      "draft_text": "927 occupied housing units per egress lane",
+      "source": "NIST TN 2252 (SOURCES.md row 5) [source document not distributed with the repository: fetch it as listed in SOURCES.md]",
+      "cause": "External citation document not distributed; no network access; not a recomputed analysis value."
+    },
+    {
+      "id": "Q.09",
+      "draft_text": "(Eagle Lodge Draft EIR, 2006)",
+      "source": "Mammoth EIR carries the year 2006 [source document not distributed with the repository: fetch it as listed in SOURCES.md]",
+      "cause": "External citation document not distributed; no network access; not a recomputed analysis value."
+    },
+    {
+      "id": "Q.10",
+      "draft_text": "A 1987 Southwest Florida hurricane evacuation study",
+      "source": "HES document is the 1987 update [source document not distributed with the repository: fetch it as listed in SOURCES.md]",
+      "cause": "External citation document not distributed; no network access; not a recomputed analysis value."
+    },
+    {
+      "id": "P.12",
+      "draft_text": "in the 2018 Camp Fire (NIST TN 2252)",
+      "source": "NIST TN 2252 is the 2018 Camp Fire case study [source document not distributed with the repository: fetch it as listed in SOURCES.md]",
+      "cause": "External citation document not distributed; no network access; not a recomputed analysis value."
+    }
+  ],
+  "regions": {
+    "northern-ca": {
+      "scope": "quick northern-ca: printed region draft / REPRODUCE / sensitivity cells ONLY; no pooled or other-region claim",
+      "region": "northern-ca",
+      "total": 63,
+      "passed": 63,
+      "failed": 0,
+      "unverified": 0,
+      "all_pass": true,
+      "required_configurations": [
+        "northern-ca_drv_A",
+        "northern-ca_drv_A_r25",
+        "northern-ca_drv_B",
+        "northern-ca_drvplus_A",
+        "northern-ca_drvplus_B"
+      ]
+    },
+    "eastern-ok": {
+      "scope": "quick eastern-ok: printed region draft / REPRODUCE / sensitivity cells ONLY; no pooled or other-region claim",
+      "region": "eastern-ok",
+      "total": 63,
+      "passed": 63,
+      "failed": 0,
+      "unverified": 0,
+      "all_pass": true,
+      "required_configurations": [
+        "eastern-ok_drv_A",
+        "eastern-ok_drv_A_r25",
+        "eastern-ok_drv_B",
+        "eastern-ok_drvplus_A",
+        "eastern-ok_drvplus_B"
+      ]
+    },
+    "maricopa-az": {
+      "scope": "quick maricopa-az: printed region draft / REPRODUCE / sensitivity cells ONLY; no pooled or other-region claim",
+      "region": "maricopa-az",
+      "total": 63,
+      "passed": 63,
+      "failed": 0,
+      "unverified": 0,
+      "all_pass": true,
+      "required_configurations": [
+        "maricopa-az_drv_A",
+        "maricopa-az_drv_A_r25",
+        "maricopa-az_drv_B",
+        "maricopa-az_drvplus_A",
+        "maricopa-az_drvplus_B"
+      ]
+    },
+    "south-central-tx": {
+      "scope": "quick south-central-tx: printed region draft / REPRODUCE / sensitivity cells ONLY; no pooled or other-region claim",
+      "region": "south-central-tx",
+      "total": 51,
+      "passed": 51,
+      "failed": 0,
+      "unverified": 0,
+      "all_pass": true,
+      "required_configurations": [
+        "south-central-tx_drv_A",
+        "south-central-tx_drv_A_r25",
+        "south-central-tx_drv_B",
+        "south-central-tx_drvplus_A"
+      ]
+    },
+    "eastern-wa": {
+      "scope": "quick eastern-wa: printed region draft / REPRODUCE / sensitivity cells ONLY; no pooled or other-region claim",
+      "region": "eastern-wa",
+      "total": 71,
+      "passed": 71,
+      "failed": 0,
+      "unverified": 0,
+      "all_pass": true,
+      "required_configurations": [
+        "eastern-wa_drv_A",
+        "eastern-wa_drv_A_r25",
+        "eastern-wa_drv_B",
+        "eastern-wa_drvplus_A",
+        "eastern-wa_drvplus_B"
+      ]
+    }
+  },
+  "python_seconds": 3032.283211444039,
+  "strict": {
+    "files": 206,
+    "bytes_identical": 44,
+    "strict_values_pass": 96
+  },
+  "fig6_pixels": {
+    "changed_pixels": 12759,
+    "bbox": [
+      217,
+      153,
+      873,
+      609
+    ],
+    "left_third": 12170,
+    "middle_third": 589,
+    "right_third": 0
+  },
+  "fig6_histogram_expected": [
+    {
+      "gap": "<5 m",
+      "clusters": 9,
+      "dwellings": 1852.3135989258742,
+      "displayed_k": "1.9k"
+    },
+    {
+      "gap": "5-10 m",
+      "clusters": 28,
+      "dwellings": 4494.273521469784,
+      "displayed_k": "4.5k"
+    },
+    {
+      "gap": "10-25 m",
+      "clusters": 153,
+      "dwellings": 28296.76394752573,
+      "displayed_k": "28.3k"
+    },
+    {
+      "gap": "25-50 m",
+      "clusters": 322,
+      "dwellings": 58651.72292224445,
+      "displayed_k": "58.7k"
+    }
+  ],
+  "fig6_histogram_computed": [
+    {
+      "gap": "<5 m",
+      "clusters": 9,
+      "dwellings": 1852.3135989258742,
+      "displayed_k": "1.9k"
+    },
+    {
+      "gap": "5-10 m",
+      "clusters": 28,
+      "dwellings": 4494.273521469784,
+      "displayed_k": "4.5k"
+    },
+    {
+      "gap": "10-25 m",
+      "clusters": 153,
+      "dwellings": 28296.76394752573,
+      "displayed_k": "28.3k"
+    },
+    {
+      "gap": "25-50 m",
+      "clusters": 322,
+      "dwellings": 58651.72292224445,
+      "displayed_k": "58.7k"
+    }
+  ],
+  "fig6_repair_metrics_equal": false,
+  "fig6_repair_metrics_expected": [
+    {
+      "radius_m": 0,
+      "true_positives": 17,
+      "n_one_exit": 26,
+      "false_positives": 1,
+      "n_multi_exit": 31,
+      "auc": 0.8535980148883374
+    },
+    {
+      "radius_m": 25,
+      "true_positives": 17,
+      "n_one_exit": 26,
+      "false_positives": 1,
+      "n_multi_exit": 31,
+      "auc": 0.8535980148883374
+    },
+    {
+      "radius_m": 50,
+      "true_positives": 16,
+      "n_one_exit": 26,
+      "false_positives": 1,
+      "n_multi_exit": 31,
+      "auc": 0.8424317617866005
+    },
+    {
+      "radius_m": 100,
+      "true_positives": 11,
+      "n_one_exit": 26,
+      "false_positives": 1,
+      "n_multi_exit": 31,
+      "auc": 0.8200992555831266
+    },
+    {
+      "radius_m": 250,
+      "true_positives": 10,
+      "n_one_exit": 26,
+      "false_positives": 0,
+      "n_multi_exit": 31,
+      "auc": 0.8064516129032258
+    }
+  ],
+  "fig6_repair_metrics_computed": [
+    {
+      "radius_m": 0,
+      "true_positives": 17,
+      "n_one_exit": 26,
+      "false_positives": 1,
+      "n_multi_exit": 31,
+      "auc": 0.8535980148883374
+    },
+    {
+      "radius_m": 25,
+      "true_positives": 17,
+      "n_one_exit": 26,
+      "false_positives": 1,
+      "n_multi_exit": 31,
+      "auc": 0.8535980148883374
+    },
+    {
+      "radius_m": 50,
+      "true_positives": 16,
+      "n_one_exit": 26,
+      "false_positives": 1,
+      "n_multi_exit": 31,
+      "auc": 0.8424317617866005
+    },
+    {
+      "radius_m": 100,
+      "true_positives": 11,
+      "n_one_exit": 26,
+      "false_positives": 1,
+      "n_multi_exit": 31,
+      "auc": 0.8132754342431762
+    },
+    {
+      "radius_m": 250,
+      "true_positives": 10,
+      "n_one_exit": 26,
+      "false_positives": 0,
+      "n_multi_exit": 31,
+      "auc": 0.8064516129032258
+    }
+  ],
+  "png_metadata": {
+    "fig2_effects_forest.png": {
+      "expected_info": {
+        "Software": "Matplotlib version3.11.2, https://matplotlib.org/",
+        "dpi": [
+          170.0022,
+          170.0022
+        ]
+      },
+      "computed_info": {
+        "Software": "Matplotlib version3.11.2, https://matplotlib.org/",
+        "dpi": [
+          170.0022,
+          170.0022
+        ]
+      }
+    },
+    "fig6_pinholes_sweep.png": {
+      "expected_info": {
+        "Software": "Matplotlib version3.11.2, https://matplotlib.org/",
+        "dpi": [
+          170.0022,
+          170.0022
+        ]
+      },
+      "computed_info": {
+        "Software": "Matplotlib version3.11.2, https://matplotlib.org/",
+        "dpi": [
+          170.0022,
+          170.0022
+        ]
+      }
+    }
+  },
+  "executed_python_source_mismatches": []
+}

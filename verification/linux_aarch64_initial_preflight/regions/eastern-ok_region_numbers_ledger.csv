@@ -1,0 +1,64 @@
+id,printed,recomputed,tolerance,status,source,draft_text
+F1.11,6.5,6.498596685032731,0.05,OK,tables/eastern-ok_drv_A_summary.csv (eq),E. Oklahoma 6.5 %
+REPRO.s30,6.5,6.498596685032732,0.005,OK,tables/eastern-ok_drv_A_summary.csv (eq),E-OK S30 6.50%
+SENS.01.spof,29.9,29.865259636746366,0.05,OK,tables/eastern-ok_drvplus_A_summary.csv (eq),eastern-ok | +service+track | A: motorway..secondary | none | ACS dwellings | single route 29.9%
+SENS.01.s30,5.7,5.650915556877575,0.05,OK,tables/eastern-ok_drvplus_A_summary.csv (eq),eastern-ok | +service+track | A: motorway..secondary | none | ACS dwellings | S30 5.7%
+SENS.01.s100,2.1,2.1224874135751817,0.05,OK,tables/eastern-ok_drvplus_A_summary.csv (eq),eastern-ok | +service+track | A: motorway..secondary | none | ACS dwellings | S100 2.1%
+SENS.01.s300,0.72,0.7204558842585542,0.005,OK,tables/eastern-ok_drvplus_A_summary.csv (eq),eastern-ok | +service+track | A: motorway..secondary | none | ACS dwellings | S300 0.72%
+SENS.02.spof,31.0,31.019015369582103,0.05,OK,tables/eastern-ok_drvplus_A_summary.csv (ar),eastern-ok | +service+track | A: motorway..secondary | none | area-weighted dwellings | single route 31.0%
+SENS.02.s30,6.4,6.377441450132541,0.05,OK,tables/eastern-ok_drvplus_A_summary.csv (ar),eastern-ok | +service+track | A: motorway..secondary | none | area-weighted dwellings | S30 6.4%
+SENS.02.s100,2.0,2.043206638251134,0.05,OK,tables/eastern-ok_drvplus_A_summary.csv (ar),eastern-ok | +service+track | A: motorway..secondary | none | area-weighted dwellings | S100 2.0%
+SENS.02.s300,0.49,0.492849950120433,0.005,OK,tables/eastern-ok_drvplus_A_summary.csv (ar),eastern-ok | +service+track | A: motorway..secondary | none | area-weighted dwellings | S300 0.49%
+SENS.03.spof,34.3,34.261243087650804,0.05,OK,tables/eastern-ok_drvplus_A_summary.csv (str),eastern-ok | +service+track | A: motorway..secondary | none | structure count | single route 34.3%
+SENS.03.s30,7.0,6.961149922623444,0.05,OK,tables/eastern-ok_drvplus_A_summary.csv (str),eastern-ok | +service+track | A: motorway..secondary | none | structure count | S30 7.0%
+SENS.03.s100,2.3,2.343565828355398,0.05,OK,tables/eastern-ok_drvplus_A_summary.csv (str),eastern-ok | +service+track | A: motorway..secondary | none | structure count | S100 2.3%
+SENS.03.s300,0.8,0.7953822854225004,0.005,OK,tables/eastern-ok_drvplus_A_summary.csv (str),eastern-ok | +service+track | A: motorway..secondary | none | structure count | S300 0.80%
+SENS.04.spof,29.9,29.882564216186854,0.05,OK,tables/eastern-ok_drvplus_B_summary.csv (eq),"eastern-ok | +service+track | B: motorway,trunk | none | ACS dwellings | single route 29.9%"
+SENS.04.s30,5.7,5.68366486766578,0.05,OK,tables/eastern-ok_drvplus_B_summary.csv (eq),"eastern-ok | +service+track | B: motorway,trunk | none | ACS dwellings | S30 5.7%"
+SENS.04.s100,2.2,2.1629029779794116,0.05,OK,tables/eastern-ok_drvplus_B_summary.csv (eq),"eastern-ok | +service+track | B: motorway,trunk | none | ACS dwellings | S100 2.2%"
+SENS.04.s300,0.76,0.7621762448324642,0.005,OK,tables/eastern-ok_drvplus_B_summary.csv (eq),"eastern-ok | +service+track | B: motorway,trunk | none | ACS dwellings | S300 0.76%"
+SENS.05.spof,31.0,31.03324543775513,0.05,OK,tables/eastern-ok_drvplus_B_summary.csv (ar),"eastern-ok | +service+track | B: motorway,trunk | none | area-weighted dwellings | single route 31.0%"
+SENS.05.s30,6.4,6.411370914310862,0.05,OK,tables/eastern-ok_drvplus_B_summary.csv (ar),"eastern-ok | +service+track | B: motorway,trunk | none | area-weighted dwellings | S30 6.4%"
+SENS.05.s100,2.1,2.0753257160899388,0.05,OK,tables/eastern-ok_drvplus_B_summary.csv (ar),"eastern-ok | +service+track | B: motorway,trunk | none | area-weighted dwellings | S100 2.1%"
+SENS.05.s300,0.53,0.5332997452268058,0.005,OK,tables/eastern-ok_drvplus_B_summary.csv (ar),"eastern-ok | +service+track | B: motorway,trunk | none | area-weighted dwellings | S300 0.53%"
+SENS.06.spof,34.3,34.28155497736986,0.05,OK,tables/eastern-ok_drvplus_B_summary.csv (str),"eastern-ok | +service+track | B: motorway,trunk | none | structure count | single route 34.3%"
+SENS.06.s30,7.0,6.998729093324217,0.05,OK,tables/eastern-ok_drvplus_B_summary.csv (str),"eastern-ok | +service+track | B: motorway,trunk | none | structure count | S30 7.0%"
+SENS.06.s100,2.4,2.3909747358366977,0.05,OK,tables/eastern-ok_drvplus_B_summary.csv (str),"eastern-ok | +service+track | B: motorway,trunk | none | structure count | S100 2.4%"
+SENS.06.s300,0.84,0.8378328301030035,0.005,OK,tables/eastern-ok_drvplus_B_summary.csv (str),"eastern-ok | +service+track | B: motorway,trunk | none | structure count | S300 0.84%"
+SENS.07.spof,20.4,20.399442014786796,0.05,OK,tables/eastern-ok_drv_A_summary.csv (eq),eastern-ok | scored classes | A: motorway..secondary | none | ACS dwellings | single route 20.4%
+SENS.07.s30,6.5,6.498596685032732,0.05,OK,tables/eastern-ok_drv_A_summary.csv (eq),eastern-ok | scored classes | A: motorway..secondary | none | ACS dwellings | S30 6.5%
+SENS.07.s100,2.4,2.4353977633846657,0.05,OK,tables/eastern-ok_drv_A_summary.csv (eq),eastern-ok | scored classes | A: motorway..secondary | none | ACS dwellings | S100 2.4%
+SENS.07.s300,0.81,0.8095105759928803,0.005,OK,tables/eastern-ok_drv_A_summary.csv (eq),eastern-ok | scored classes | A: motorway..secondary | none | ACS dwellings | S300 0.81%
+SENS.08.spof,20.8,20.77347542918721,0.05,OK,tables/eastern-ok_drv_A_summary.csv (ar),eastern-ok | scored classes | A: motorway..secondary | none | area-weighted dwellings | single route 20.8%
+SENS.08.s30,7.3,7.264317677931882,0.05,OK,tables/eastern-ok_drv_A_summary.csv (ar),eastern-ok | scored classes | A: motorway..secondary | none | area-weighted dwellings | S30 7.3%
+SENS.08.s100,2.5,2.4598524968332773,0.05,OK,tables/eastern-ok_drv_A_summary.csv (ar),eastern-ok | scored classes | A: motorway..secondary | none | area-weighted dwellings | S100 2.5%
+SENS.08.s300,0.64,0.6390865038302241,0.005,OK,tables/eastern-ok_drv_A_summary.csv (ar),eastern-ok | scored classes | A: motorway..secondary | none | area-weighted dwellings | S300 0.64%
+SENS.09.spof,21.8,21.812129405355424,0.05,OK,tables/eastern-ok_drv_A_summary.csv (str),eastern-ok | scored classes | A: motorway..secondary | none | structure count | single route 21.8%
+SENS.09.s30,8.1,8.098800674801362,0.05,OK,tables/eastern-ok_drv_A_summary.csv (str),eastern-ok | scored classes | A: motorway..secondary | none | structure count | S30 8.1%
+SENS.09.s100,2.8,2.7680278202038617,0.05,OK,tables/eastern-ok_drv_A_summary.csv (str),eastern-ok | scored classes | A: motorway..secondary | none | structure count | S100 2.8%
+SENS.09.s300,0.87,0.871750018203495,0.005,OK,tables/eastern-ok_drv_A_summary.csv (str),eastern-ok | scored classes | A: motorway..secondary | none | structure count | S300 0.87%
+SENS.10.spof,20.0,19.992171913437694,0.05,OK,tables/eastern-ok_drv_A_r25_summary.csv (eq),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | single route 20.0%
+SENS.10.s30,6.3,6.289069725472,0.05,OK,tables/eastern-ok_drv_A_r25_summary.csv (eq),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S30 6.3%
+SENS.10.s100,2.3,2.341320306199265,0.05,OK,tables/eastern-ok_drv_A_r25_summary.csv (eq),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S100 2.3%
+SENS.10.s300,0.77,0.7685090480979135,0.005,OK,tables/eastern-ok_drv_A_r25_summary.csv (eq),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S300 0.77%
+SENS.11.spof,20.4,20.353108815034965,0.05,OK,tables/eastern-ok_drv_A_r25_summary.csv (ar),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | single route 20.4%
+SENS.11.s30,7.0,7.040705363693737,0.05,OK,tables/eastern-ok_drv_A_r25_summary.csv (ar),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S30 7.0%
+SENS.11.s100,2.4,2.392740530654708,0.05,OK,tables/eastern-ok_drv_A_r25_summary.csv (ar),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S100 2.4%
+SENS.11.s300,0.6,0.5951225884142427,0.005,OK,tables/eastern-ok_drv_A_r25_summary.csv (ar),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S300 0.60%
+SENS.12.spof,21.5,21.488852881547444,0.05,OK,tables/eastern-ok_drv_A_r25_summary.csv (str),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | single route 21.5%
+SENS.12.s30,7.9,7.919309828746783,0.05,OK,tables/eastern-ok_drv_A_r25_summary.csv (str),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S30 7.9%
+SENS.12.s100,2.7,2.6773612564710136,0.05,OK,tables/eastern-ok_drv_A_r25_summary.csv (str),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S100 2.7%
+SENS.12.s300,0.83,0.8267895790036065,0.005,OK,tables/eastern-ok_drv_A_r25_summary.csv (str),eastern-ok | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S300 0.83%
+SENS.13.spof,20.4,20.42725822624531,0.05,OK,tables/eastern-ok_drv_B_summary.csv (eq),"eastern-ok | scored classes | B: motorway,trunk | none | ACS dwellings | single route 20.4%"
+SENS.13.s30,6.5,6.533409521176199,0.05,OK,tables/eastern-ok_drv_B_summary.csv (eq),"eastern-ok | scored classes | B: motorway,trunk | none | ACS dwellings | S30 6.5%"
+SENS.13.s100,2.5,2.4760958991273507,0.05,OK,tables/eastern-ok_drv_B_summary.csv (eq),"eastern-ok | scored classes | B: motorway,trunk | none | ACS dwellings | S100 2.5%"
+SENS.13.s300,0.85,0.8517102688047056,0.005,OK,tables/eastern-ok_drv_B_summary.csv (eq),"eastern-ok | scored classes | B: motorway,trunk | none | ACS dwellings | S300 0.85%"
+SENS.14.spof,20.8,20.802091287720383,0.05,OK,tables/eastern-ok_drv_B_summary.csv (ar),"eastern-ok | scored classes | B: motorway,trunk | none | area-weighted dwellings | single route 20.8%"
+SENS.14.s30,7.3,7.303565472881607,0.05,OK,tables/eastern-ok_drv_B_summary.csv (ar),"eastern-ok | scored classes | B: motorway,trunk | none | area-weighted dwellings | S30 7.3%"
+SENS.14.s100,2.5,2.4922868610745774,0.05,OK,tables/eastern-ok_drv_B_summary.csv (ar),"eastern-ok | scored classes | B: motorway,trunk | none | area-weighted dwellings | S100 2.5%"
+SENS.14.s300,0.68,0.6803132275473834,0.005,OK,tables/eastern-ok_drv_B_summary.csv (ar),"eastern-ok | scored classes | B: motorway,trunk | none | area-weighted dwellings | S300 0.68%"
+SENS.15.spof,21.8,21.84625547530422,0.05,OK,tables/eastern-ok_drv_B_summary.csv (str),"eastern-ok | scored classes | B: motorway,trunk | none | structure count | single route 21.8%"
+SENS.15.s30,8.1,8.142225879491987,0.05,OK,tables/eastern-ok_drv_B_summary.csv (str),"eastern-ok | scored classes | B: motorway,trunk | none | structure count | S30 8.1%"
+SENS.15.s100,2.8,2.8236910371254793,0.05,OK,tables/eastern-ok_drv_B_summary.csv (str),"eastern-ok | scored classes | B: motorway,trunk | none | structure count | S100 2.8%"
+SENS.15.s300,0.91,0.9147365844629003,0.005,OK,tables/eastern-ok_drv_B_summary.csv (str),"eastern-ok | scored classes | B: motorway,trunk | none | structure count | S300 0.91%"
+EXEC.required_steps,0.0,0.0,0.0,OK,quick rebuild command status,all required commands exited zero

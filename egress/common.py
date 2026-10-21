@@ -1,22 +1,22 @@
 """Shared paths/helpers for the egress (single-point-of-failure) analysis. Seeded, re-runnable; every path is derived from the location of this file (data root: $BIAS_BOUNTY_ROOT or ./data)."""
 import os, duckdb, numpy as np
 _HERE = os.path.dirname(os.path.abspath(__file__))
-LANE = os.environ.get("EGRESS_LANE") or os.path.dirname(_HERE)      # the repository root: the directory that holds egress/, tables/, work/, ext/ ... (derived from this file's location)
+REPO_ROOT = os.environ.get("EGRESS_ROOT") or os.path.dirname(_HERE)      # the repository root: the directory that holds egress/, tables/, work/, ext/ ... (derived from this file's location)
 def _data_root():
     """Directory that holds data/reference/<region>/ and data/strata/<region>/ (the `aws s3 sync` layout of the challenge README):
     $BIAS_BOUNTY_ROOT if set, else the repository root or its nearest parent directory that has data/reference/."""
     env = os.environ.get("BIAS_BOUNTY_ROOT")
     if env: return env
-    d = LANE
+    d = REPO_ROOT
     while True:
         if os.path.isdir(os.path.join(d, "data", "reference")): return d
         p = os.path.dirname(d)
-        if p == d: return LANE
+        if p == d: return REPO_ROOT
         d = p
 ROOT = _data_root()
 DATA = f"{ROOT}/data"
-WORK = f"{LANE}/work"
-OUT = f"{LANE}/tables"
+WORK = f"{REPO_ROOT}/work"
+OUT = f"{REPO_ROOT}/tables"
 REGIONS = ["northern-ca", "eastern-ok", "maricopa-az", "south-central-tx"]      # the four regions of the original task
 ALLREG = REGIONS + ["eastern-wa"]                                              # eastern-wa (415 tracts) joined the scored set on 2026-09-28
 
@@ -40,7 +40,14 @@ def strata(region, name="strata-tract-table"):
 
 def con(threads=4, mem="10GB"):
     c = duckdb.connect()
-    c.sql("INSTALL spatial; LOAD spatial;")
+    try:
+        c.sql("LOAD spatial;")  # already installed: no network access
+    except duckdb.Error:
+        try:
+            c.sql("INSTALL spatial; LOAD spatial;")  # first run only: DuckDB downloads its spatial extension
+        except duckdb.Error as exc:
+            raise RuntimeError("DuckDB spatial extension could not be loaded or installed; install it once with: "
+                               "python -c \"import duckdb; duckdb.sql('INSTALL spatial')\"") from exc
     c.sql(f"SET threads={threads}; SET memory_limit='{mem}'; SET temp_directory='{WORK}/duck_tmp';")
     os.makedirs(f"{WORK}/duck_tmp", exist_ok=True)
     return c

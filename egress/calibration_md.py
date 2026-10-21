@@ -22,4 +22,4 @@ L.append("\n## Reading\n"
          "* >= 100 m is not credible: Hays loses 6 of 17 documented single-exit flags at 100 m; Tehama loses 6 of 24 at 250 m and its dose-response (documented population vs graph load) collapses from Spearman 0.86 to 0.30.\n"
          "* Consistent conclusion: the single-link exposure is mostly REAL (documented areas stay flagged under moderate repair), and the map-induced part is small and unproven.\n"
          "* Limits: two counties, 84 neighbourhoods, flags are small integers (one flag = 4-6 %); Hays centroids are matched to the K nearest buildings, Tehama areas by road-name regex inside town boxes.\n")
-open(f"{LANE}/CALIBRATION.md", "w").write("\n".join(L)); print("wrote CALIBRATION.md")
+open(f"{REPO_ROOT}/CALIBRATION.md", "w").write("\n".join(L)); print("wrote CALIBRATION.md")

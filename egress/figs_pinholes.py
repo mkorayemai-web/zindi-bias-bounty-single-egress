@@ -9,7 +9,7 @@ import os as _os; sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)
 from common import *
 from spof import load_graph
 plt.rcParams.update({"font.size": 9, "axes.spines.top": False, "axes.spines.right": False})
-FIG = f"{LANE}/figs"
+FIG = f"{REPO_ROOT}/figs"
 NAME = {"northern-ca": "N. California", "eastern-ok": "E. Oklahoma", "maricopa-az": "Maricopa AZ", "south-central-tx": "S-C Texas", "eastern-wa": "E. Washington"}
 COL = {"northern-ca": "#d95f02", "eastern-ok": "#7570b3", "maricopa-az": "#1b9e77", "south-central-tx": "#e7298a", "eastern-wa": "#66a61e"}
 # ---------------- Fig 6: sweep + gap histogram

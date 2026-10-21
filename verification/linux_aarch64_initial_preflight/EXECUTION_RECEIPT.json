@@ -1,0 +1,80 @@
+{
+  "steps": [
+    {
+      "step": "finish_rebuild",
+      "exit_code": 0,
+      "log": "<scratch>/rebuild/logs/continuation_finish_rebuild.txt",
+      "ended_utc": "2026-10-21T17:38:14Z"
+    },
+    {
+      "step": "export_timings",
+      "exit_code": 0,
+      "log": "<scratch>/rebuild/logs/continuation_export_timings.txt",
+      "ended_utc": "2026-10-21T17:38:14Z"
+    },
+    {
+      "step": "full_finding_audit",
+      "exit_code": 1,
+      "log": "<scratch>/rebuild/logs/continuation_full_finding_audit.txt",
+      "ended_utc": "2026-10-21T17:38:19Z"
+    },
+    {
+      "step": "region_northern-ca",
+      "exit_code": 0,
+      "log": "<scratch>/rebuild/logs/continuation_region_northern-ca.txt",
+      "ended_utc": "2026-10-21T17:38:19Z"
+    },
+    {
+      "step": "region_eastern-ok",
+      "exit_code": 0,
+      "log": "<scratch>/rebuild/logs/continuation_region_eastern-ok.txt",
+      "ended_utc": "2026-10-21T17:38:20Z"
+    },
+    {
+      "step": "region_maricopa-az",
+      "exit_code": 0,
+      "log": "<scratch>/rebuild/logs/continuation_region_maricopa-az.txt",
+      "ended_utc": "2026-10-21T17:38:20Z"
+    },
+    {
+      "step": "region_south-central-tx",
+      "exit_code": 0,
+      "log": "<scratch>/rebuild/logs/continuation_region_south-central-tx.txt",
+      "ended_utc": "2026-10-21T17:38:20Z"
+    },
+    {
+      "step": "region_eastern-wa",
+      "exit_code": 0,
+      "log": "<scratch>/rebuild/logs/continuation_region_eastern-wa.txt",
+      "ended_utc": "2026-10-21T17:38:20Z"
+    },
+    {
+      "step": "quick_preflight",
+      "exit_code": 0,
+      "log": "<scratch>/rebuild/logs/continuation_quick_preflight.txt",
+      "ended_utc": "2026-10-21T17:40:13Z"
+    },
+    {
+      "step": "full_preflight",
+      "exit_code": 1,
+      "log": "<scratch>/rebuild/logs/continuation_full_preflight.txt",
+      "ended_utc": "2026-10-21T17:40:18Z"
+    },
+    {
+      "step": "unittests",
+      "exit_code": 0,
+      "log": "<scratch>/rebuild/logs/continuation_unittests.txt",
+      "ended_utc": "2026-10-21T17:40:18Z"
+    },
+    {
+      "step": "ledger_selftest",
+      "exit_code": 0,
+      "log": "<scratch>/rebuild/logs/continuation_ledger_selftest.txt",
+      "ended_utc": "2026-10-21T17:40:19Z"
+    }
+  ],
+  "started_utc": "2026-10-21T17:34:33Z",
+  "current": "finished",
+  "updated_utc": "2026-10-21T17:40:18Z",
+  "ended_utc": "2026-10-21T17:40:19Z"
+}

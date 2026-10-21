@@ -16,4 +16,4 @@ for xi, (_, r) in zip(x, DR.iterrows()):
 ax.set_xticks(x); ax.set_xticklabels(DR.bin); ax.set_xlabel("seasonal/recreational share of the tract's housing units (ACS B25004)", fontsize=8.5)
 ax.set_ylabel("% of dwellings behind a single link\nserving >=30 dwellings (S30)", fontsize=8.5)
 ax.set_title("Dose-response: resort-type tracts carry 2-3x the exposure\n(5 regions, 9,712 tracts; 95% tract-bootstrap CI)", fontsize=9)
-fig.tight_layout(pad=1.2); from figlabels import qa; qa(fig, "fig4"); fig.savefig(f"{LANE}/figs/fig4_seasonal.png", dpi=170, bbox_inches="tight", pad_inches=0.06); print("wrote fig4_seasonal.png")
+fig.tight_layout(pad=1.2); from figlabels import qa; qa(fig, "fig4"); fig.savefig(f"{REPO_ROOT}/figs/fig4_seasonal.png", dpi=170, bbox_inches="tight", pad_inches=0.06); print("wrote fig4_seasonal.png")

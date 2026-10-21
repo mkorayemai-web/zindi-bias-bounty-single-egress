@@ -1,7 +1,7 @@
 """Figures for D5: one map per region (all five, final fig1 set) + region bars (baseline vs robust S30). usage: figs_regions.py
 -> figs/fig1_<region>_map.png for all 5 regions (run AFTER figs_m1.py; figs_m1.py no longer draws fig1), figs/fig5_region_bars.png
 Inputs: tables/<region>_drv_A_links.csv, work/<region>_drv_A_tract.parquet, tables/false_single_access.csv. Deterministic.
-Lead review 2026-10-14 21:15Z applied: axes removed, de-overlapped labels with leader lines kept inside the map, circle-size key, non-linear colour scale stated, circle encoding stated correctly
+Layout review 2026-10-14 21:15Z applied: axes removed, de-overlapped labels with leader lines kept inside the map, circle-size key, non-linear colour scale stated, circle encoding stated correctly
 (marker area proportional to the SQUARE ROOT of dwellings; the earlier title said 'area ~ dwellings', which was wrong)."""
 import sys, os, numpy as np, pandas as pd, geopandas as gpd, matplotlib
 matplotlib.use("Agg")
@@ -13,7 +13,7 @@ from shapely.geometry import box as sbox
 import os as _os; sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 from common import *
 from figlabels import place_labels, qa
-FIG = f"{LANE}/figs"; os.makedirs(FIG, exist_ok=True)
+FIG = f"{REPO_ROOT}/figs"; os.makedirs(FIG, exist_ok=True)
 plt.rcParams.update({"font.size": 9, "axes.spines.top": False, "axes.spines.right": False})
 LABELS = {"eastern-ok": "Eastern Oklahoma", "maricopa-az": "Maricopa County, Arizona", "south-central-tx": "South-Central Texas", "eastern-wa": "Eastern Washington", "northern-ca": "Northern California"}
 NORM = PowerNorm(0.6, vmin=0, vmax=0.45); BLUE = "#0b3d91"; FILL = (0.04, 0.24, 0.57, 0.12)

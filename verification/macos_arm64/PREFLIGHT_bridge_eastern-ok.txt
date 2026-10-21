@@ -1,0 +1,47 @@
+PREFLIGHT_bridge_eastern-ok.txt = output of: PY=<python> sh egress/preflight_bridge.sh eastern-ok
+run 2026-10-15 05:16-05:19Z on <repo> host (Apple M2, macOS), scratch copy of <repo> (APFS clone); <repo> itself was not written.
+----
+scripts in the copy that still point at the <repo>: 0
+files deleted: 30; left of them: 0
+--- python build_edges.py eastern-ok drvplus  [05:16:05]
+--- python pipeline.py eastern-ok drvplus --force  [05:16:08]
+--- python variants.py eastern-ok drvplus A --minload 20  [05:17:20]
+--- python variants.py eastern-ok drvplus B --minload 100  [05:17:32]
+--- python facilities2.py eastern-ok drvplus A  [05:17:44]
+--- python variants.py eastern-ok drv A --repair 25  [05:17:47]
+--- python coverage_bridge.py eastern-ok  [05:17:54]
+--- python sens_nearmiss2.py eastern-ok 50 100 250  [05:18:06]
+robustness chain: 197 s
+  tables/eastern-ok_drv_A_r25_summary.csv                    identical
+  tables/eastern-ok_drvplus_A_links.csv                      identical
+  tables/eastern-ok_drvplus_A_summary.csv                    identical
+  tables/eastern-ok_drvplus_B_links.csv                      identical
+  tables/eastern-ok_drvplus_B_summary.csv                    identical
+  tables/fac_clusters_eastern-ok_drvplus_A.csv               identical
+  tables/fac_eastern-ok_drvplus_A.csv                        identical
+  tables/sens_nearmiss2_eastern-ok.csv                       identical
+  work/cb_eastern-ok_conc.csv                                identical
+  work/cb_eastern-ok_link.parquet                            identical
+  work/cb_eastern-ok_prov.parquet                            identical
+  work/eastern-ok_drv_A_r25_bres.parquet                     identical
+  work/eastern-ok_drv_A_r25_nodes.npz                        identical
+  work/eastern-ok_drv_A_r25_tract.parquet                    identical
+  work/eastern-ok_drvplus_A_bres.parquet                     identical
+  work/eastern-ok_drvplus_A_nodes.npz                        identical
+  work/eastern-ok_drvplus_A_tract.parquet                    identical
+  work/eastern-ok_drvplus_B_bres.parquet                     identical
+  work/eastern-ok_drvplus_B_nodes.npz                        identical
+  work/eastern-ok_drvplus_B_tract.parquet                    identical
+  work/eastern-ok_drvplus_pieces.parquet                     identical
+  work/eastern-ok_drvplus_segs.parquet                       identical
+  work/eastern-ok_drvplus_snap.parquet                       identical
+  work/eastern-ok_nm0_bld.parquet                            identical
+  work/eastern-ok_nm100_bld.parquet                          identical
+  work/eastern-ok_nm100_pairs.parquet                        identical
+  work/eastern-ok_nm250_bld.parquet                          identical
+  work/eastern-ok_nm250_pairs.parquet                        identical
+  work/eastern-ok_nm50_bld.parquet                           identical
+  work/eastern-ok_nm50_pairs.parquet                         identical
+deleted before the run: 30; re-written and compared: 30; identical: 30; problems: 0; command failures: none
+not re-written by this chain, not compared (0): 
+BRIDGE-PREFLIGHT PASS

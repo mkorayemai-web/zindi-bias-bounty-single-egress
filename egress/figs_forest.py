@@ -34,6 +34,6 @@ ax.xaxis.set_major_locator(FixedLocator([0.2, 0.5, 1, 2, 4])); ax.xaxis.set_majo
 ax.set_yticks(y); ax.set_yticklabels(T.row.tolist()); ax.set_xlabel("ratio of S30 exposure (95% county-clustered bootstrap CI), 5 regions pooled", fontsize=8)
 fig.text(0.012, 0.985, "Resort-type, mobile-home and rural tracts are more exposed; high-SVI tracts and public facilities less", ha="left", va="top", fontsize=8.6)
 fig.subplots_adjust(left=0.37, right=0.80, top=0.92, bottom=0.15)
-fig.savefig(f"{LANE}/figs/fig2_effects_forest.png", dpi=170, bbox_inches="tight", pad_inches=0.06); plt.close(fig)
+fig.savefig(f"{REPO_ROOT}/figs/fig2_effects_forest.png", dpi=170, bbox_inches="tight", pad_inches=0.06); plt.close(fig)
 for r in T.itertuples(): print(f"{r.row:55s} {r.ratio:5.2f}x ({r.lo:.2f}-{r.hi:.2f})  [{r.source}, {r.counties} counties]")
 print("wrote fig2_effects_forest.png and tables/effects_forest_county.csv")

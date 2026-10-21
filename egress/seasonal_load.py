@@ -47,4 +47,4 @@ xi = np.arange(len(G)) * 1.8; ax.bar(xi, G.ratio_mid, color="#e6550d", width=0.5
 for x_, r_, lo_, hi_ in zip(xi, G.ratio_mid, G.ratio_low, G.ratio_high): ax.text(x_ + 0.36, r_, f"{r_:.2f}x\n({lo_:.2f}-{hi_:.2f})", ha="left", va="center", fontsize=8)   # beside the bar, clear of the whisker
 ax.axhline(1, color="k", lw=0.8, ls="--"); ax.set_xticks(xi); ax.set_xticklabels(["10 %+", "25 %+", "50 %+"]); ax.set_xlim(-0.5, xi[-1] + 1.5); ax.set_xlabel("tracts by seasonal share of housing units"); ax.set_ylabel("peak persons / census persons", fontsize=8.5)
 ax.set_title(f"Understatement of the people behind single links\nbars = mid case (q = {Q['mid']})\nwhiskers = assumed range q = {Q['low']}-{Q['high']}", fontsize=8.5)
-fig.tight_layout(pad=1.6); qa(fig, "fig8"); fig.savefig(f"{LANE}/figs/fig8_seasonal_load.png", dpi=170); print("wrote fig8")
+fig.tight_layout(pad=1.6); qa(fig, "fig8"); fig.savefig(f"{REPO_ROOT}/figs/fig8_seasonal_load.png", dpi=170); print("wrote fig8")

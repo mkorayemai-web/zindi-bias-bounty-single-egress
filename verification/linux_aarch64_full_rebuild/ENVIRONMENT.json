@@ -1,0 +1,27 @@
+{
+  "platform": "Linux-6.17.0-1029-nvidia-aarch64-with-glibc2.39",
+  "machine": "aarch64",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "packages": {
+    "duckdb": "1.5.4",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "geopandas": "1.2.0",
+    "pyarrow": "26.0.0",
+    "pyproj": "3.8.0",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.3.0"
+  },
+  "spatial": [
+    {
+      "extension_name": "spatial",
+      "loaded": true,
+      "installed": true,
+      "install_path": "<scratch>/.duckdb/extensions/v1.5.4/linux_arm64/spatial.duckdb_extension",
+      "extension_version": "28db190"
+    }
+  ]
+}

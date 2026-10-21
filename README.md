@@ -1,41 +1,60 @@
-# Who has only one way out? Second-home, resort and mobile-home communities, invisible to SVI and to census person counts
+# One way out: 3.76 M people depend on a single local road link the coverage score never measures. Mobile-home parks and second-home communities are most exposed; SVI points the other way.
 
-Entry for the Zindi "Bias Bounty: Mapping Equity Challenge", prize "Best Bias Discovery". This repository holds the write-up, the code, every table and figure it quotes, and the sources behind it.
+Entry for the Zindi "Bias Bounty: Mapping Equity Challenge", prize "Best Bias Discovery". This release contains the author's write-up, code, quoted tables and figures, sources and verification records.
 
-## What is here
+## Summary
 
-| path | content |
-|---|---|
-| `DISCOVERY_DRAFT.md` | the write-up (1,500 words or fewer, figures in `figs/`) |
-| `SOURCES.md` | every public source used beyond the challenge package: URL, retrieval date, licence |
-| `REPRODUCE.md` | commands, expected values, method in one paragraph |
-| `NUMBERS_LEDGER.md` | every number in the write-up re-derived from the tables, source documents and code parameters (`egress/numbers_ledger.py`; self-test `egress/ledger_selftest.py`) |
-| `PREFLIGHT_<region>.txt` (five files) | records of the clean-room re-run of each region plus the validations (`egress/preflight.sh <region>`); all five end in PREFLIGHT PASS |
-| `PREFLIGHT_bridge_<region>.txt` (five files) | records of the clean-room re-run of the robustness chain (service and track roads, 25 m gap repair, latent-connection sweeps, coverage bridge; `egress/preflight_bridge.sh <region>`); all five end in BRIDGE-PREFLIGHT PASS |
-| `NOVELTY.md`, `CALIBRATION.md`, `PINHOLES.md` | supporting notes (how this differs from other entries; how far map repairs can be trusted; unverified leads) |
-| `egress/` | the code: Python 3.12, DuckDB 1.5.4, seed 20261014, at most 4 threads |
-| `validation/` | checks against two independent published documents: Tehama County CA evacuation study, Hays County TX (Ramos and Yuan 2024) |
-| `tables/`, `figs/`, `ext/` | every output the write-up quotes; small public inputs |
-| `work/` | small intermediates (per-region tract tables, link and node arrays; about 80 MB) that `egress/preflight_stats.sh` needs to re-derive the statistics without rebuilding the graph; the large graph and building files are not shipped |
-| `MANIFEST.sha256` | SHA-256 of every file listed above |
+The scorecard credits arterial kilometres, not whether homes have a second route upstream. Across five regions, 9.9 % of dwellings (1.68 M dwellings, 3.76 M people) sit behind one road link serving at least 30 dwellings, the model-code benchmark (IFC D107.1). Exposure is 1.77x for mapped mobile-home parks and 2.15x in seasonal communities; high-SVI tracts are less exposed (0.60x). County evacuation studies confirm the classification; gap repair removes 3.9 %. The coverage-definition gap matters for evacuation, outside responders and car-less households; second-home occupancy scenarios also expose census-based planning undercounts.
 
-## Reproduce one region in about a minute
+## How this differs from related entries
 
-1. Get the challenge data package in the layout of the challenge README (`aws s3 sync`) into `data/` inside this repository (`data/reference/<region>/...`, `data/strata/<region>/...`), or anywhere else and then `export BIAS_BOUNTY_ROOT=<DATA_ROOT>`, the directory that contains `data/`.
-2. Check the download: `shasum -a 256 -c MANIFEST.sha256`.
-3. Nothing to configure: no script contains an absolute path, each derives its paths from its own location and finds the data in `./data` (or in `$BIAS_BOUNTY_ROOT`).
-4. Rebuild Eastern Washington and compare with the shipped tables: `PY="$(command -v python)" sh egress/preflight.sh eastern-wa`. It works on a scratch copy, deletes the region's outputs first, and prints `PREFLIGHT PASS` only if every re-written file is identical to the shipped one. Expected: single-link share S30 = 7.52 % (52,721 dwellings, 112,860 people). The other four regions work the same way (`preflight.sh northern-ca`, `eastern-ok`, `maricopa-az`, `south-central-tx`): under 2.5 minutes each, Texas about 14 minutes. All four were also run inside a fresh clone of this repository; there only the region chain is compared and the validations are skipped, because the clone has no building files (step 6).
-5. Re-derive the statistics and the tables, documents and figures they feed (65 files, among them 10 of the 13 files in `figs/` and 6 of the write-up's 7 figures) from the shipped intermediates, with no graph build (about 5 minutes on the author's laptop): `PY="$(command -v python)" sh egress/preflight_stats.sh`. It works on a scratch copy and prints `PREFLIGHT-STATS PASS` only if every re-written file is byte-identical to the shipped one. Not re-derived this way: the per-region link tables, the validation tables, the pinhole lists and the pinhole and resort-cluster figures (they need the graph and building files; see 6 and the paragraph below).
-6. The other regions from scratch and the four validation scripts follow `REPRODUCE.md` (Texas is the long one: about 8 minutes for the main graph and about 10 for the +service/track variant on an otherwise idle laptop); the validations need northern-ca and south-central-tx to be built first.
+- 34995 examines reference-based coverage gaps in mobile-home-park tracts; this release measures route redundancy around parks that are mapped.
+- 35081/35157 measure road density; this release asks whether each dwelling has a second route to an arterial.
+- 35033 examines closures at listed Texas low-water crossings; this release ranks single links across five regions without a hazard list, weighted by dwellings and persons.
+- 35360 examines missing urban arterial geometry; this release studies local links upstream of arterials that are present.
+- 35333/34972 examine phantom or stale road geometry; this release checks naming and edit recency as safeguards for its topology analysis.
+- 35000 examines road-score construction and station coverage; this release addresses route redundancy below the scored arterial classes.
 
-Checks run on the author's host, where the building and graph files exist (the repository does not ship them; the records are in this repository): `egress/preflight.sh <region>` with the four validations for all five regions (`PREFLIGHT_<region>.txt`; Texas about 15 minutes, because it also rebuilds the latent-connection variants that the Hays validation reads); `egress/preflight_bridge.sh <region>` for the robustness chain behind the sensitivity numbers and the pinhole counts (service and track roads, 25 m gap repair, latent-connection sweeps, coverage bridge; `PREFLIGHT_bridge_<region>.txt`); `figs_resort.py` and `figs_pinholes.py` for the three figures that step 5 cannot re-derive (fig6, fig7, fig9: byte-identical to the shipped PNGs); `acs_ext.py` and `seasonal.py` from the raw Census files (the two ACS extracts come out content-identical; checksums in `SOURCES.md` rows 3 and 8).
+These are complementary questions. NOVELTY.md records the comparisons and the limitations of the public-entry search.
 
-Python 3.12 and the packages pinned in `requirements.txt` (the tested set), plus DuckDB's spatial extension (`python -c "import duckdb; duckdb.sql('INSTALL spatial')"`, needs internet once).
+## Contents
+
+- DISCOVERY_DRAFT.md: the final write-up; figures are in figs/.
+- SOURCES.md: public-source URLs, retrieval dates and licence terms.
+- REPRODUCE.md: commands, expected values, software environment and method.
+- NUMBERS_LEDGER.md and tables/numbers_ledger.csv: per-check numeric evidence and explicit missing-source statuses.
+- verification/: macOS arm64 and Linux aarch64 records, per-step runtimes, per-check values, strict differences, PNG comparisons and current preflight transcripts. verification/README.md explains their scope and normalised location placeholders.
+- egress/ and validation/: the analysis, preflight and independent validation code.
+- tables/, figs/, ext/: quoted outputs and small public inputs.
+- work/: shipped small intermediates; large graph/building files are rebuilt from challenge data.
+- CHANGELOG.md: changes from release 1 to this release; no new measured results.
+- MANIFEST.sha256: sorted SHA-256 inventory of release files.
+
+## Reproduce
+
+Use Python 3.12, the packages pinned in requirements.txt and an installed DuckDB spatial extension. The analysis loads the extension and, if it is missing, installs it once (needs internet on first use).
+
+1. Verify the checkout: `sha256sum -c MANIFEST.sha256` (macOS: `shasum -a 256 -c MANIFEST.sha256`).
+2. Put the challenge package in the documented data/reference and data/strata layout, or set BIAS_BOUNTY_ROOT to the directory containing data/.
+3. Run a clean region check: `PY=<python> sh egress/preflight.sh eastern-wa`. All printed regional sensitivity configurations are rebuilt in scratch; committed results are not overwritten. Expected S30: 7.52 %, 52,721 dwellings and 112,860 persons.
+4. For pooled findings use `PY=<python> sh egress/preflight_all.sh`. A completed clean rebuild can instead be audited with `--existing-rebuild <scratch>`. REPRODUCE.md gives the detailed commands and prerequisites.
+
+The quick command ends with:
+
+    HEADLINE (printed numbers for eastern-wa): PASS 71/71
+    FULL INTERMEDIATES (strict, informational): 3 of 20 files identical; differences explained in <scratch>/FULL_INTERMEDIATES.md
+    QUOTED SOURCES (not shipped; verify at the SOURCES.md URLs, or pass --sources DIR): 9 checks SKIPPED
+
+The full computational label is `HEADLINE (every printed number computed from the data): PASS 193/193`. Only HEADLINE controls the preflight exit. A computed failure or skip still fails; quoted documents remain separate and are never silently counted as passes. Both commands accept `--sources DIR`; matching, mismatching and missing local text files are counted on the third line. See REPRODUCE.md for filenames. n counts ledger checks, including parameter/whole-row checks, not distinct empirical quantities.
+
+## Verification limits
+
+The author verified macOS arm64 and Linux aarch64; x86 is untested. Across the full Linux rebuild, 44 of 206 artifacts are byte-identical and seven of 13 PNGs have identical pixels. Strict differences remain visible with exact counts/IDs and float rel 1e-9 / abs 1e-12; no numerical tolerances were relaxed. Earlier transcripts use the historical single-gate policy; verification/README.md distinguishes them from current computational verdicts.
+
+Raw national ACS extraction failed because the source files were absent. Hashed shipped public ACS extracts remain documented INPUTS, not newly extracted results. Nine external-document checks remain SKIPPED until their real text is supplied. Runtime, input provenance, pixel counts and every differing column are retained in verification/.
 
 ## Licence
 
-Code: MIT (`LICENSE`). Tables, figures and text are derived from the challenge package (Overture Maps extracts, release 2026-08-19.0, US Census Bureau tables) and from the public sources in `SOURCES.md`; they carry the terms of those inputs, which each row of `SOURCES.md` states (row 0 for the package). In particular the Overture transportation and buildings themes are ODbL 1.0: reuse of tables and figures derived from them needs the attribution "(c) OpenStreetMap contributors, Overture Maps Foundation", and ODbL share-alike terms may apply to derived databases. The challenge page also lists "Data Sharing: CC-BY SA 4.0 license" for the package (`SOURCES.md` row 0). Check before reuse.
+Code: MIT (LICENSE). Data-derived outputs and text carry the source terms in SOURCES.md, including Overture/OSM attribution and applicable ODbL share-alike requirements. The challenge page also states CC-BY SA 4.0 for the package. Check the source-specific terms before reuse.
 
-## How the code was written
-
-Code was drafted with the help of AI coding assistants (permitted by the challenge rules); every step runs with open-source tools only.
+Code was drafted with AI coding assistants, as permitted by the challenge rules. This release uses open-source tools only.

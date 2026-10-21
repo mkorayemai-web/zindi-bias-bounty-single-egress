@@ -42,4 +42,4 @@ fig.suptitle("Second homes behind one link: the census counts the residents, not
 hs = [Line2D([0], [0], color="#ff7f00", lw=3, label="the single link (only way out)"), Line2D([0], [0], color="#b2182b", lw=1.5, label="roads behind the link"), Line2D([0], [0], marker="o", ls="", ms=3.5, color="#e34a33", label="homes behind the link"),
       Line2D([0], [0], color="#2166ac", lw=1.6, label="arterial (scored-class) roads"), Line2D([0], [0], color="#9a9a9a", lw=1, label="other roads"), Line2D([0], [0], marker="o", ls="", ms=3.5, color="#d6d6d6", label="other homes")]
 fig.legend(handles=hs, loc="lower center", ncol=6, fontsize=7.8, frameon=False, columnspacing=1.4, handlelength=1.8)
-fig.tight_layout(pad=1.4, rect=(0, 0.075, 1, 0.94)); qa(fig, "fig9"); fig.savefig(f"{LANE}/figs/fig9_resort_clusters.png", dpi=170); print("wrote fig9")
+fig.tight_layout(pad=1.4, rect=(0, 0.075, 1, 0.94)); qa(fig, "fig9"); fig.savefig(f"{REPO_ROOT}/figs/fig9_resort_clusters.png", dpi=170); print("wrote fig9")

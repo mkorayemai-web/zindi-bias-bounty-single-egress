@@ -1,0 +1,148 @@
+{
+  "started_utc": "2026-10-21T16:42:06Z",
+  "ended_utc": "2026-10-21T17:38:14Z",
+  "python_invocations": 153,
+  "python_seconds": 3032.283211444039,
+  "nonzero_invocations": [
+    {
+      "started_utc": "2026-10-21T16:42:06Z",
+      "ended_utc": "2026-10-21T16:42:07Z",
+      "wall_seconds": 0.20836744003463537,
+      "command": [
+        "<repo>/.venv/bin/python",
+        "acs_ext.py"
+      ],
+      "cwd": "<scratch>/full-rebuild/egress",
+      "exit_code": 1,
+      "rewritten": []
+    }
+  ],
+  "by_region": {
+    "northern-ca": {
+      "python_invocations": 24,
+      "seconds": 210.6789718932705,
+      "failed": []
+    },
+    "eastern-ok": {
+      "python_invocations": 24,
+      "seconds": 333.676226205891,
+      "failed": []
+    },
+    "maricopa-az": {
+      "python_invocations": 24,
+      "seconds": 451.10076304210816,
+      "failed": []
+    },
+    "south-central-tx": {
+      "python_invocations": 21,
+      "seconds": 1529.7264149751281,
+      "failed": []
+    },
+    "eastern-wa": {
+      "python_invocations": 18,
+      "seconds": 170.816371033201,
+      "failed": []
+    }
+  },
+  "state": {
+    "started_utc": "2026-10-21T16:42:06Z",
+    "finished": [
+      "acs_ext",
+      "stage_all",
+      "stage_wa",
+      "finalize_m1",
+      "validate_tehama",
+      "validate_hays",
+      "coverage_northern-ca",
+      "latent_northern-ca",
+      "coverage_eastern-ok",
+      "latent_eastern-ok",
+      "coverage_maricopa-az",
+      "latent_maricopa-az",
+      "coverage_south-central-tx",
+      "latent_south-central-tx",
+      "coverage_eastern-wa",
+      "latent_eastern-wa",
+      "tx_plus",
+      "stats_drvplus_complete",
+      "sens_table_complete",
+      "named_northern-ca",
+      "pinholes_northern-ca",
+      "response_strict_northern-ca",
+      "response_broad_northern-ca",
+      "named_eastern-ok",
+      "pinholes_eastern-ok",
+      "response_strict_eastern-ok",
+      "response_broad_eastern-ok",
+      "named_maricopa-az",
+      "pinholes_maricopa-az",
+      "response_strict_maricopa-az",
+      "response_broad_maricopa-az",
+      "named_south-central-tx",
+      "pinholes_south-central-tx",
+      "response_strict_south-central-tx",
+      "response_broad_south-central-tx",
+      "named_eastern-wa",
+      "pinholes_eastern-wa",
+      "response_strict_eastern-wa",
+      "response_broad_eastern-wa",
+      "seasonal",
+      "seasonal2",
+      "seasonal_robust",
+      "county_boot",
+      "county_boot_facilities",
+      "density_dissoc",
+      "persons_per_dwelling_ci",
+      "seasonal_load",
+      "seasonal_alloc_robust",
+      "stranded",
+      "named_station_check",
+      "s30_scorecard_tracts",
+      "egress_km_by_class",
+      "coverage_bridge_agg",
+      "resp_summary",
+      "double_trap",
+      "latent_sweep_table",
+      "pinhole_summary",
+      "validate_hays_repair",
+      "validate_tehama_repair",
+      "pinhole_md",
+      "calibration_md",
+      "figs_m1",
+      "figs_forest",
+      "figs_regions",
+      "figs_m2",
+      "figs_pinholes",
+      "figs_resort"
+    ],
+    "fallbacks": [
+      {
+        "step": "acs_ext",
+        "reason": "raw national ACS files absent; use documented shipped ACS extract as an INPUT, not a rebuilt output",
+        "log": "<scratch>/full-rebuild/logs/acs_ext.log"
+      }
+    ],
+    "ended_utc": "2026-10-21T17:38:14Z",
+    "analysis_outputs_started_empty": true
+  },
+  "provenance": {
+    "prepared_utc": "2026-10-21T16:42:06Z",
+    "source_checkout": "<repo>",
+    "data_root": "<scratch>/data-root",
+    "empty_output_dirs": [
+      "work",
+      "tables",
+      "figs"
+    ],
+    "serial": true,
+    "numerical_pool_threads": 1,
+    "duckdb_threads": 4,
+    "copied_ext_inputs": {
+      "acs_tract_ext.parquet": "17a649b77ac32a6d762f2ee819149d74a74dc1d515625ddc65152904ab644101",
+      "hays_table1.csv": "550472008efa7a5ab1a9d176c9c7e36fc047d1fbe10fa0750e3097e42c68f839",
+      "acs_b25004_seasonal.parquet": "f2ed4f5bfdde54f91ae44f21eefd4d0cb7b340108b2929098824fb180eeea80a",
+      "hays_geographies_4_3_26.md": "f489813c3c9097975ddd89dd28929b970abe41040e552299872f76e66f2400a1",
+      "national_county2020.txt": "9f6e5f6eb6ac2f5e9a36d5fd01dec77991bddc75118f748a069441a4782970d6"
+    }
+  }
+}

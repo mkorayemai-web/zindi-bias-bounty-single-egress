@@ -1,0 +1,154 @@
+ordinal,started_utc,ended_utc,wall_seconds,exit_code,command,rewritten_count
+1,2026-10-21T16:42:06Z,2026-10-21T16:42:07Z,0.20836744003463537,1,<repo>/.venv/bin/python acs_ext.py,0
+2,2026-10-21T16:42:07Z,2026-10-21T16:42:08Z,1.2291463570436463,0,<repo>/.venv/bin/python build_edges.py northern-ca drv,3
+3,2026-10-21T16:42:08Z,2026-10-21T16:42:09Z,1.1790205619763583,0,<repo>/.venv/bin/python buildings_prep.py northern-ca,2
+4,2026-10-21T16:42:09Z,2026-10-21T16:42:50Z,41.38330853707157,0,<repo>/.venv/bin/python pipeline.py northern-ca drv --force,3
+5,2026-10-21T16:42:50Z,2026-10-21T16:42:54Z,3.9509865840664133,0,<repo>/.venv/bin/python variants.py northern-ca drv A --minload 100,6
+6,2026-10-21T16:42:54Z,2026-10-21T16:42:58Z,3.8668886079685763,0,<repo>/.venv/bin/python variants.py northern-ca drv B --minload 100,6
+7,2026-10-21T16:42:58Z,2026-10-21T16:43:02Z,3.7671279120258987,0,<repo>/.venv/bin/python variants.py northern-ca drv A --repair 25,5
+8,2026-10-21T16:43:02Z,2026-10-21T16:43:04Z,1.8072812100872397,0,<repo>/.venv/bin/python build_edges.py northern-ca drvplus,3
+9,2026-10-21T16:43:04Z,2026-10-21T16:43:50Z,45.75283719797153,0,<repo>/.venv/bin/python pipeline.py northern-ca drvplus --force,3
+10,2026-10-21T16:43:50Z,2026-10-21T16:43:56Z,6.561163360951468,0,<repo>/.venv/bin/python variants.py northern-ca drvplus A --minload 100,6
+11,2026-10-21T16:43:56Z,2026-10-21T16:44:03Z,6.649498245911673,0,<repo>/.venv/bin/python variants.py northern-ca drvplus B --minload 100,6
+12,2026-10-21T16:44:03Z,2026-10-21T16:44:05Z,1.7755261149723083,0,<repo>/.venv/bin/python build_edges.py eastern-ok drv,3
+13,2026-10-21T16:44:05Z,2026-10-21T16:44:07Z,2.2341527349781245,0,<repo>/.venv/bin/python buildings_prep.py eastern-ok,2
+14,2026-10-21T16:44:07Z,2026-10-21T16:45:07Z,59.80864498799201,0,<repo>/.venv/bin/python pipeline.py eastern-ok drv --force,3
+15,2026-10-21T16:45:07Z,2026-10-21T16:45:15Z,7.698719175066799,0,<repo>/.venv/bin/python variants.py eastern-ok drv A --minload 100,6
+16,2026-10-21T16:45:15Z,2026-10-21T16:45:22Z,7.242565358057618,0,<repo>/.venv/bin/python variants.py eastern-ok drv B --minload 100,6
+17,2026-10-21T16:45:22Z,2026-10-21T16:45:29Z,7.0989534188993275,0,<repo>/.venv/bin/python variants.py eastern-ok drv A --repair 25,5
+18,2026-10-21T16:45:29Z,2026-10-21T16:45:32Z,2.891522084013559,0,<repo>/.venv/bin/python build_edges.py eastern-ok drvplus,3
+19,2026-10-21T16:45:32Z,2026-10-21T16:46:44Z,72.37070921307895,0,<repo>/.venv/bin/python pipeline.py eastern-ok drvplus --force,3
+20,2026-10-21T16:46:44Z,2026-10-21T16:46:56Z,11.848233469994739,0,<repo>/.venv/bin/python variants.py eastern-ok drvplus A --minload 100,6
+21,2026-10-21T16:46:56Z,2026-10-21T16:47:08Z,11.985317584010772,0,<repo>/.venv/bin/python variants.py eastern-ok drvplus B --minload 100,6
+22,2026-10-21T16:47:08Z,2026-10-21T16:47:10Z,1.8412216319702566,0,<repo>/.venv/bin/python build_edges.py maricopa-az drv,3
+23,2026-10-21T16:47:10Z,2026-10-21T16:47:13Z,2.689958865987137,0,<repo>/.venv/bin/python buildings_prep.py maricopa-az,2
+24,2026-10-21T16:47:13Z,2026-10-21T16:48:41Z,88.20062984502874,0,<repo>/.venv/bin/python pipeline.py maricopa-az drv --force,3
+25,2026-10-21T16:48:41Z,2026-10-21T16:48:49Z,7.575086239958182,0,<repo>/.venv/bin/python variants.py maricopa-az drv A --minload 100,6
+26,2026-10-21T16:48:49Z,2026-10-21T16:48:56Z,7.601043828995898,0,<repo>/.venv/bin/python variants.py maricopa-az drv B --minload 100,6
+27,2026-10-21T16:48:56Z,2026-10-21T16:49:03Z,6.800099275074899,0,<repo>/.venv/bin/python variants.py maricopa-az drv A --repair 25,5
+28,2026-10-21T16:49:03Z,2026-10-21T16:49:06Z,2.9842553560156375,0,<repo>/.venv/bin/python build_edges.py maricopa-az drvplus,3
+29,2026-10-21T16:49:06Z,2026-10-21T16:50:59Z,112.6793642010307,0,<repo>/.venv/bin/python pipeline.py maricopa-az drvplus --force,3
+30,2026-10-21T16:50:59Z,2026-10-21T16:51:12Z,12.983929948997684,0,<repo>/.venv/bin/python variants.py maricopa-az drvplus A --minload 100,6
+31,2026-10-21T16:51:12Z,2026-10-21T16:51:24Z,12.560437908046879,0,<repo>/.venv/bin/python variants.py maricopa-az drvplus B --minload 100,6
+32,2026-10-21T16:51:24Z,2026-10-21T16:51:30Z,6.052453821059316,0,<repo>/.venv/bin/python build_edges.py south-central-tx drv,3
+33,2026-10-21T16:51:30Z,2026-10-21T16:51:43Z,12.55711207492277,0,<repo>/.venv/bin/python buildings_prep.py south-central-tx,2
+34,2026-10-21T16:51:43Z,2026-10-21T16:57:14Z,330.67232362600043,0,<repo>/.venv/bin/python pipeline.py south-central-tx drv --force,3
+35,2026-10-21T16:57:14Z,2026-10-21T16:57:45Z,31.701269915909506,0,<repo>/.venv/bin/python variants.py south-central-tx drv A --minload 100,6
+36,2026-10-21T16:57:45Z,2026-10-21T16:58:15Z,29.203226970974356,0,<repo>/.venv/bin/python variants.py south-central-tx drv B --minload 100,6
+37,2026-10-21T16:58:15Z,2026-10-21T16:58:43Z,28.79553659108933,0,<repo>/.venv/bin/python variants.py south-central-tx drv A --repair 25,5
+38,2026-10-21T16:58:43Z,2026-10-21T16:58:45Z,1.3067873310064897,0,<repo>/.venv/bin/python build_edges.py eastern-wa drv,2
+39,2026-10-21T16:58:45Z,2026-10-21T16:58:46Z,1.260495434049517,0,<repo>/.venv/bin/python buildings_prep.py eastern-wa,1
+40,2026-10-21T16:58:46Z,2026-10-21T16:59:28Z,42.0062490189448,0,<repo>/.venv/bin/python pipeline.py eastern-wa drv --force,2
+41,2026-10-21T16:59:28Z,2026-10-21T16:59:32Z,3.409303718013689,0,<repo>/.venv/bin/python variants.py eastern-wa drv A --minload 20,5
+42,2026-10-21T16:59:32Z,2026-10-21T16:59:35Z,3.328746819985099,0,<repo>/.venv/bin/python variants.py eastern-wa drv B --minload 100,5
+43,2026-10-21T16:59:35Z,2026-10-21T16:59:38Z,3.0325463199988008,0,<repo>/.venv/bin/python variants.py eastern-wa drv A --repair 25,4
+44,2026-10-21T16:59:38Z,2026-10-21T16:59:39Z,1.2455062300432473,0,<repo>/.venv/bin/python facilities2.py eastern-wa drv A,2
+45,2026-10-21T16:59:39Z,2026-10-21T16:59:41Z,1.5046325490111485,0,<repo>/.venv/bin/python build_edges.py eastern-wa drvplus,2
+46,2026-10-21T16:59:41Z,2026-10-21T17:00:27Z,46.525798602961004,0,<repo>/.venv/bin/python pipeline.py eastern-wa drvplus --force,2
+47,2026-10-21T17:00:27Z,2026-10-21T17:00:32Z,5.149041378055699,0,<repo>/.venv/bin/python variants.py eastern-wa drvplus A --minload 20,5
+48,2026-10-21T17:00:32Z,2026-10-21T17:00:37Z,4.839350525988266,0,<repo>/.venv/bin/python variants.py eastern-wa drvplus B --minload 100,5
+49,2026-10-21T17:00:37Z,2026-10-21T17:00:39Z,1.827475585974753,0,<repo>/.venv/bin/python facilities2.py eastern-wa drvplus A,2
+50,2026-10-21T17:00:39Z,2026-10-21T17:00:43Z,4.174711197032593,0,<repo>/.venv/bin/python variants.py northern-ca drv A --minload 20,5
+51,2026-10-21T17:00:43Z,2026-10-21T17:00:47Z,3.8164316350594163,0,<repo>/.venv/bin/python variants.py northern-ca drv B --minload 100,5
+52,2026-10-21T17:00:47Z,2026-10-21T17:00:51Z,3.949593461002223,0,<repo>/.venv/bin/python variants.py northern-ca drv A --repair 25,4
+53,2026-10-21T17:00:51Z,2026-10-21T17:00:53Z,1.4767407029867172,0,<repo>/.venv/bin/python facilities2.py northern-ca drv A,2
+54,2026-10-21T17:00:53Z,2026-10-21T17:01:00Z,7.782569007948041,0,<repo>/.venv/bin/python variants.py eastern-ok drv A --minload 20,5
+55,2026-10-21T17:01:01Z,2026-10-21T17:01:08Z,7.641140052000992,0,<repo>/.venv/bin/python variants.py eastern-ok drv B --minload 100,5
+56,2026-10-21T17:01:08Z,2026-10-21T17:01:16Z,8.036188443889841,0,<repo>/.venv/bin/python variants.py eastern-ok drv A --repair 25,4
+57,2026-10-21T17:01:16Z,2026-10-21T17:01:19Z,2.3221581019461155,0,<repo>/.venv/bin/python facilities2.py eastern-ok drv A,2
+58,2026-10-21T17:01:19Z,2026-10-21T17:01:27Z,8.109803766012192,0,<repo>/.venv/bin/python variants.py maricopa-az drv A --minload 20,5
+59,2026-10-21T17:01:27Z,2026-10-21T17:01:34Z,7.6993293759878725,0,<repo>/.venv/bin/python variants.py maricopa-az drv B --minload 100,5
+60,2026-10-21T17:01:34Z,2026-10-21T17:01:42Z,7.077600591001101,0,<repo>/.venv/bin/python variants.py maricopa-az drv A --repair 25,4
+61,2026-10-21T17:01:42Z,2026-10-21T17:01:44Z,2.525029120966792,0,<repo>/.venv/bin/python facilities2.py maricopa-az drv A,2
+62,2026-10-21T17:01:44Z,2026-10-21T17:02:17Z,32.429912150022574,0,<repo>/.venv/bin/python variants.py south-central-tx drv A --minload 20,5
+63,2026-10-21T17:02:17Z,2026-10-21T17:02:47Z,30.72065123100765,0,<repo>/.venv/bin/python variants.py south-central-tx drv B --minload 100,5
+64,2026-10-21T17:02:47Z,2026-10-21T17:03:17Z,29.427343792049214,0,<repo>/.venv/bin/python variants.py south-central-tx drv A --repair 25,4
+65,2026-10-21T17:03:17Z,2026-10-21T17:03:25Z,7.885571381892078,0,<repo>/.venv/bin/python facilities2.py south-central-tx drv A,2
+66,2026-10-21T17:03:25Z,2026-10-21T17:03:31Z,6.540775761008263,0,<repo>/.venv/bin/python variants.py northern-ca drvplus A --minload 20,5
+67,2026-10-21T17:03:31Z,2026-10-21T17:03:38Z,6.739993807976134,0,<repo>/.venv/bin/python variants.py northern-ca drvplus B --minload 100,5
+68,2026-10-21T17:03:38Z,2026-10-21T17:03:40Z,2.284315631026402,0,<repo>/.venv/bin/python facilities2.py northern-ca drvplus A,2
+69,2026-10-21T17:03:40Z,2026-10-21T17:03:52Z,11.981101354002021,0,<repo>/.venv/bin/python variants.py eastern-ok drvplus A --minload 20,5
+70,2026-10-21T17:03:52Z,2026-10-21T17:04:04Z,11.603345256997272,0,<repo>/.venv/bin/python variants.py eastern-ok drvplus B --minload 100,5
+71,2026-10-21T17:04:04Z,2026-10-21T17:04:07Z,3.506076836027205,0,<repo>/.venv/bin/python facilities2.py eastern-ok drvplus A,2
+72,2026-10-21T17:04:07Z,2026-10-21T17:04:20Z,12.771362597937696,0,<repo>/.venv/bin/python variants.py maricopa-az drvplus A --minload 20,5
+73,2026-10-21T17:04:20Z,2026-10-21T17:04:32Z,12.237389071960934,0,<repo>/.venv/bin/python variants.py maricopa-az drvplus B --minload 100,5
+74,2026-10-21T17:04:33Z,2026-10-21T17:04:37Z,4.300535099115223,0,<repo>/.venv/bin/python facilities2.py maricopa-az drvplus A,2
+75,2026-10-21T17:04:37Z,2026-10-21T17:05:12Z,35.225306039093994,0,<repo>/.venv/bin/python stats.py drv_A 2000 eq,4
+76,2026-10-21T17:05:12Z,2026-10-21T17:05:34Z,21.857365456060506,0,<repo>/.venv/bin/python stats.py drv_A 2000 ar,3
+77,2026-10-21T17:05:34Z,2026-10-21T17:05:48Z,14.283303476055153,0,<repo>/.venv/bin/python stats.py drvplus_A 2000 eq,4
+78,2026-10-21T17:05:48Z,2026-10-21T17:06:23Z,34.93485696008429,0,<repo>/.venv/bin/python stats.py drv_B 2000 eq,4
+79,2026-10-21T17:06:23Z,2026-10-21T17:06:39Z,15.885817416012287,0,<repo>/.venv/bin/python fac_stats.py drv_A 2000,2
+80,2026-10-21T17:06:39Z,2026-10-21T17:06:46Z,6.407890610047616,0,<repo>/.venv/bin/python fac_stats.py drvplus_A 2000,2
+81,2026-10-21T17:06:46Z,2026-10-21T17:06:49Z,3.5654181679710746,0,<repo>/.venv/bin/python mh_tract.py drv_A 2000,3
+82,2026-10-21T17:06:49Z,2026-10-21T17:06:49Z,0.25254103098995984,0,<repo>/.venv/bin/python sens_table.py,3
+83,2026-10-21T17:06:49Z,2026-10-21T17:06:50Z,0.29019088903442025,0,<repo>/.venv/bin/python named_lists.py northern-ca drv_A,1
+84,2026-10-21T17:06:50Z,2026-10-21T17:06:50Z,0.27683297998737544,0,<repo>/.venv/bin/python named_lists.py eastern-ok drv_A,1
+85,2026-10-21T17:06:50Z,2026-10-21T17:06:50Z,0.30604908196255565,0,<repo>/.venv/bin/python named_lists.py maricopa-az drv_A,1
+86,2026-10-21T17:06:50Z,2026-10-21T17:06:51Z,0.4117140250746161,0,<repo>/.venv/bin/python named_lists.py south-central-tx drv_A,1
+87,2026-10-21T17:06:51Z,2026-10-21T17:07:03Z,12.169772926019505,0,<repo>/.venv/bin/python ../validation/validate_tehama.py,2
+88,2026-10-21T17:07:03Z,2026-10-21T17:07:05Z,1.7337897479301319,0,<repo>/.venv/bin/python ../validation/validate_hays.py,2
+89,2026-10-21T17:07:05Z,2026-10-21T17:07:15Z,10.57125965890009,0,<repo>/.venv/bin/python coverage_bridge.py northern-ca,3
+90,2026-10-21T17:07:15Z,2026-10-21T17:08:05Z,49.586769276997074,0,<repo>/.venv/bin/python sens_nearmiss2.py northern-ca 50 100 250,8
+91,2026-10-21T17:08:05Z,2026-10-21T17:08:18Z,13.404167889035307,0,<repo>/.venv/bin/python coverage_bridge.py eastern-ok,3
+92,2026-10-21T17:08:18Z,2026-10-21T17:09:31Z,72.32856204395648,0,<repo>/.venv/bin/python sens_nearmiss2.py eastern-ok 50 100 250,8
+93,2026-10-21T17:09:31Z,2026-10-21T17:09:47Z,16.205115058925003,0,<repo>/.venv/bin/python coverage_bridge.py maricopa-az,3
+94,2026-10-21T17:09:47Z,2026-10-21T17:11:41Z,113.82155821204651,0,<repo>/.venv/bin/python sens_nearmiss2.py maricopa-az 50 100 250,8
+95,2026-10-21T17:11:41Z,2026-10-21T17:12:31Z,50.26949880900793,0,<repo>/.venv/bin/python coverage_bridge.py south-central-tx,3
+96,2026-10-21T17:12:31Z,2026-10-21T17:19:04Z,393.0132280699909,0,<repo>/.venv/bin/python sens_nearmiss2.py south-central-tx 50 100 250,8
+97,2026-10-21T17:19:04Z,2026-10-21T17:19:13Z,8.415100863086991,0,<repo>/.venv/bin/python coverage_bridge.py eastern-wa,3
+98,2026-10-21T17:19:13Z,2026-10-21T17:19:55Z,42.64688816294074,0,<repo>/.venv/bin/python sens_nearmiss2.py eastern-wa 50 100 250,8
+99,2026-10-21T17:19:55Z,2026-10-21T17:20:06Z,11.05446107906755,0,<repo>/.venv/bin/python build_edges.py south-central-tx drvplus,3
+100,2026-10-21T17:20:06Z,2026-10-21T17:26:44Z,397.8362366440706,0,<repo>/.venv/bin/python pipeline.py south-central-tx drvplus --force,3
+101,2026-10-21T17:26:44Z,2026-10-21T17:27:36Z,51.868015586049296,0,<repo>/.venv/bin/python variants.py south-central-tx drvplus A --minload 20,6
+102,2026-10-21T17:27:36Z,2026-10-21T17:28:26Z,49.4600509039592,0,<repo>/.venv/bin/python coverage_bridge.py south-central-tx,4
+103,2026-10-21T17:28:26Z,2026-10-21T17:29:01Z,35.11785411601886,0,<repo>/.venv/bin/python stats.py drvplus_A 2000 eq,3
+104,2026-10-21T17:34:33Z,2026-10-21T17:35:08Z,34.93621629988775,0,<repo>/.venv/bin/python stats.py drvplus_A 2000 eq,3
+105,2026-10-21T17:35:08Z,2026-10-21T17:35:08Z,0.2555805160664022,0,<repo>/.venv/bin/python sens_table.py,2
+106,2026-10-21T17:35:08Z,2026-10-21T17:35:08Z,0.27620176307391375,0,<repo>/.venv/bin/python named_lists.py northern-ca drv_A,1
+107,2026-10-21T17:35:08Z,2026-10-21T17:35:09Z,1.2838070270372555,0,<repo>/.venv/bin/python pinhole_list.py northern-ca 50,1
+108,2026-10-21T17:35:09Z,2026-10-21T17:35:11Z,1.7665027510374784,0,<repo>/.venv/bin/python response_time.py northern-ca,2
+109,2026-10-21T17:35:11Z,2026-10-21T17:35:13Z,1.7744197560241446,0,<repo>/.venv/bin/python response_time.py northern-ca --broad,2
+110,2026-10-21T17:35:13Z,2026-10-21T17:35:13Z,0.3013347489759326,0,<repo>/.venv/bin/python named_lists.py eastern-ok drv_A,1
+111,2026-10-21T17:35:13Z,2026-10-21T17:35:16Z,2.2051930050365627,0,<repo>/.venv/bin/python pinhole_list.py eastern-ok 50,1
+112,2026-10-21T17:35:16Z,2026-10-21T17:35:19Z,3.7802708230447024,0,<repo>/.venv/bin/python response_time.py eastern-ok,2
+113,2026-10-21T17:35:19Z,2026-10-21T17:35:23Z,3.552941521978937,0,<repo>/.venv/bin/python response_time.py eastern-ok --broad,2
+114,2026-10-21T17:35:23Z,2026-10-21T17:35:23Z,0.28935456392355263,0,<repo>/.venv/bin/python named_lists.py maricopa-az drv_A,1
+115,2026-10-21T17:35:23Z,2026-10-21T17:35:26Z,2.3471753450576216,0,<repo>/.venv/bin/python pinhole_list.py maricopa-az 50,1
+116,2026-10-21T17:35:26Z,2026-10-21T17:35:30Z,3.8807186010526493,0,<repo>/.venv/bin/python response_time.py maricopa-az,2
+117,2026-10-21T17:35:30Z,2026-10-21T17:35:33Z,3.613715455052443,0,<repo>/.venv/bin/python response_time.py maricopa-az --broad,2
+118,2026-10-21T17:35:33Z,2026-10-21T17:35:34Z,0.39528264792170376,0,<repo>/.venv/bin/python named_lists.py south-central-tx drv_A,1
+119,2026-10-21T17:35:34Z,2026-10-21T17:35:41Z,7.2971917079994455,0,<repo>/.venv/bin/python pinhole_list.py south-central-tx 50,1
+120,2026-10-21T17:35:41Z,2026-10-21T17:35:55Z,13.909382579033263,0,<repo>/.venv/bin/python response_time.py south-central-tx,2
+121,2026-10-21T17:35:55Z,2026-10-21T17:36:10Z,14.765951368026435,0,<repo>/.venv/bin/python response_time.py south-central-tx --broad,2
+122,2026-10-21T17:36:10Z,2026-10-21T17:36:10Z,0.2772359480150044,0,<repo>/.venv/bin/python named_lists.py eastern-wa drv_A,1
+123,2026-10-21T17:36:10Z,2026-10-21T17:36:11Z,1.0701051499927416,0,<repo>/.venv/bin/python pinhole_list.py eastern-wa 50,1
+124,2026-10-21T17:36:11Z,2026-10-21T17:36:13Z,1.4495306350290775,0,<repo>/.venv/bin/python response_time.py eastern-wa,2
+125,2026-10-21T17:36:13Z,2026-10-21T17:36:14Z,1.521576760103926,0,<repo>/.venv/bin/python response_time.py eastern-wa --broad,2
+126,2026-10-21T17:36:14Z,2026-10-21T17:36:18Z,3.7907077190466225,0,<repo>/.venv/bin/python seasonal.py,3
+127,2026-10-21T17:36:18Z,2026-10-21T17:36:23Z,5.060803151107393,0,<repo>/.venv/bin/python seasonal2.py,4
+128,2026-10-21T17:36:23Z,2026-10-21T17:36:34Z,10.964906599954702,0,<repo>/.venv/bin/python seasonal_robust.py,1
+129,2026-10-21T17:36:34Z,2026-10-21T17:36:35Z,1.128151061013341,0,<repo>/.venv/bin/python county_boot.py,1
+130,2026-10-21T17:36:35Z,2026-10-21T17:36:36Z,0.5697202640585601,0,<repo>/.venv/bin/python county_boot_facilities.py,1
+131,2026-10-21T17:36:36Z,2026-10-21T17:36:38Z,1.8341328549431637,0,<repo>/.venv/bin/python density_dissoc.py,2
+132,2026-10-21T17:36:38Z,2026-10-21T17:36:38Z,0.6816182309994474,0,<repo>/.venv/bin/python persons_per_dwelling_ci.py,2
+133,2026-10-21T17:36:38Z,2026-10-21T17:36:40Z,1.2595879780128598,0,<repo>/.venv/bin/python seasonal_load.py,3
+134,2026-10-21T17:36:40Z,2026-10-21T17:36:40Z,0.3268271069973707,0,<repo>/.venv/bin/python seasonal_alloc_robust.py,1
+135,2026-10-21T17:36:40Z,2026-10-21T17:36:40Z,0.45195611903909594,0,<repo>/.venv/bin/python stranded.py,1
+136,2026-10-21T17:36:41Z,2026-10-21T17:36:41Z,0.5033110990189016,0,<repo>/.venv/bin/python named_station_check.py,1
+137,2026-10-21T17:36:41Z,2026-10-21T17:36:41Z,0.31169641006272286,0,<repo>/.venv/bin/python s30_scorecard_tracts.py,1
+138,2026-10-21T17:36:41Z,2026-10-21T17:36:42Z,0.2957548350095749,0,<repo>/.venv/bin/python egress_km_by_class.py,1
+139,2026-10-21T17:36:42Z,2026-10-21T17:36:42Z,0.4245823760284111,0,<repo>/.venv/bin/python coverage_bridge_agg.py,3
+140,2026-10-21T17:36:42Z,2026-10-21T17:36:44Z,1.995866282028146,0,<repo>/.venv/bin/python resp_summary.py,1
+141,2026-10-21T17:36:44Z,2026-10-21T17:36:54Z,10.289166264934465,0,<repo>/.venv/bin/python double_trap.py,1
+142,2026-10-21T17:36:54Z,2026-10-21T17:36:55Z,0.2586315938970074,0,<repo>/.venv/bin/python latent_sweep_table.py,1
+143,2026-10-21T17:36:55Z,2026-10-21T17:36:55Z,0.31691403908189386,0,<repo>/.venv/bin/python pinhole_summary.py,2
+144,2026-10-21T17:36:55Z,2026-10-21T17:36:57Z,1.6348392489599064,0,<repo>/.venv/bin/python ../validation/validate_hays_repair.py,3
+145,2026-10-21T17:36:57Z,2026-10-21T17:37:49Z,52.60632670496125,0,<repo>/.venv/bin/python ../validation/validate_tehama_repair.py,2
+146,2026-10-21T17:37:49Z,2026-10-21T17:37:50Z,0.29846596403513104,0,<repo>/.venv/bin/python pinhole_md.py,0
+147,2026-10-21T17:37:50Z,2026-10-21T17:37:50Z,0.26002334395889193,0,<repo>/.venv/bin/python calibration_md.py,0
+148,2026-10-21T17:37:50Z,2026-10-21T17:37:51Z,0.6449090649839491,0,<repo>/.venv/bin/python figs_m1.py,2
+149,2026-10-21T17:37:51Z,2026-10-21T17:37:51Z,0.5070211110869423,0,<repo>/.venv/bin/python figs_forest.py,2
+150,2026-10-21T17:37:51Z,2026-10-21T17:38:01Z,10.17206673999317,0,<repo>/.venv/bin/python figs_regions.py,6
+151,2026-10-21T17:38:01Z,2026-10-21T17:38:02Z,0.5455062479013577,0,<repo>/.venv/bin/python figs_m2.py,1
+152,2026-10-21T17:38:02Z,2026-10-21T17:38:06Z,3.605543315061368,0,<repo>/.venv/bin/python figs_pinholes.py,2
+153,2026-10-21T17:38:06Z,2026-10-21T17:38:14Z,8.711348365992308,0,<repo>/.venv/bin/python figs_resort.py,1

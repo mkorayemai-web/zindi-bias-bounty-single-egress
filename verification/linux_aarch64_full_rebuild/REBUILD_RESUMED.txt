@@ -1,0 +1,118 @@
+RESUME completed: acs_ext
+RESUME completed: stage_all
+RESUME completed: stage_wa
+RESUME completed: finalize_m1
+RESUME completed: validate_tehama
+RESUME completed: validate_hays
+RESUME completed: coverage_northern-ca
+RESUME completed: latent_northern-ca
+RESUME completed: coverage_eastern-ok
+RESUME completed: latent_eastern-ok
+RESUME completed: coverage_maricopa-az
+RESUME completed: latent_maricopa-az
+RESUME completed: coverage_south-central-tx
+RESUME completed: latent_south-central-tx
+RESUME completed: coverage_eastern-wa
+RESUME completed: latent_eastern-wa
+RESUME completed: tx_plus
+START 2026-10-21T17:34:33Z stats_drvplus_complete: <scratch>/full-rebuild/timed-python stats.py drvplus_A 2000 eq
+END 2026-10-21T17:35:08Z stats_drvplus_complete: exit=0 seconds=34.972 log=<scratch>/full-rebuild/logs/stats_drvplus_complete.log
+START 2026-10-21T17:35:08Z sens_table_complete: <scratch>/full-rebuild/timed-python sens_table.py
+END 2026-10-21T17:35:08Z sens_table_complete: exit=0 seconds=0.275 log=<scratch>/full-rebuild/logs/sens_table_complete.log
+START 2026-10-21T17:35:08Z named_northern-ca: <scratch>/full-rebuild/timed-python named_lists.py northern-ca drv_A
+END 2026-10-21T17:35:08Z named_northern-ca: exit=0 seconds=0.299 log=<scratch>/full-rebuild/logs/named_northern-ca.log
+START 2026-10-21T17:35:08Z pinholes_northern-ca: <scratch>/full-rebuild/timed-python pinhole_list.py northern-ca 50
+END 2026-10-21T17:35:09Z pinholes_northern-ca: exit=0 seconds=1.315 log=<scratch>/full-rebuild/logs/pinholes_northern-ca.log
+START 2026-10-21T17:35:09Z response_strict_northern-ca: <scratch>/full-rebuild/timed-python response_time.py northern-ca
+END 2026-10-21T17:35:11Z response_strict_northern-ca: exit=0 seconds=1.784 log=<scratch>/full-rebuild/logs/response_strict_northern-ca.log
+START 2026-10-21T17:35:11Z response_broad_northern-ca: <scratch>/full-rebuild/timed-python response_time.py northern-ca --broad
+END 2026-10-21T17:35:13Z response_broad_northern-ca: exit=0 seconds=1.804 log=<scratch>/full-rebuild/logs/response_broad_northern-ca.log
+START 2026-10-21T17:35:13Z named_eastern-ok: <scratch>/full-rebuild/timed-python named_lists.py eastern-ok drv_A
+END 2026-10-21T17:35:13Z named_eastern-ok: exit=0 seconds=0.318 log=<scratch>/full-rebuild/logs/named_eastern-ok.log
+START 2026-10-21T17:35:13Z pinholes_eastern-ok: <scratch>/full-rebuild/timed-python pinhole_list.py eastern-ok 50
+END 2026-10-21T17:35:16Z pinholes_eastern-ok: exit=0 seconds=2.238 log=<scratch>/full-rebuild/logs/pinholes_eastern-ok.log
+START 2026-10-21T17:35:16Z response_strict_eastern-ok: <scratch>/full-rebuild/timed-python response_time.py eastern-ok
+END 2026-10-21T17:35:19Z response_strict_eastern-ok: exit=0 seconds=3.802 log=<scratch>/full-rebuild/logs/response_strict_eastern-ok.log
+START 2026-10-21T17:35:19Z response_broad_eastern-ok: <scratch>/full-rebuild/timed-python response_time.py eastern-ok --broad
+END 2026-10-21T17:35:23Z response_broad_eastern-ok: exit=0 seconds=3.570 log=<scratch>/full-rebuild/logs/response_broad_eastern-ok.log
+START 2026-10-21T17:35:23Z named_maricopa-az: <scratch>/full-rebuild/timed-python named_lists.py maricopa-az drv_A
+END 2026-10-21T17:35:23Z named_maricopa-az: exit=0 seconds=0.307 log=<scratch>/full-rebuild/logs/named_maricopa-az.log
+START 2026-10-21T17:35:23Z pinholes_maricopa-az: <scratch>/full-rebuild/timed-python pinhole_list.py maricopa-az 50
+END 2026-10-21T17:35:26Z pinholes_maricopa-az: exit=0 seconds=2.379 log=<scratch>/full-rebuild/logs/pinholes_maricopa-az.log
+START 2026-10-21T17:35:26Z response_strict_maricopa-az: <scratch>/full-rebuild/timed-python response_time.py maricopa-az
+END 2026-10-21T17:35:30Z response_strict_maricopa-az: exit=0 seconds=3.913 log=<scratch>/full-rebuild/logs/response_strict_maricopa-az.log
+START 2026-10-21T17:35:30Z response_broad_maricopa-az: <scratch>/full-rebuild/timed-python response_time.py maricopa-az --broad
+END 2026-10-21T17:35:33Z response_broad_maricopa-az: exit=0 seconds=3.631 log=<scratch>/full-rebuild/logs/response_broad_maricopa-az.log
+START 2026-10-21T17:35:33Z named_south-central-tx: <scratch>/full-rebuild/timed-python named_lists.py south-central-tx drv_A
+END 2026-10-21T17:35:34Z named_south-central-tx: exit=0 seconds=0.412 log=<scratch>/full-rebuild/logs/named_south-central-tx.log
+START 2026-10-21T17:35:34Z pinholes_south-central-tx: <scratch>/full-rebuild/timed-python pinhole_list.py south-central-tx 50
+END 2026-10-21T17:35:41Z pinholes_south-central-tx: exit=0 seconds=7.326 log=<scratch>/full-rebuild/logs/pinholes_south-central-tx.log
+START 2026-10-21T17:35:41Z response_strict_south-central-tx: <scratch>/full-rebuild/timed-python response_time.py south-central-tx
+END 2026-10-21T17:35:55Z response_strict_south-central-tx: exit=0 seconds=13.938 log=<scratch>/full-rebuild/logs/response_strict_south-central-tx.log
+START 2026-10-21T17:35:55Z response_broad_south-central-tx: <scratch>/full-rebuild/timed-python response_time.py south-central-tx --broad
+END 2026-10-21T17:36:10Z response_broad_south-central-tx: exit=0 seconds=14.796 log=<scratch>/full-rebuild/logs/response_broad_south-central-tx.log
+START 2026-10-21T17:36:10Z named_eastern-wa: <scratch>/full-rebuild/timed-python named_lists.py eastern-wa drv_A
+END 2026-10-21T17:36:10Z named_eastern-wa: exit=0 seconds=0.307 log=<scratch>/full-rebuild/logs/named_eastern-wa.log
+START 2026-10-21T17:36:10Z pinholes_eastern-wa: <scratch>/full-rebuild/timed-python pinhole_list.py eastern-wa 50
+END 2026-10-21T17:36:11Z pinholes_eastern-wa: exit=0 seconds=1.101 log=<scratch>/full-rebuild/logs/pinholes_eastern-wa.log
+START 2026-10-21T17:36:11Z response_strict_eastern-wa: <scratch>/full-rebuild/timed-python response_time.py eastern-wa
+END 2026-10-21T17:36:13Z response_strict_eastern-wa: exit=0 seconds=1.466 log=<scratch>/full-rebuild/logs/response_strict_eastern-wa.log
+START 2026-10-21T17:36:13Z response_broad_eastern-wa: <scratch>/full-rebuild/timed-python response_time.py eastern-wa --broad
+END 2026-10-21T17:36:14Z response_broad_eastern-wa: exit=0 seconds=1.539 log=<scratch>/full-rebuild/logs/response_broad_eastern-wa.log
+START 2026-10-21T17:36:14Z seasonal: <scratch>/full-rebuild/timed-python seasonal.py
+END 2026-10-21T17:36:18Z seasonal: exit=0 seconds=3.809 log=<scratch>/full-rebuild/logs/seasonal.log
+START 2026-10-21T17:36:18Z seasonal2: <scratch>/full-rebuild/timed-python seasonal2.py
+END 2026-10-21T17:36:23Z seasonal2: exit=0 seconds=5.091 log=<scratch>/full-rebuild/logs/seasonal2.log
+START 2026-10-21T17:36:23Z seasonal_robust: <scratch>/full-rebuild/timed-python seasonal_robust.py
+END 2026-10-21T17:36:34Z seasonal_robust: exit=0 seconds=10.996 log=<scratch>/full-rebuild/logs/seasonal_robust.log
+START 2026-10-21T17:36:34Z county_boot: <scratch>/full-rebuild/timed-python county_boot.py
+END 2026-10-21T17:36:35Z county_boot: exit=0 seconds=1.158 log=<scratch>/full-rebuild/logs/county_boot.log
+START 2026-10-21T17:36:35Z county_boot_facilities: <scratch>/full-rebuild/timed-python county_boot_facilities.py
+END 2026-10-21T17:36:36Z county_boot_facilities: exit=0 seconds=0.592 log=<scratch>/full-rebuild/logs/county_boot_facilities.log
+START 2026-10-21T17:36:36Z density_dissoc: <scratch>/full-rebuild/timed-python density_dissoc.py
+END 2026-10-21T17:36:38Z density_dissoc: exit=0 seconds=1.863 log=<scratch>/full-rebuild/logs/density_dissoc.log
+START 2026-10-21T17:36:38Z persons_per_dwelling_ci: <scratch>/full-rebuild/timed-python persons_per_dwelling_ci.py
+END 2026-10-21T17:36:38Z persons_per_dwelling_ci: exit=0 seconds=0.716 log=<scratch>/full-rebuild/logs/persons_per_dwelling_ci.log
+START 2026-10-21T17:36:38Z seasonal_load: <scratch>/full-rebuild/timed-python seasonal_load.py
+END 2026-10-21T17:36:40Z seasonal_load: exit=0 seconds=1.289 log=<scratch>/full-rebuild/logs/seasonal_load.log
+START 2026-10-21T17:36:40Z seasonal_alloc_robust: <scratch>/full-rebuild/timed-python seasonal_alloc_robust.py
+END 2026-10-21T17:36:40Z seasonal_alloc_robust: exit=0 seconds=0.345 log=<scratch>/full-rebuild/logs/seasonal_alloc_robust.log
+START 2026-10-21T17:36:40Z stranded: <scratch>/full-rebuild/timed-python stranded.py
+END 2026-10-21T17:36:40Z stranded: exit=0 seconds=0.470 log=<scratch>/full-rebuild/logs/stranded.log
+START 2026-10-21T17:36:40Z named_station_check: <scratch>/full-rebuild/timed-python named_station_check.py
+END 2026-10-21T17:36:41Z named_station_check: exit=0 seconds=0.521 log=<scratch>/full-rebuild/logs/named_station_check.log
+START 2026-10-21T17:36:41Z s30_scorecard_tracts: <scratch>/full-rebuild/timed-python s30_scorecard_tracts.py
+END 2026-10-21T17:36:41Z s30_scorecard_tracts: exit=0 seconds=0.340 log=<scratch>/full-rebuild/logs/s30_scorecard_tracts.log
+START 2026-10-21T17:36:41Z egress_km_by_class: <scratch>/full-rebuild/timed-python egress_km_by_class.py
+END 2026-10-21T17:36:42Z egress_km_by_class: exit=0 seconds=0.314 log=<scratch>/full-rebuild/logs/egress_km_by_class.log
+START 2026-10-21T17:36:42Z coverage_bridge_agg: <scratch>/full-rebuild/timed-python coverage_bridge_agg.py
+END 2026-10-21T17:36:42Z coverage_bridge_agg: exit=0 seconds=0.442 log=<scratch>/full-rebuild/logs/coverage_bridge_agg.log
+START 2026-10-21T17:36:42Z resp_summary: <scratch>/full-rebuild/timed-python resp_summary.py
+END 2026-10-21T17:36:44Z resp_summary: exit=0 seconds=2.016 log=<scratch>/full-rebuild/logs/resp_summary.log
+START 2026-10-21T17:36:44Z double_trap: <scratch>/full-rebuild/timed-python double_trap.py
+END 2026-10-21T17:36:54Z double_trap: exit=0 seconds=10.321 log=<scratch>/full-rebuild/logs/double_trap.log
+START 2026-10-21T17:36:54Z latent_sweep_table: <scratch>/full-rebuild/timed-python latent_sweep_table.py
+END 2026-10-21T17:36:55Z latent_sweep_table: exit=0 seconds=0.291 log=<scratch>/full-rebuild/logs/latent_sweep_table.log
+START 2026-10-21T17:36:55Z pinhole_summary: <scratch>/full-rebuild/timed-python pinhole_summary.py
+END 2026-10-21T17:36:55Z pinhole_summary: exit=0 seconds=0.348 log=<scratch>/full-rebuild/logs/pinhole_summary.log
+START 2026-10-21T17:36:55Z validate_hays_repair: <scratch>/full-rebuild/timed-python ../validation/validate_hays_repair.py
+END 2026-10-21T17:36:57Z validate_hays_repair: exit=0 seconds=1.653 log=<scratch>/full-rebuild/logs/validate_hays_repair.log
+START 2026-10-21T17:36:57Z validate_tehama_repair: <scratch>/full-rebuild/timed-python ../validation/validate_tehama_repair.py
+END 2026-10-21T17:37:49Z validate_tehama_repair: exit=0 seconds=52.637 log=<scratch>/full-rebuild/logs/validate_tehama_repair.log
+START 2026-10-21T17:37:49Z pinhole_md: <scratch>/full-rebuild/timed-python pinhole_md.py
+END 2026-10-21T17:37:50Z pinhole_md: exit=0 seconds=0.330 log=<scratch>/full-rebuild/logs/pinhole_md.log
+START 2026-10-21T17:37:50Z calibration_md: <scratch>/full-rebuild/timed-python calibration_md.py
+END 2026-10-21T17:37:50Z calibration_md: exit=0 seconds=0.291 log=<scratch>/full-rebuild/logs/calibration_md.log
+START 2026-10-21T17:37:50Z figs_m1: <scratch>/full-rebuild/timed-python figs_m1.py
+END 2026-10-21T17:37:51Z figs_m1: exit=0 seconds=0.665 log=<scratch>/full-rebuild/logs/figs_m1.log
+START 2026-10-21T17:37:51Z figs_forest: <scratch>/full-rebuild/timed-python figs_forest.py
+END 2026-10-21T17:37:51Z figs_forest: exit=0 seconds=0.525 log=<scratch>/full-rebuild/logs/figs_forest.log
+START 2026-10-21T17:37:51Z figs_regions: <scratch>/full-rebuild/timed-python figs_regions.py
+END 2026-10-21T17:38:01Z figs_regions: exit=0 seconds=10.189 log=<scratch>/full-rebuild/logs/figs_regions.log
+START 2026-10-21T17:38:01Z figs_m2: <scratch>/full-rebuild/timed-python figs_m2.py
+END 2026-10-21T17:38:02Z figs_m2: exit=0 seconds=0.565 log=<scratch>/full-rebuild/logs/figs_m2.log
+START 2026-10-21T17:38:02Z figs_pinholes: <scratch>/full-rebuild/timed-python figs_pinholes.py
+END 2026-10-21T17:38:06Z figs_pinholes: exit=0 seconds=3.625 log=<scratch>/full-rebuild/logs/figs_pinholes.log
+START 2026-10-21T17:38:06Z figs_resort: <scratch>/full-rebuild/timed-python figs_resort.py
+END 2026-10-21T17:38:14Z figs_resort: exit=0 seconds=8.744 log=<scratch>/full-rebuild/logs/figs_resort.log
+FULL REBUILD FINISHED 2026-10-21T17:38:14Z; raw-input fallbacks=1; tables/work/figures are in <scratch>/full-rebuild

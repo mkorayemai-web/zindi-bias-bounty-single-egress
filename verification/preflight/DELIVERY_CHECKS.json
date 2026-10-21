@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-21T18:45:58Z",
+  "quick_exit": 0,
+  "full_exit": 0,
+  "full_computed_checks": 193,
+  "quoted_skipped": 9,
+  "canonical_ledger_rows": 202,
+  "tests_passed": 31,
+  "word_count": 1638,
+  "original_word_baseline": 1491,
+  "word_change_pct": 9.859154929577475,
+  "old_numerical_analysis_and_strict_comparator_unchanged": true,
+  "allowed_ledger_bookkeeping_change": []
+}

@@ -22,7 +22,7 @@ lon, lat = tf.transform(mx, my); P = P.assign(lon=lon, lat=lat)
 BOX = {"Cottonwood": (-122.45, -122.12, 40.30, 40.50), "Red Bluff": (-122.35, -122.10, 40.05, 40.30)}
 def inbox(df, town):
     a, b, c, d = BOX[town]; return (df.lon >= a) & (df.lon <= b) & (df.lat >= c) & (df.lat <= d)
-T = pd.read_csv(f"{LANE}/validation/tehama_table2.csv")
+T = pd.read_csv(f"{REPO_ROOT}/validation/tehama_table2.csv")
 areas = []
 for _, r in T.iterrows():
     m = P[P.rname.fillna("").str.contains(r.name_regex, flags=re.I, regex=True) & inbox(P, r.community)]

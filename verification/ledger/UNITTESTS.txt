@@ -1,0 +1,36 @@
+test_all_ok_pass (test_finding_audit.FindingAuditTests.test_all_ok_pass) ... ok
+test_dependency_inventory (test_finding_audit.FindingAuditTests.test_dependency_inventory) ... ok
+test_one_changed_pixel (test_finding_audit.FindingAuditTests.test_one_changed_pixel) ... ok
+test_size_mismatch_not_identical (test_finding_audit.FindingAuditTests.test_size_mismatch_not_identical) ... ok
+test_skipped_is_not_passed (test_finding_audit.FindingAuditTests.test_skipped_is_not_passed) ... ok
+test_counts_are_metadata_not_new_measured_rows (test_metadata_coverage.MetadataTests.test_counts_are_metadata_not_new_measured_rows) ... ok
+test_platform_digits_are_identifier_metadata (test_metadata_coverage.MetadataTests.test_platform_digits_are_identifier_metadata) ... ok
+test_unrelated_measurement_is_not_reclassified (test_metadata_coverage.MetadataTests.test_unrelated_measurement_is_not_reclassified) ... ok
+test_wrong_inventory_count_is_detected (test_metadata_coverage.MetadataTests.test_wrong_inventory_count_is_detected) ... ok
+test_bytes_informational_and_missing_identifiers_fail (test_preflight_compare.ValueComparisonTests.test_bytes_informational_and_missing_identifiers_fail) ... ok
+test_float_tolerance (test_preflight_compare.ValueComparisonTests.test_float_tolerance) ... ok
+test_integer_and_float_stored_counts_exact (test_preflight_compare.ValueComparisonTests.test_integer_and_float_stored_counts_exact) ... ok
+test_missing_nonfinite_and_schema (test_preflight_compare.ValueComparisonTests.test_missing_nonfinite_and_schema) ... ok
+test_parquet_index_and_npz_counts (test_preflight_compare.ValueComparisonTests.test_parquet_index_and_npz_counts) ... ok
+test_missing_or_duplicate_source_id_cannot_disappear (test_quoted_sources.QuotedSourcesTests.test_missing_or_duplicate_source_id_cannot_disappear) ... ok
+test_missing_stays_skipped_not_pass (test_quoted_sources.QuotedSourcesTests.test_missing_stays_skipped_not_pass) ... ok
+test_nested_layout_partial_sources_and_text_corruption (test_quoted_sources.QuotedSourcesTests.test_nested_layout_partial_sources_and_text_corruption) ... ok
+test_partition_is_by_explicit_id_not_skip_or_q_prefix (test_quoted_sources.QuotedSourcesTests.test_partition_is_by_explicit_id_not_skip_or_q_prefix) ... ok
+test_supplied_flat_documents_actually_run_and_count (test_quoted_sources.QuotedSourcesTests.test_supplied_flat_documents_actually_run_and_count) ... ok
+test_drvplus_failure_propagates_and_no_done_marker (test_rebuild_runners.RebuildRunnerTests.test_drvplus_failure_propagates_and_no_done_marker) ... ok
+test_prepare_refuses_source_or_existing_scratch (test_rebuild_runners.RebuildRunnerTests.test_prepare_refuses_source_or_existing_scratch) ... ok
+test_all_shipped_region_cells_and_required_configuration_plan (test_two_tier_preflight.TwoTierTests.test_all_shipped_region_cells_and_required_configuration_plan) ... ok
+test_corrupt_last_configuration_is_detected (test_two_tier_preflight.TwoTierTests.test_corrupt_last_configuration_is_detected) ... ok
+test_empty_does_not_pass (test_two_tier_preflight.TwoTierTests.test_empty_does_not_pass) ... ok
+test_failed_or_skipped_computed_check_controls_exit (test_two_tier_preflight.TwoTierTests.test_failed_or_skipped_computed_check_controls_exit) ... ok
+test_guard_never_erases_source_or_unmarked_directory (test_two_tier_preflight.TwoTierTests.test_guard_never_erases_source_or_unmarked_directory) ... ok
+test_missing_outputs_and_command_failure_not_hidden (test_two_tier_preflight.TwoTierTests.test_missing_outputs_and_command_failure_not_hidden) ... ok
+test_printed_precision (test_two_tier_preflight.TwoTierTests.test_printed_precision) ... ok
+test_region_label_does_not_claim_pooled_values (test_two_tier_preflight.TwoTierTests.test_region_label_does_not_claim_pooled_values) ... ok
+test_strict_differences_and_quoted_skips_do_not_fail_headline (test_two_tier_preflight.TwoTierTests.test_strict_differences_and_quoted_skips_do_not_fail_headline) ... ok
+test_supplied_source_passes_and_failures_count_separately (test_two_tier_preflight.TwoTierTests.test_supplied_source_passes_and_failures_count_separately) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.104s
+
+OK

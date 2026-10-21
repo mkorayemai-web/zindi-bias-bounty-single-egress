@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "<scratch>/full-rebuild/egress/acs_ext.py", line 16, in <module>
+    a = load("acsdt5y2024-b25024.dat", ["B25024_E001", "B25024_E010"])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<scratch>/full-rebuild/egress/acs_ext.py", line 9, in load
+    for ch in pd.read_csv(f"{EXT}/{fn}", sep="|", usecols=["GEO_ID"] + cols, dtype=str, chunksize=200000):
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1643, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1907, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "<repo>/.venv/lib/python3.12/site-packages/pandas/io/common.py", line 930, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '<scratch>/full-rebuild/ext/acsdt5y2024-b25024.dat'
+REBUILD STEP exit=1 seconds=0.208 command=acs_ext.py

@@ -5,7 +5,7 @@ import sys, numpy as np, pandas as pd
 from common import *
 B = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
 rng = np.random.default_rng(SEED)
-S = pd.read_parquet(f"{LANE}/ext/acs_b25004_seasonal.parquet")
+S = pd.read_parquet(f"{REPO_ROOT}/ext/acs_b25004_seasonal.parquet")
 rows = []
 for tag in ("drv_A", "drvplus_A"):
     DS = []

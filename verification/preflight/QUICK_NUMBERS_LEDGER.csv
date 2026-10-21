@@ -1,0 +1,72 @@
+id,printed,recomputed,tolerance,status,source,draft_text
+F1.14,7.5,7.516796010160704,0.05,OK,tables/eastern-wa_drv_A_summary.csv (eq),E. Washington 7.5 %
+REPRO.den,701378.0,701378.4401320483,0.5,OK,tables/eastern-wa_drv_A_summary.csv (eq),"701,378 in REPRODUCE.md step 1"
+REPRO.isl,0.16,0.16415890140519254,0.005,OK,tables/eastern-wa_drv_A_summary.csv (eq),0.16 in REPRODUCE.md step 1
+REPRO.spof,21.71,21.708349875739344,0.005,OK,tables/eastern-wa_drv_A_summary.csv (eq),21.71 in REPRODUCE.md step 1
+REPRO.s10,14.05,14.05449777780475,0.005,OK,tables/eastern-wa_drv_A_summary.csv (eq),14.05 in REPRODUCE.md step 1
+REPRO.s30,7.52,7.516796010160704,0.005,OK,tables/eastern-wa_drv_A_summary.csv (eq),7.52 in REPRODUCE.md step 1
+REPRO.dwell_s30,52721.0,52721.18660397319,0.5,OK,tables/eastern-wa_drv_A_summary.csv (eq),"52,721 in REPRODUCE.md step 1"
+REPRO.persons_s30,112860.0,112859.6802925026,0.5,OK,tables/eastern-wa_drv_A_summary.csv (eq),"112,860 in REPRODUCE.md step 1"
+REPRO.s100,2.7,2.7019839348573096,0.005,OK,tables/eastern-wa_drv_A_summary.csv (eq),2.70 in REPRODUCE.md step 1
+REPRO.s300,0.38,0.38273314307325745,0.005,OK,tables/eastern-wa_drv_A_summary.csv (eq),0.38 in REPRODUCE.md step 1
+SENS.01.spof,29.2,29.20911803001381,0.05,OK,tables/eastern-wa_drvplus_A_summary.csv (eq),eastern-wa | +service+track | A: motorway..secondary | none | ACS dwellings | single route 29.2%
+SENS.01.s30,5.5,5.504852439481464,0.05,OK,tables/eastern-wa_drvplus_A_summary.csv (eq),eastern-wa | +service+track | A: motorway..secondary | none | ACS dwellings | S30 5.5%
+SENS.01.s100,1.8,1.8372006711628432,0.05,OK,tables/eastern-wa_drvplus_A_summary.csv (eq),eastern-wa | +service+track | A: motorway..secondary | none | ACS dwellings | S100 1.8%
+SENS.01.s300,0.27,0.267270515127265,0.005,OK,tables/eastern-wa_drvplus_A_summary.csv (eq),eastern-wa | +service+track | A: motorway..secondary | none | ACS dwellings | S300 0.27%
+SENS.02.spof,30.9,30.901301733751886,0.05,OK,tables/eastern-wa_drvplus_A_summary.csv (ar),eastern-wa | +service+track | A: motorway..secondary | none | area-weighted dwellings | single route 30.9%
+SENS.02.s30,6.8,6.761847388448492,0.05,OK,tables/eastern-wa_drvplus_A_summary.csv (ar),eastern-wa | +service+track | A: motorway..secondary | none | area-weighted dwellings | S30 6.8%
+SENS.02.s100,2.3,2.289803472307134,0.05,OK,tables/eastern-wa_drvplus_A_summary.csv (ar),eastern-wa | +service+track | A: motorway..secondary | none | area-weighted dwellings | S100 2.3%
+SENS.02.s300,0.34,0.3363647131043364,0.005,OK,tables/eastern-wa_drvplus_A_summary.csv (ar),eastern-wa | +service+track | A: motorway..secondary | none | area-weighted dwellings | S300 0.34%
+SENS.03.spof,32.4,32.413659918933305,0.05,OK,tables/eastern-wa_drvplus_A_summary.csv (str),eastern-wa | +service+track | A: motorway..secondary | none | structure count | single route 32.4%
+SENS.03.s30,7.3,7.293868357850015,0.05,OK,tables/eastern-wa_drvplus_A_summary.csv (str),eastern-wa | +service+track | A: motorway..secondary | none | structure count | S30 7.3%
+SENS.03.s100,2.5,2.5412562029676082,0.05,OK,tables/eastern-wa_drvplus_A_summary.csv (str),eastern-wa | +service+track | A: motorway..secondary | none | structure count | S100 2.5%
+SENS.03.s300,0.75,0.7464366611789985,0.005,OK,tables/eastern-wa_drvplus_A_summary.csv (str),eastern-wa | +service+track | A: motorway..secondary | none | structure count | S300 0.75%
+SENS.04.spof,29.2,29.220245884605568,0.05,OK,tables/eastern-wa_drvplus_B_summary.csv (eq),"eastern-wa | +service+track | B: motorway,trunk | none | ACS dwellings | single route 29.2%"
+SENS.04.s30,5.5,5.52910532184077,0.05,OK,tables/eastern-wa_drvplus_B_summary.csv (eq),"eastern-wa | +service+track | B: motorway,trunk | none | ACS dwellings | S30 5.5%"
+SENS.04.s100,1.9,1.8552969527935343,0.05,OK,tables/eastern-wa_drvplus_B_summary.csv (eq),"eastern-wa | +service+track | B: motorway,trunk | none | ACS dwellings | S100 1.9%"
+SENS.04.s300,0.27,0.267270515127265,0.005,OK,tables/eastern-wa_drvplus_B_summary.csv (eq),"eastern-wa | +service+track | B: motorway,trunk | none | ACS dwellings | S300 0.27%"
+SENS.05.spof,30.9,30.915687716502838,0.05,OK,tables/eastern-wa_drvplus_B_summary.csv (ar),"eastern-wa | +service+track | B: motorway,trunk | none | area-weighted dwellings | single route 30.9%"
+SENS.05.s30,6.8,6.794311505588345,0.05,OK,tables/eastern-wa_drvplus_B_summary.csv (ar),"eastern-wa | +service+track | B: motorway,trunk | none | area-weighted dwellings | S30 6.8%"
+SENS.05.s100,2.3,2.3055750395939567,0.05,OK,tables/eastern-wa_drvplus_B_summary.csv (ar),"eastern-wa | +service+track | B: motorway,trunk | none | area-weighted dwellings | S100 2.3%"
+SENS.05.s300,0.34,0.3363647131043364,0.005,OK,tables/eastern-wa_drvplus_B_summary.csv (ar),"eastern-wa | +service+track | B: motorway,trunk | none | area-weighted dwellings | S300 0.34%"
+SENS.06.spof,32.4,32.4290239668478,0.05,OK,tables/eastern-wa_drvplus_B_summary.csv (str),"eastern-wa | +service+track | B: motorway,trunk | none | structure count | single route 32.4%"
+SENS.06.s30,7.3,7.328544160434802,0.05,OK,tables/eastern-wa_drvplus_B_summary.csv (str),"eastern-wa | +service+track | B: motorway,trunk | none | structure count | S30 7.3%"
+SENS.06.s100,2.6,2.5775324272101554,0.05,OK,tables/eastern-wa_drvplus_B_summary.csv (str),"eastern-wa | +service+track | B: motorway,trunk | none | structure count | S100 2.6%"
+SENS.06.s300,0.75,0.7464366611789985,0.005,OK,tables/eastern-wa_drvplus_B_summary.csv (str),"eastern-wa | +service+track | B: motorway,trunk | none | structure count | S300 0.75%"
+SENS.07.spof,21.7,21.708349875739344,0.05,OK,tables/eastern-wa_drv_A_summary.csv (eq),eastern-wa | scored classes | A: motorway..secondary | none | ACS dwellings | single route 21.7%
+SENS.07.s30,7.5,7.516796010160704,0.05,OK,tables/eastern-wa_drv_A_summary.csv (eq),eastern-wa | scored classes | A: motorway..secondary | none | ACS dwellings | S30 7.5%
+SENS.07.s100,2.7,2.7019839348573096,0.05,OK,tables/eastern-wa_drv_A_summary.csv (eq),eastern-wa | scored classes | A: motorway..secondary | none | ACS dwellings | S100 2.7%
+SENS.07.s300,0.38,0.38273314307325745,0.005,OK,tables/eastern-wa_drv_A_summary.csv (eq),eastern-wa | scored classes | A: motorway..secondary | none | ACS dwellings | S300 0.38%
+SENS.08.spof,22.3,22.2715604289667,0.05,OK,tables/eastern-wa_drv_A_summary.csv (ar),eastern-wa | scored classes | A: motorway..secondary | none | area-weighted dwellings | single route 22.3%
+SENS.08.s30,8.3,8.335657256410794,0.05,OK,tables/eastern-wa_drv_A_summary.csv (ar),eastern-wa | scored classes | A: motorway..secondary | none | area-weighted dwellings | S30 8.3%
+SENS.08.s100,3.2,3.1877908256420397,0.05,OK,tables/eastern-wa_drv_A_summary.csv (ar),eastern-wa | scored classes | A: motorway..secondary | none | area-weighted dwellings | S100 3.2%
+SENS.08.s300,0.45,0.44692377605922307,0.005,OK,tables/eastern-wa_drv_A_summary.csv (ar),eastern-wa | scored classes | A: motorway..secondary | none | area-weighted dwellings | S300 0.45%
+SENS.09.spof,23.7,23.658473743239323,0.05,OK,tables/eastern-wa_drv_A_summary.csv (str),eastern-wa | scored classes | A: motorway..secondary | none | structure count | single route 23.7%
+SENS.09.s30,10.4,10.372254049911014,0.05,OK,tables/eastern-wa_drv_A_summary.csv (str),eastern-wa | scored classes | A: motorway..secondary | none | structure count | S30 10.4%
+SENS.09.s100,4.0,3.960598620367123,0.05,OK,tables/eastern-wa_drv_A_summary.csv (str),eastern-wa | scored classes | A: motorway..secondary | none | structure count | S100 4.0%
+SENS.09.s300,1.23,1.229263286436208,0.005,OK,tables/eastern-wa_drv_A_summary.csv (str),eastern-wa | scored classes | A: motorway..secondary | none | structure count | S300 1.23%
+SENS.10.spof,21.1,21.081177056813278,0.05,OK,tables/eastern-wa_drv_A_r25_summary.csv (eq),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | single route 21.1%
+SENS.10.s30,7.2,7.164455824100642,0.05,OK,tables/eastern-wa_drv_A_r25_summary.csv (eq),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S30 7.2%
+SENS.10.s100,2.6,2.5790905459378117,0.05,OK,tables/eastern-wa_drv_A_r25_summary.csv (eq),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S100 2.6%
+SENS.10.s300,0.39,0.38505738782610277,0.005,OK,tables/eastern-wa_drv_A_r25_summary.csv (eq),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S300 0.39%
+SENS.11.spof,21.7,21.6687584174456,0.05,OK,tables/eastern-wa_drv_A_r25_summary.csv (ar),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | single route 21.7%
+SENS.11.s30,8.0,8.037198037998852,0.05,OK,tables/eastern-wa_drv_A_r25_summary.csv (ar),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S30 8.0%
+SENS.11.s100,3.1,3.094184366086381,0.05,OK,tables/eastern-wa_drv_A_r25_summary.csv (ar),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S100 3.1%
+SENS.11.s300,0.45,0.44692377605922307,0.005,OK,tables/eastern-wa_drv_A_r25_summary.csv (ar),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S300 0.45%
+SENS.12.spof,23.1,23.122924163494723,0.05,OK,tables/eastern-wa_drv_A_r25_summary.csv (str),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | single route 23.1%
+SENS.12.s30,10.1,10.056575340686178,0.05,OK,tables/eastern-wa_drv_A_r25_summary.csv (str),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S30 10.1%
+SENS.12.s100,3.8,3.8254933291762474,0.05,OK,tables/eastern-wa_drv_A_r25_summary.csv (str),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S100 3.8%
+SENS.12.s300,1.23,1.2330522970064652,0.005,OK,tables/eastern-wa_drv_A_r25_summary.csv (str),eastern-wa | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S300 1.23%
+SENS.13.spof,21.8,21.78117951691686,0.05,OK,tables/eastern-wa_drv_B_summary.csv (eq),"eastern-wa | scored classes | B: motorway,trunk | none | ACS dwellings | single route 21.8%"
+SENS.13.s30,7.6,7.634077842443278,0.05,OK,tables/eastern-wa_drv_B_summary.csv (eq),"eastern-wa | scored classes | B: motorway,trunk | none | ACS dwellings | S30 7.6%"
+SENS.13.s100,2.8,2.8155722208696563,0.05,OK,tables/eastern-wa_drv_B_summary.csv (eq),"eastern-wa | scored classes | B: motorway,trunk | none | ACS dwellings | S100 2.8%"
+SENS.13.s300,0.48,0.47928454545323473,0.005,OK,tables/eastern-wa_drv_B_summary.csv (eq),"eastern-wa | scored classes | B: motorway,trunk | none | ACS dwellings | S300 0.48%"
+SENS.14.spof,22.4,22.41140391445734,0.05,OK,tables/eastern-wa_drv_B_summary.csv (ar),"eastern-wa | scored classes | B: motorway,trunk | none | area-weighted dwellings | single route 22.4%"
+SENS.14.s30,8.5,8.523093333062759,0.05,OK,tables/eastern-wa_drv_B_summary.csv (ar),"eastern-wa | scored classes | B: motorway,trunk | none | area-weighted dwellings | S30 8.5%"
+SENS.14.s100,3.4,3.385505615320892,0.05,OK,tables/eastern-wa_drv_B_summary.csv (ar),"eastern-wa | scored classes | B: motorway,trunk | none | area-weighted dwellings | S100 3.4%"
+SENS.14.s300,0.57,0.5724581530678027,0.005,OK,tables/eastern-wa_drv_B_summary.csv (ar),"eastern-wa | scored classes | B: motorway,trunk | none | area-weighted dwellings | S300 0.57%"
+SENS.15.spof,23.8,23.75958619674275,0.05,OK,tables/eastern-wa_drv_B_summary.csv (str),"eastern-wa | scored classes | B: motorway,trunk | none | structure count | single route 23.8%"
+SENS.15.s30,10.5,10.506060251763513,0.05,OK,tables/eastern-wa_drv_B_summary.csv (str),"eastern-wa | scored classes | B: motorway,trunk | none | structure count | S30 10.5%"
+SENS.15.s100,4.1,4.14041423628703,0.05,OK,tables/eastern-wa_drv_B_summary.csv (str),"eastern-wa | scored classes | B: motorway,trunk | none | structure count | S100 4.1%"
+SENS.15.s300,1.41,1.4068054960139609,0.005,OK,tables/eastern-wa_drv_B_summary.csv (str),"eastern-wa | scored classes | B: motorway,trunk | none | structure count | S300 1.41%"
+EXEC.required_steps,0.0,0.0,0.0,OK,quick rebuild command status,all required commands exited zero

@@ -1,0 +1,10 @@
+id,draft_text,quoted,recomputed,tolerance,source,status
+Q.01,4.0 persons per occupied second-home or visitor unit,,,,Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9) [source document not distributed with the repository: fetch it as listed in SOURCES.md],SKIPPED-NO-SOURCE
+Q.02,occupied 49 % of the year,,,,Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9) [source document not distributed with the repository: fetch it as listed in SOURCES.md],SKIPPED-NO-SOURCE
+Q.03,"34,265 persons",,,,Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9) [source document not distributed with the repository: fetch it as listed in SOURCES.md],SKIPPED-NO-SOURCE
+Q.04,"7,259 residents",,,,Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9) [source document not distributed with the repository: fetch it as listed in SOURCES.md],SKIPPED-NO-SOURCE
+Q.05,51-64 % for condominiums and 43-75 % for mobile homes,,,,SW Florida RPC Hurricane Evacuation Study Update 1987 (SOURCES.md row 10) [source document not distributed with the repository: fetch it as listed in SOURCES.md],SKIPPED-NO-SOURCE
+I.04,927 occupied housing units per egress lane,,,,NIST TN 2252 (SOURCES.md row 5) [source document not distributed with the repository: fetch it as listed in SOURCES.md],SKIPPED-NO-SOURCE
+Q.09,"(Eagle Lodge Draft EIR, 2006)",,,,Mammoth EIR carries the year 2006 [source document not distributed with the repository: fetch it as listed in SOURCES.md],SKIPPED-NO-SOURCE
+Q.10,A 1987 Southwest Florida hurricane evacuation study,,,,HES document is the 1987 update [source document not distributed with the repository: fetch it as listed in SOURCES.md],SKIPPED-NO-SOURCE
+P.12,in the 2018 Camp Fire (NIST TN 2252),,,,NIST TN 2252 is the 2018 Camp Fire case study [source document not distributed with the repository: fetch it as listed in SOURCES.md],SKIPPED-NO-SOURCE

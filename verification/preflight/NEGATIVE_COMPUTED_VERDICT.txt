@@ -1,0 +1,4 @@
+DELIBERATELY CORRUPTED CALCULATION; test fixture, not a result. Strict comparison not run in this negative test.
+HEADLINE (every printed number computed from the data): FAIL 1/193
+FULL INTERMEDIATES (strict, informational): 0 of 0 files identical; differences explained in <scratch>/negative-computation-fixture/ledger_stdout.txt
+QUOTED SOURCES (not shipped; verify at the SOURCES.md URLs, or pass --sources DIR): 9 checks SKIPPED

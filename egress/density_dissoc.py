@@ -5,7 +5,7 @@ import numpy as np, pandas as pd, statsmodels.formula.api as smf
 from scipy.stats import spearmanr
 from common import *
 pd.set_option("display.width", 250); pd.set_option("display.max_columns", 30)
-S = pd.read_parquet(f"{LANE}/ext/acs_b25004_seasonal.parquet"); X = pd.read_parquet(f"{LANE}/ext/acs_tract_ext.parquet")[["GEOID", "mh_share"]]
+S = pd.read_parquet(f"{REPO_ROOT}/ext/acs_b25004_seasonal.parquet"); X = pd.read_parquet(f"{REPO_ROOT}/ext/acs_tract_ext.parquet")[["GEOID", "mh_share"]]
 DS = []
 for region in regions_for("drv_A"):
     T = pd.read_parquet(f"{WORK}/{region}_drv_A_tract.parquet").reset_index(names="GEOID")

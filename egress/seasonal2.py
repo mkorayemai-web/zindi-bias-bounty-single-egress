@@ -6,8 +6,8 @@ from common import *
 B = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
 rng = np.random.default_rng(SEED)
 pd.set_option("display.width", 250); pd.set_option("display.max_columns", 30); pd.set_option("display.max_colwidth", 38)
-S = pd.read_parquet(f"{LANE}/ext/acs_b25004_seasonal.parquet"); X = pd.read_parquet(f"{LANE}/ext/acs_tract_ext.parquet")[["GEOID", "mh_share"]]
-cn = pd.read_csv(f"{LANE}/ext/national_county2020.txt", sep="|", dtype=str); cn["code"] = cn.STATEFP + cn.COUNTYFP
+S = pd.read_parquet(f"{REPO_ROOT}/ext/acs_b25004_seasonal.parquet"); X = pd.read_parquet(f"{REPO_ROOT}/ext/acs_tract_ext.parquet")[["GEOID", "mh_share"]]
+cn = pd.read_csv(f"{REPO_ROOT}/ext/national_county2020.txt", sep="|", dtype=str); cn["code"] = cn.STATEFP + cn.COUNTYFP
 CNAME = dict(zip(cn.code, cn.COUNTYNAME + ", " + cn.STATE))
 DS = []
 for region in regions_for("drv_A"):

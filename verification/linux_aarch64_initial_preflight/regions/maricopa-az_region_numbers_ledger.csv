@@ -1,0 +1,64 @@
+id,printed,recomputed,tolerance,status,source,draft_text
+F1.12,9.8,9.782440082626916,0.05,OK,tables/maricopa-az_drv_A_summary.csv (eq),Maricopa 9.8 %
+REPRO.s30,9.78,9.782440082626916,0.005,OK,tables/maricopa-az_drv_A_summary.csv (eq),Maricopa S30 9.78%
+SENS.01.spof,23.7,23.700669077195506,0.05,OK,tables/maricopa-az_drvplus_A_summary.csv (eq),maricopa-az | +service+track | A: motorway..secondary | none | ACS dwellings | single route 23.7%
+SENS.01.s30,7.2,7.200139668362142,0.05,OK,tables/maricopa-az_drvplus_A_summary.csv (eq),maricopa-az | +service+track | A: motorway..secondary | none | ACS dwellings | S30 7.2%
+SENS.01.s100,3.0,2.965988734685789,0.05,OK,tables/maricopa-az_drvplus_A_summary.csv (eq),maricopa-az | +service+track | A: motorway..secondary | none | ACS dwellings | S100 3.0%
+SENS.01.s300,0.73,0.7271475435162044,0.005,OK,tables/maricopa-az_drvplus_A_summary.csv (eq),maricopa-az | +service+track | A: motorway..secondary | none | ACS dwellings | S300 0.73%
+SENS.02.spof,24.4,24.379580913281586,0.05,OK,tables/maricopa-az_drvplus_A_summary.csv (ar),maricopa-az | +service+track | A: motorway..secondary | none | area-weighted dwellings | single route 24.4%
+SENS.02.s30,7.8,7.764739491121528,0.05,OK,tables/maricopa-az_drvplus_A_summary.csv (ar),maricopa-az | +service+track | A: motorway..secondary | none | area-weighted dwellings | S30 7.8%
+SENS.02.s100,2.7,2.704099298202332,0.05,OK,tables/maricopa-az_drvplus_A_summary.csv (ar),maricopa-az | +service+track | A: motorway..secondary | none | area-weighted dwellings | S100 2.7%
+SENS.02.s300,0.58,0.5840581081468733,0.005,OK,tables/maricopa-az_drvplus_A_summary.csv (ar),maricopa-az | +service+track | A: motorway..secondary | none | area-weighted dwellings | S300 0.58%
+SENS.03.spof,25.3,25.289456609109134,0.05,OK,tables/maricopa-az_drvplus_A_summary.csv (str),maricopa-az | +service+track | A: motorway..secondary | none | structure count | single route 25.3%
+SENS.03.s30,7.3,7.346497641852041,0.05,OK,tables/maricopa-az_drvplus_A_summary.csv (str),maricopa-az | +service+track | A: motorway..secondary | none | structure count | S30 7.3%
+SENS.03.s100,2.8,2.8223399413126216,0.05,OK,tables/maricopa-az_drvplus_A_summary.csv (str),maricopa-az | +service+track | A: motorway..secondary | none | structure count | S100 2.8%
+SENS.03.s300,0.8,0.8039589769414773,0.005,OK,tables/maricopa-az_drvplus_A_summary.csv (str),maricopa-az | +service+track | A: motorway..secondary | none | structure count | S300 0.80%
+SENS.04.spof,23.7,23.700919565444035,0.05,OK,tables/maricopa-az_drvplus_B_summary.csv (eq),"maricopa-az | +service+track | B: motorway,trunk | none | ACS dwellings | single route 23.7%"
+SENS.04.s30,7.2,7.200285479476934,0.05,OK,tables/maricopa-az_drvplus_B_summary.csv (eq),"maricopa-az | +service+track | B: motorway,trunk | none | ACS dwellings | S30 7.2%"
+SENS.04.s100,3.0,2.9702755814606885,0.05,OK,tables/maricopa-az_drvplus_B_summary.csv (eq),"maricopa-az | +service+track | B: motorway,trunk | none | ACS dwellings | S100 3.0%"
+SENS.04.s300,0.73,0.7271475435162044,0.005,OK,tables/maricopa-az_drvplus_B_summary.csv (eq),"maricopa-az | +service+track | B: motorway,trunk | none | ACS dwellings | S300 0.73%"
+SENS.05.spof,24.4,24.379743326768114,0.05,OK,tables/maricopa-az_drvplus_B_summary.csv (ar),"maricopa-az | +service+track | B: motorway,trunk | none | area-weighted dwellings | single route 24.4%"
+SENS.05.s30,7.8,7.765862382604695,0.05,OK,tables/maricopa-az_drvplus_B_summary.csv (ar),"maricopa-az | +service+track | B: motorway,trunk | none | area-weighted dwellings | S30 7.8%"
+SENS.05.s100,2.7,2.7082303669805996,0.05,OK,tables/maricopa-az_drvplus_B_summary.csv (ar),"maricopa-az | +service+track | B: motorway,trunk | none | area-weighted dwellings | S100 2.7%"
+SENS.05.s300,0.58,0.5840581081468733,0.005,OK,tables/maricopa-az_drvplus_B_summary.csv (ar),"maricopa-az | +service+track | B: motorway,trunk | none | area-weighted dwellings | S300 0.58%"
+SENS.06.spof,25.3,25.2897665094568,0.05,OK,tables/maricopa-az_drvplus_B_summary.csv (str),"maricopa-az | +service+track | B: motorway,trunk | none | structure count | single route 25.3%"
+SENS.06.s30,7.3,7.346691329569335,0.05,OK,tables/maricopa-az_drvplus_B_summary.csv (str),"maricopa-az | +service+track | B: motorway,trunk | none | structure count | S30 7.3%"
+SENS.06.s100,2.8,2.828034360201048,0.05,OK,tables/maricopa-az_drvplus_B_summary.csv (str),"maricopa-az | +service+track | B: motorway,trunk | none | structure count | S100 2.8%"
+SENS.06.s300,0.8,0.8039589769414773,0.005,OK,tables/maricopa-az_drvplus_B_summary.csv (str),"maricopa-az | +service+track | B: motorway,trunk | none | structure count | S300 0.80%"
+SENS.07.spof,21.3,21.336674079519806,0.05,OK,tables/maricopa-az_drv_A_summary.csv (eq),maricopa-az | scored classes | A: motorway..secondary | none | ACS dwellings | single route 21.3%
+SENS.07.s30,9.8,9.782440082626916,0.05,OK,tables/maricopa-az_drv_A_summary.csv (eq),maricopa-az | scored classes | A: motorway..secondary | none | ACS dwellings | S30 9.8%
+SENS.07.s100,4.5,4.542874812686674,0.05,OK,tables/maricopa-az_drv_A_summary.csv (eq),maricopa-az | scored classes | A: motorway..secondary | none | ACS dwellings | S100 4.5%
+SENS.07.s300,1.49,1.4918141758762495,0.005,OK,tables/maricopa-az_drv_A_summary.csv (eq),maricopa-az | scored classes | A: motorway..secondary | none | ACS dwellings | S300 1.49%
+SENS.08.spof,21.2,21.224069869961035,0.05,OK,tables/maricopa-az_drv_A_summary.csv (ar),maricopa-az | scored classes | A: motorway..secondary | none | area-weighted dwellings | single route 21.2%
+SENS.08.s30,10.0,9.977625947817248,0.05,OK,tables/maricopa-az_drv_A_summary.csv (ar),maricopa-az | scored classes | A: motorway..secondary | none | area-weighted dwellings | S30 10.0%
+SENS.08.s100,4.3,4.274093258175276,0.05,OK,tables/maricopa-az_drv_A_summary.csv (ar),maricopa-az | scored classes | A: motorway..secondary | none | area-weighted dwellings | S100 4.3%
+SENS.08.s300,1.26,1.2608416475729627,0.005,OK,tables/maricopa-az_drv_A_summary.csv (ar),maricopa-az | scored classes | A: motorway..secondary | none | area-weighted dwellings | S300 1.26%
+SENS.09.spof,23.2,23.24896961510069,0.05,OK,tables/maricopa-az_drv_A_summary.csv (str),maricopa-az | scored classes | A: motorway..secondary | none | structure count | single route 23.2%
+SENS.09.s30,10.3,10.343625418383649,0.05,OK,tables/maricopa-az_drv_A_summary.csv (str),maricopa-az | scored classes | A: motorway..secondary | none | structure count | S30 10.3%
+SENS.09.s100,4.6,4.563876844387995,0.05,OK,tables/maricopa-az_drv_A_summary.csv (str),maricopa-az | scored classes | A: motorway..secondary | none | structure count | S100 4.6%
+SENS.09.s300,1.62,1.618237568989675,0.005,OK,tables/maricopa-az_drv_A_summary.csv (str),maricopa-az | scored classes | A: motorway..secondary | none | structure count | S300 1.62%
+SENS.10.spof,20.3,20.343962763799876,0.05,OK,tables/maricopa-az_drv_A_r25_summary.csv (eq),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | single route 20.3%
+SENS.10.s30,9.3,9.289472162599962,0.05,OK,tables/maricopa-az_drv_A_r25_summary.csv (eq),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S30 9.3%
+SENS.10.s100,4.3,4.275877400303198,0.05,OK,tables/maricopa-az_drv_A_r25_summary.csv (eq),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S100 4.3%
+SENS.10.s300,1.41,1.4072017334733036,0.005,OK,tables/maricopa-az_drv_A_r25_summary.csv (eq),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S300 1.41%
+SENS.11.spof,20.3,20.28422889204489,0.05,OK,tables/maricopa-az_drv_A_r25_summary.csv (ar),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | single route 20.3%
+SENS.11.s30,9.5,9.50563082561983,0.05,OK,tables/maricopa-az_drv_A_r25_summary.csv (ar),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S30 9.5%
+SENS.11.s100,4.1,4.058005916642973,0.05,OK,tables/maricopa-az_drv_A_r25_summary.csv (ar),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S100 4.1%
+SENS.11.s300,1.21,1.2110757964664198,0.005,OK,tables/maricopa-az_drv_A_r25_summary.csv (ar),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S300 1.21%
+SENS.12.spof,22.3,22.276436016695182,0.05,OK,tables/maricopa-az_drv_A_r25_summary.csv (str),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | single route 22.3%
+SENS.12.s30,9.9,9.850046776296214,0.05,OK,tables/maricopa-az_drv_A_r25_summary.csv (str),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S30 9.9%
+SENS.12.s100,4.3,4.3190178498658325,0.05,OK,tables/maricopa-az_drv_A_r25_summary.csv (str),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S100 4.3%
+SENS.12.s300,1.54,1.5413754765859191,0.005,OK,tables/maricopa-az_drv_A_r25_summary.csv (str),maricopa-az | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S300 1.54%
+SENS.13.spof,21.3,21.346300897847627,0.05,OK,tables/maricopa-az_drv_B_summary.csv (eq),"maricopa-az | scored classes | B: motorway,trunk | none | ACS dwellings | single route 21.3%"
+SENS.13.s30,9.8,9.793343470135701,0.05,OK,tables/maricopa-az_drv_B_summary.csv (eq),"maricopa-az | scored classes | B: motorway,trunk | none | ACS dwellings | S30 9.8%"
+SENS.13.s100,4.6,4.550223810857953,0.05,OK,tables/maricopa-az_drv_B_summary.csv (eq),"maricopa-az | scored classes | B: motorway,trunk | none | ACS dwellings | S100 4.6%"
+SENS.13.s300,1.49,1.4918141758762495,0.005,OK,tables/maricopa-az_drv_B_summary.csv (eq),"maricopa-az | scored classes | B: motorway,trunk | none | ACS dwellings | S300 1.49%"
+SENS.14.spof,21.2,21.242644856238087,0.05,OK,tables/maricopa-az_drv_B_summary.csv (ar),"maricopa-az | scored classes | B: motorway,trunk | none | area-weighted dwellings | single route 21.2%"
+SENS.14.s30,10.0,9.999362580911598,0.05,OK,tables/maricopa-az_drv_B_summary.csv (ar),"maricopa-az | scored classes | B: motorway,trunk | none | area-weighted dwellings | S30 10.0%"
+SENS.14.s100,4.3,4.293415668710501,0.05,OK,tables/maricopa-az_drv_B_summary.csv (ar),"maricopa-az | scored classes | B: motorway,trunk | none | area-weighted dwellings | S100 4.3%"
+SENS.14.s300,1.27,1.2726885779901453,0.005,OK,tables/maricopa-az_drv_B_summary.csv (ar),"maricopa-az | scored classes | B: motorway,trunk | none | area-weighted dwellings | S300 1.27%"
+SENS.15.spof,23.3,23.26831187681163,0.05,OK,tables/maricopa-az_drv_B_summary.csv (str),"maricopa-az | scored classes | B: motorway,trunk | none | structure count | single route 23.3%"
+SENS.15.s30,10.4,10.369714073796189,0.05,OK,tables/maricopa-az_drv_B_summary.csv (str),"maricopa-az | scored classes | B: motorway,trunk | none | structure count | S30 10.4%"
+SENS.15.s100,4.6,4.593943142329799,0.05,OK,tables/maricopa-az_drv_B_summary.csv (str),"maricopa-az | scored classes | B: motorway,trunk | none | structure count | S100 4.6%"
+SENS.15.s300,1.63,1.629741535128238,0.005,OK,tables/maricopa-az_drv_B_summary.csv (str),"maricopa-az | scored classes | B: motorway,trunk | none | structure count | S300 1.63%"
+EXEC.required_steps,0.0,0.0,0.0,OK,quick rebuild command status,all required commands exited zero

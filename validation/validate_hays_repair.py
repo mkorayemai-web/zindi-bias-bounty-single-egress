@@ -8,7 +8,7 @@ from scipy.stats import mannwhitneyu, fisher_exact
 import os as _os; sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "egress"))
 from common import *
 region = "south-central-tx"
-H = pd.read_csv(f"{LANE}/ext/hays_table1.csv"); H.columns = ["rank", "name", "houses", "exits", "ratio", "fire_level", "lon", "lat"]
+H = pd.read_csv(f"{REPO_ROOT}/ext/hays_table1.csv"); H.columns = ["rank", "name", "houses", "exits", "ratio", "fire_level", "lon", "lat"]
 H["lon"] = H.lon.astype(str).str.replace("\u2212", "-").astype(float); H["lat"] = H.lat.astype(float)
 tf = pyproj.Transformer.from_crs("EPSG:4326", CRS_M, always_xy=True); H["x"], H["y"] = tf.transform(H.lon.values, H.lat.values)
 pad = 6000; x0, x1, y0, y1 = H.x.min() - pad, H.x.max() + pad, H.y.min() - pad, H.y.max() + pad

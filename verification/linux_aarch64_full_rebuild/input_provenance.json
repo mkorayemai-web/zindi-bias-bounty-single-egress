@@ -1,0 +1,20 @@
+{
+  "prepared_utc": "2026-10-21T16:42:06Z",
+  "source_checkout": "<repo>",
+  "data_root": "<scratch>/data-root",
+  "empty_output_dirs": [
+    "work",
+    "tables",
+    "figs"
+  ],
+  "serial": true,
+  "numerical_pool_threads": 1,
+  "duckdb_threads": 4,
+  "copied_ext_inputs": {
+    "acs_tract_ext.parquet": "17a649b77ac32a6d762f2ee819149d74a74dc1d515625ddc65152904ab644101",
+    "hays_table1.csv": "550472008efa7a5ab1a9d176c9c7e36fc047d1fbe10fa0750e3097e42c68f839",
+    "acs_b25004_seasonal.parquet": "f2ed4f5bfdde54f91ae44f21eefd4d0cb7b340108b2929098824fb180eeea80a",
+    "hays_geographies_4_3_26.md": "f489813c3c9097975ddd89dd28929b970abe41040e552299872f76e66f2400a1",
+    "national_county2020.txt": "9f6e5f6eb6ac2f5e9a36d5fd01dec77991bddc75118f748a069441a4782970d6"
+  }
+}

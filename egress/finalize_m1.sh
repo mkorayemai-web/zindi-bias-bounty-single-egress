@@ -1,5 +1,6 @@
 #!/bin/sh
 # Re-run every configuration with the final code, then all statistics/tables for M1. Waits for the heavy stage batch (work/stage_all.done).
+set -e
 PY=${PY:-python3}
 cd "$(dirname "$0")" || exit 1
 n=0
@@ -19,7 +20,7 @@ done
 $PY stats.py drv_A 2000 eq > ../tables/stats_drv_A_eq.log 2>&1
 $PY stats.py drv_A 2000 ar > ../tables/stats_drv_A_ar.log 2>&1
 $PY stats.py drvplus_A 2000 eq > ../tables/stats_drvplus_A_eq.log 2>&1
-$PY stats.py drv_B 1000 eq > ../tables/stats_drv_B_eq.log 2>&1
+$PY stats.py drv_B 2000 eq > ../tables/stats_drv_B_eq.log 2>&1
 $PY fac_stats.py drv_A 2000 > ../tables/fac_stats_drv_A.log 2>&1
 $PY fac_stats.py drvplus_A 2000 > ../tables/fac_stats_drvplus_A.log 2>&1
 $PY mh_tract.py drv_A 2000 > ../tables/mh_tract_drv_A.log 2>&1

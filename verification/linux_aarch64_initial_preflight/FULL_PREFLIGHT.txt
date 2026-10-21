@@ -1,0 +1,5 @@
+Full-entry ledger scope: same draft, original printed precision/tolerances; missing external-source checks are not passed.
+Checks: 193 PASS; 0 FAIL; 9 UNVERIFIED. Per-check report: <scratch>/full-rebuild/finding_audit/EVERY_LEDGER_CHECK.md
+PNG pixel differences (informational): <scratch>/full-rebuild/finding_audit/FIGURE_PIXEL_DIFFS.csv
+HEADLINE (every number printed in the entry): FAIL 9/202
+FULL INTERMEDIATES (strict, informational): 44 of 206 files identical; differences explained in <scratch>/full-rebuild/finding_audit/FULL_INTERMEDIATES.md

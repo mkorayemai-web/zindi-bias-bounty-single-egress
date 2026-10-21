@@ -1,0 +1,18 @@
+Quick ledger scope: eastern-wa printed region values and sensitivity-table cells only; use preflight_all.sh for pooled/full-entry checks.
+Clean slate: deleted 29 region artifacts; scratch <scratch>/quick-eastern-wa
+Step 1/12: build_edges.py eastern-wa drv; log <scratch>/quick-eastern-wa/logs/01_build_edges.py.txt
+Step 2/12: buildings_prep.py eastern-wa; log <scratch>/quick-eastern-wa/logs/02_buildings_prep.py.txt
+Step 3/12: pipeline.py eastern-wa drv --force; log <scratch>/quick-eastern-wa/logs/03_pipeline.py.txt
+Step 4/12: variants.py eastern-wa drv A --minload 20; log <scratch>/quick-eastern-wa/logs/04_variants.py.txt
+Step 5/12: variants.py eastern-wa drv A --repair 25; log <scratch>/quick-eastern-wa/logs/05_variants.py.txt
+Step 6/12: variants.py eastern-wa drv B --minload 100; log <scratch>/quick-eastern-wa/logs/06_variants.py.txt
+Step 7/12: facilities2.py eastern-wa drv A; log <scratch>/quick-eastern-wa/logs/07_facilities2.py.txt
+Step 8/12: build_edges.py eastern-wa drvplus; log <scratch>/quick-eastern-wa/logs/08_build_edges.py.txt
+Step 9/12: pipeline.py eastern-wa drvplus --force; log <scratch>/quick-eastern-wa/logs/09_pipeline.py.txt
+Step 10/12: variants.py eastern-wa drvplus A --minload 20; log <scratch>/quick-eastern-wa/logs/10_variants.py.txt
+Step 11/12: variants.py eastern-wa drvplus B --minload 100; log <scratch>/quick-eastern-wa/logs/11_variants.py.txt
+Step 12/12: facilities2.py eastern-wa drvplus A; log <scratch>/quick-eastern-wa/logs/12_facilities2.py.txt
+Printed-number ledger: <scratch>/quick-eastern-wa/headline/region_numbers_ledger.csv; strict comparison: <scratch>/quick-eastern-wa/strict_comparator.log
+No full-entry or validation claim is made by the quick scope.
+HEADLINE (every number printed in the entry): PASS 71/71
+FULL INTERMEDIATES (strict, informational): 3 of 20 files identical; differences explained in <scratch>/quick-eastern-wa/FULL_INTERMEDIATES.md

@@ -1,0 +1,302 @@
+[
+  {
+    "region": "northern-ca",
+    "main_five_command_seconds": 49.442927356110886,
+    "headline_passed": 63,
+    "headline_total": 63,
+    "regional_strict_files": 29,
+    "regional_bytes_identical": 6,
+    "regional_strict_values_pass": 14,
+    "steps": [
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "build_edges.py",
+          "northern-ca",
+          "drv"
+        ],
+        "seconds": 1.2291463570436463
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "buildings_prep.py",
+          "northern-ca"
+        ],
+        "seconds": 1.1790205619763583
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "pipeline.py",
+          "northern-ca",
+          "drv",
+          "--force"
+        ],
+        "seconds": 41.38330853707157
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "variants.py",
+          "northern-ca",
+          "drv",
+          "A",
+          "--minload",
+          "20"
+        ],
+        "seconds": 4.174711197032593
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "facilities2.py",
+          "northern-ca",
+          "drv",
+          "A"
+        ],
+        "seconds": 1.4767407029867172
+      }
+    ]
+  },
+  {
+    "region": "eastern-ok",
+    "main_five_command_seconds": 73.9230509478366,
+    "headline_passed": 63,
+    "headline_total": 63,
+    "regional_strict_files": 29,
+    "regional_bytes_identical": 6,
+    "regional_strict_values_pass": 14,
+    "steps": [
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "build_edges.py",
+          "eastern-ok",
+          "drv"
+        ],
+        "seconds": 1.7755261149723083
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "buildings_prep.py",
+          "eastern-ok"
+        ],
+        "seconds": 2.2341527349781245
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "pipeline.py",
+          "eastern-ok",
+          "drv",
+          "--force"
+        ],
+        "seconds": 59.80864498799201
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "variants.py",
+          "eastern-ok",
+          "drv",
+          "A",
+          "--minload",
+          "20"
+        ],
+        "seconds": 7.782569007948041
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "facilities2.py",
+          "eastern-ok",
+          "drv",
+          "A"
+        ],
+        "seconds": 2.3221581019461155
+      }
+    ]
+  },
+  {
+    "region": "maricopa-az",
+    "main_five_command_seconds": 103.36664322996512,
+    "headline_passed": 63,
+    "headline_total": 63,
+    "regional_strict_files": 29,
+    "regional_bytes_identical": 6,
+    "regional_strict_values_pass": 15,
+    "steps": [
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "build_edges.py",
+          "maricopa-az",
+          "drv"
+        ],
+        "seconds": 1.8412216319702566
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "buildings_prep.py",
+          "maricopa-az"
+        ],
+        "seconds": 2.689958865987137
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "pipeline.py",
+          "maricopa-az",
+          "drv",
+          "--force"
+        ],
+        "seconds": 88.20062984502874
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "variants.py",
+          "maricopa-az",
+          "drv",
+          "A",
+          "--minload",
+          "20"
+        ],
+        "seconds": 8.109803766012192
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "facilities2.py",
+          "maricopa-az",
+          "drv",
+          "A"
+        ],
+        "seconds": 2.525029120966792
+      }
+    ]
+  },
+  {
+    "region": "south-central-tx",
+    "main_five_command_seconds": 389.5973730538972,
+    "headline_passed": 51,
+    "headline_total": 51,
+    "regional_strict_files": 25,
+    "regional_bytes_identical": 5,
+    "regional_strict_values_pass": 9,
+    "steps": [
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "build_edges.py",
+          "south-central-tx",
+          "drv"
+        ],
+        "seconds": 6.052453821059316
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "buildings_prep.py",
+          "south-central-tx"
+        ],
+        "seconds": 12.55711207492277
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "pipeline.py",
+          "south-central-tx",
+          "drv",
+          "--force"
+        ],
+        "seconds": 330.67232362600043
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "variants.py",
+          "south-central-tx",
+          "drv",
+          "A",
+          "--minload",
+          "20"
+        ],
+        "seconds": 32.429912150022574
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "facilities2.py",
+          "south-central-tx",
+          "drv",
+          "A"
+        ],
+        "seconds": 7.885571381892078
+      }
+    ]
+  },
+  {
+    "region": "eastern-wa",
+    "main_five_command_seconds": 49.22834173205774,
+    "headline_passed": 71,
+    "headline_total": 71,
+    "regional_strict_files": 29,
+    "regional_bytes_identical": 6,
+    "regional_strict_values_pass": 12,
+    "steps": [
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "build_edges.py",
+          "eastern-wa",
+          "drv"
+        ],
+        "seconds": 1.3067873310064897
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "buildings_prep.py",
+          "eastern-wa"
+        ],
+        "seconds": 1.260495434049517
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "pipeline.py",
+          "eastern-wa",
+          "drv",
+          "--force"
+        ],
+        "seconds": 42.0062490189448
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "variants.py",
+          "eastern-wa",
+          "drv",
+          "A",
+          "--minload",
+          "20"
+        ],
+        "seconds": 3.409303718013689
+      },
+      {
+        "command": [
+          "<repo>/.venv/bin/python",
+          "facilities2.py",
+          "eastern-wa",
+          "drv",
+          "A"
+        ],
+        "seconds": 1.2455062300432473
+      }
+    ]
+  }
+]

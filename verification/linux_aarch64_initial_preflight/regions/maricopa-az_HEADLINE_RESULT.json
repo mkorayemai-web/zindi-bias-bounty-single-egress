@@ -1,0 +1,16 @@
+{
+  "scope": "quick maricopa-az: printed region draft / REPRODUCE / sensitivity cells ONLY; no pooled or other-region claim",
+  "region": "maricopa-az",
+  "total": 63,
+  "passed": 63,
+  "failed": 0,
+  "unverified": 0,
+  "all_pass": true,
+  "required_configurations": [
+    "maricopa-az_drv_A",
+    "maricopa-az_drv_A_r25",
+    "maricopa-az_drv_B",
+    "maricopa-az_drvplus_A",
+    "maricopa-az_drvplus_B"
+  ]
+}

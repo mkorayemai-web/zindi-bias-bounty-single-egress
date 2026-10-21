@@ -1,0 +1,155 @@
+scripts in the copy that still point at the <repo>: 0
+region artifacts left: 0; validation tables left: 0
+--- python build_edges.py eastern-wa drv  [16:10:47]
+step build_edges.py: 2 s; exit 0; log step_build_edges.py.log
+--- python buildings_prep.py eastern-wa  [16:10:49]
+step buildings_prep.py: 2 s; exit 0; log step_buildings_prep.py.log
+--- python pipeline.py eastern-wa drv --force  [16:10:51]
+step pipeline.py: 65 s; exit 0; log step_pipeline.py.log
+--- python variants.py eastern-wa drv A --minload 20  [16:11:56]
+step variants.py: 7 s; exit 0; log step_variants.py.log
+--- python facilities2.py eastern-wa drv A  [16:12:03]
+step facilities2.py: 3 s; exit 0; log step_facilities2.py.log
+region chain: 79 s
+validations skipped (northern-ca / south-central-tx not built)
+validations: 0 s
+Value policy: integer counts / identifiers exact; floats rel 1e-09 / abs 1e-12; no relaxed tolerances.
+  tables/eastern-wa_drv_A_links.csv: bytes DIFFERENT (informational); values PASS
+    load_persons: float; changed=1; outside tolerance=0; max abs diff=5.684341886080802e-14; PASS
+    len_m: float; changed=616; outside tolerance=0; max abs diff=1.0108706760547648e-08; PASS
+    lon: float; changed=31; outside tolerance=0; max abs diff=5.684341886080802e-14; PASS
+    lat: float; changed=260; outside tolerance=0; max abs diff=9.947598300641403e-14; PASS
+  tables/eastern-wa_drv_A_summary.csv: bytes DIFFERENT (informational); values FAIL
+    den: float; changed=1; outside tolerance=0; max abs diff=7.636845111846924e-08; PASS
+    isl: float; changed=1; outside tolerance=0; max abs diff=1.1391061705001704e-14; PASS
+    spof: float; changed=3; outside tolerance=3; max abs diff=2.3592475527078882e-06; FAIL
+      row/index 0: expected 0.21708253809827407; computed 0.21708349875739344
+      row/index 1: expected 0.22271324504211432; computed 0.22271560428966702
+      row/index 2: expected 0.23658365485794458; computed 0.23658473743239322
+    s10: float; changed=1; outside tolerance=0; max abs diff=1.921796055626146e-13; PASS
+    persons_s10: float; changed=1; outside tolerance=0; max abs diff=4.824250936508179e-07; PASS
+    dwell_s10: float; changed=1; outside tolerance=0; max abs diff=1.4572287909686565e-07; PASS
+    s30: float; changed=1; outside tolerance=0; max abs diff=6.823708265102368e-14; PASS
+    persons_s30: float; changed=1; outside tolerance=0; max abs diff=3.5218545235693455e-07; PASS
+    dwell_s30: float; changed=1; outside tolerance=0; max abs diff=5.400943337008357e-08; PASS
+    s60: float; changed=1; outside tolerance=0; max abs diff=3.0962732378014834e-13; PASS
+    persons_s60: float; changed=1; outside tolerance=0; max abs diff=3.99566488340497e-07; PASS
+    dwell_s60: float; changed=1; outside tolerance=0; max abs diff=2.125161699950695e-07; PASS
+    s100: float; changed=1; outside tolerance=0; max abs diff=6.217942827291267e-14; PASS
+    persons_s100: float; changed=1; outside tolerance=0; max abs diff=7.088237907737494e-08; PASS
+    dwell_s100: float; changed=1; outside tolerance=0; max abs diff=4.0981831261888146e-08; PASS
+    s300: float; changed=1; outside tolerance=0; max abs diff=3.0742769441260975e-14; PASS
+    persons_s300: float; changed=1; outside tolerance=0; max abs diff=5.726178642362356e-08; PASS
+    dwell_s300: float; changed=1; outside tolerance=0; max abs diff=2.1807863959111273e-08; PASS
+  tables/fac_clusters_eastern-wa_drv_A.csv: bytes IDENTICAL; values PASS
+  tables/fac_eastern-wa_drv_A.csv: bytes DIFFERENT (informational); values FAIL
+    dist_m: float; changed=760; outside tolerance=3; max abs diff=8.569301712668675e-09; FAIL
+      row/index 3: expected 19.858658428141105; computed 19.85865842784968
+      row/index 13: expected 38.59564295843649; computed 38.59564295894744
+      row/index 17: expected 33.33957918165767; computed 33.33957918187565
+  work/eastern-wa_drv_A_nodes.npz: bytes DIFFERENT (informational); values FAIL
+    top_eq: float; changed=10; outside tolerance=10; max abs diff=0.6737855672836304; FAIL
+      row/index 49658: expected 0.0; computed 0.67378557
+      row/index 54987: expected 0.0; computed 0.67378557
+      row/index 122997: expected 0.0; computed 0.67378557
+    top_ar: float; changed=31; outside tolerance=31; max abs diff=1.647369146347046; FAIL
+      row/index 20163: expected 0.1774055; computed 0.17740552
+      row/index 21143: expected 11.598122; computed 11.598123
+      row/index 49658: expected 0.0; computed 1.6473691
+    top_str: exact; changed=10; outside tolerance=10; max abs diff=1.0; FAIL
+      row/index 49658: expected 0.0; computed 1.0
+      row/index 54987: expected 0.0; computed 1.0
+      row/index 122997: expected 0.0; computed 1.0
+    sub_eq: float; changed=247; outside tolerance=247; max abs diff=23.90113639831543; FAIL
+      row/index 858: expected 18.88421; computed 10.552941
+      row/index 2214: expected 0.0; computed 14.746675
+      row/index 2413: expected 161.62663; computed 150.51826
+    top_pers: float; changed=10; outside tolerance=10; max abs diff=0.9648241400718689; FAIL
+      row/index 49658: expected 0.0; computed 0.96482414
+      row/index 54987: expected 0.0; computed 0.96482414
+      row/index 122997: expected 0.0; computed 0.96482414
+    sub_pers: float; changed=247; outside tolerance=247; max abs diff=52.104209899902344; FAIL
+      row/index 858: expected 37.936844; computed 21.2
+      row/index 2214: expected 0.0; computed 40.122616
+      row/index 2413: expected 324.69473; computed 302.37894
+  work/eastern-wa_drv_A_tract.parquet: bytes DIFFERENT (informational); values FAIL
+    eq_r1k: float; changed=2; outside tolerance=2; max abs diff=0.0004618937644341736; FAIL
+      row/index 92: expected 0.30555555555555924; computed 0.3059116809116846
+      row/index 97: expected 0.1907621247113164; computed 0.19122401847575057
+    eq_r5k: float; changed=1; outside tolerance=1; max abs diff=0.00046189376443418056; FAIL
+      row/index 97: expected 0.018937644341801382; computed 0.019399538106235563
+    eq_spof: float; changed=1; outside tolerance=1; max abs diff=0.0004618937644341736; FAIL
+      row/index 97: expected 0.553810623556582; computed 0.5542725173210161
+    eq_pspof: float; changed=1; outside tolerance=1; max abs diff=0.0004618937644341736; FAIL
+      row/index 97: expected 0.5538106235565806; computed 0.5542725173210148
+    ar_den: float; changed=197; outside tolerance=0; max abs diff=9.145924195763655e-08; PASS
+    ar_isl: float; changed=48; outside tolerance=0; max abs diff=2.3184128228326273e-12; PASS
+    ar_spof: float; changed=194; outside tolerance=3; max abs diff=0.001300925221301541; FAIL
+      row/index 0: expected 0.4507333229592626; computed 0.4507333229845004
+      row/index 4: expected 0.26638963437410734; computed 0.2663896343782215
+      row/index 5: expected 0.3634479456662551; computed 0.36344794565801125
+    ar_s10: float; changed=187; outside tolerance=0; max abs diff=6.535660901363372e-11; PASS
+    ar_s30: float; changed=150; outside tolerance=1; max abs diff=6.66240465574397e-11; FAIL
+      row/index 0: expected 0.10743785930814065; computed 0.10743785930320399
+      row/index 4: expected 0.07026386905098957; computed 0.0702638690505957
+      row/index 5: expected 0.032021699740885624; computed 0.032021699741300404
+    ar_s60: float; changed=84; outside tolerance=1; max abs diff=4.458093269543717e-11; FAIL
+      row/index 0: expected 0.07402640554310899; computed 0.07402640553970752
+      row/index 4: expected 0.053373710071983174; computed 0.05337371007168398
+      row/index 8: expected 0.05443249875680012; computed 0.054432498757636116
+    ar_s100: float; changed=50; outside tolerance=0; max abs diff=2.887678984819786e-11; PASS
+    ar_s300: float; changed=3; outside tolerance=0; max abs diff=8.731043665832772e-12; PASS
+    ar_pden: float; changed=195; outside tolerance=0; max abs diff=1.7826278053689748e-07; PASS
+    ar_pspof: float; changed=193; outside tolerance=2; max abs diff=0.0013009252213027622; FAIL
+      row/index 0: expected 0.45073332295926455; computed 0.4507333229845014
+      row/index 4: expected 0.26638963437410784; computed 0.26638963437822094
+      row/index 5: expected 0.36344794566625627; computed 0.36344794565801103
+    ar_ps10: float; changed=185; outside tolerance=0; max abs diff=6.535677554708741e-11; PASS
+    ar_nps10: float; changed=185; outside tolerance=0; max abs diff=3.430537844906212e-07; PASS
+    ar_nds10: float; changed=186; outside tolerance=0; max abs diff=1.1856405990329222e-07; PASS
+    ar_ps30: float; changed=150; outside tolerance=1; max abs diff=6.662406737412141e-11; FAIL
+      row/index 0: expected 0.10743785930814106; computed 0.10743785930320418
+      row/index 4: expected 0.07026386905098954; computed 0.07026386905059559
+      row/index 5: expected 0.03202169974088572; computed 0.03202169974130039
+    ar_nps30: float; changed=149; outside tolerance=2; max abs diff=3.7446625356096774e-07; FAIL
+      row/index 0: expected 244.4438374737941; computed 244.44383746258106
+      row/index 4: expected 302.72378012672726; computed 302.7237801250687
+      row/index 5: expected 96.81922478963028; computed 96.81922479084716
+    ar_nds30: float; changed=149; outside tolerance=2; max abs diff=1.3364788031822172e-07; FAIL
+      row/index 0: expected 124.31347416942842; computed 124.31347416372589
+      row/index 4: expected 149.19908691662027; computed 149.1990869158028
+      row/index 5: expected 46.48317082326284; computed 46.483170823847
+    ar_ps60: float; changed=85; outside tolerance=1; max abs diff=4.4580908409308506e-11; FAIL
+      row/index 0: expected 0.07402640554310926; computed 0.07402640553970764
+      row/index 4: expected 0.05337371007198321; computed 0.053373710071683886
+      row/index 8: expected 0.054432498756800084; computed 0.05443249875763624
+    ar_nps60: float; changed=84; outside tolerance=1; max abs diff=3.8722993167539244e-07; FAIL
+      row/index 0: expected 168.4257184746216; computed 168.42571846689557
+      row/index 4: expected 229.95447718162887; computed 229.9544771803687
+      row/index 8: expected 182.01616133989592; computed 182.01616134267363
+    ar_nds60: float; changed=84; outside tolerance=1; max abs diff=1.3383189667592887e-07; FAIL
+      row/index 0: expected 85.65397442390807; computed 85.6539744199789
+      row/index 4: expected 113.33433407023801; computed 113.33433406961703
+      row/index 8: expected 61.64540223632837; computed 61.64540223726917
+    ar_ps100: float; changed=51; outside tolerance=0; max abs diff=2.8876234736685547e-11; PASS
+    ar_nps100: float; changed=51; outside tolerance=0; max abs diff=8.249605798482662e-08; PASS
+    ar_nds100: float; changed=51; outside tolerance=0; max abs diff=4.649888296626159e-08; PASS
+    ar_ps300: float; changed=3; outside tolerance=0; max abs diff=8.730627332198537e-12; PASS
+    ar_nps300: float; changed=3; outside tolerance=0; max abs diff=4.78008814752684e-08; PASS
+    ar_nds300: float; changed=3; outside tolerance=0; max abs diff=1.7383058548148256e-08; PASS
+    str_spof: float; changed=1; outside tolerance=1; max abs diff=0.0004618937644341736; FAIL
+      row/index 97: expected 0.553810623556582; computed 0.5542725173210161
+  work/eastern-wa_tracts.parquet: bytes IDENTICAL; values PASS
+Headline values (expected = committed summary, eq; also REPRODUCE.md step 1 for Eastern WA):
+  dwellings          expected 701,378 | computed 701,378 | abs diff 0 | PASS
+  islands %          expected 0.16 | computed 0.16 | abs diff 0 | PASS
+  single route %     expected 21.71 | computed 21.71 | abs diff 9.60659119364e-05 | FAIL
+  S10 %              expected 14.05 | computed 14.05 | abs diff 0 | PASS
+  S30 %              expected 7.52 | computed 7.52 | abs diff 0 | PASS
+  S30 dwellings      expected 52,721 | computed 52,721 | abs diff 0 | PASS
+  S30 persons        expected 112,860 | computed 112,860 | abs diff 0 | PASS
+  S100 %             expected 2.70 | computed 2.70 | abs diff 0 | PASS
+  S300 %             expected 0.38 | computed 0.38 | abs diff 0 | PASS
+Deleted 38; re-written and compared 7; bytes identical 2; values PASS 3; missing 0; commands failed False
+Not produced by this chain, explicitly not compared (31): tables/eastern-wa_drv_A_r25_summary.csv, tables/eastern-wa_drv_B_links.csv, tables/eastern-wa_drv_B_summary.csv, tables/eastern-wa_drvplus_A_links.csv, tables/eastern-wa_drvplus_A_summary.csv, tables/eastern-wa_drvplus_B_links.csv, tables/eastern-wa_drvplus_B_summary.csv, tables/fac_clusters_eastern-wa_drvplus_A.csv, tables/fac_eastern-wa_drvplus_A.csv, tables/named_eastern-wa_drv_A.md, tables/pinholes_eastern-wa_r50.csv, tables/resp_eastern-wa_broad.csv, tables/resp_eastern-wa.csv, tables/sens_nearmiss2_eastern-wa.csv, tables/validation_hays.csv, tables/validation_hays_repair.csv, tables/validation_hays_repair_metrics.csv, tables/validation_hays_repair_summary.txt, tables/validation_hays_summary.txt, tables/validation_tehama.csv, tables/validation_tehama_repair.csv, tables/validation_tehama_repair_summary.txt, tables/validation_tehama_summary.txt, work/cb_eastern-wa_conc.csv, work/cb_eastern-wa_link.parquet, work/cb_eastern-wa.log, work/cb_eastern-wa_prov.parquet, work/eastern-wa_drv_A_r25_tract.parquet, work/eastern-wa_drv_B_tract.parquet, work/eastern-wa_drvplus_A_tract.parquet, work/eastern-wa_drvplus_B_tract.parquet
+PREFLIGHT FAIL

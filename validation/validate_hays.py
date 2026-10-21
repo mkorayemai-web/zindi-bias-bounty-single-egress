@@ -15,7 +15,7 @@ from common import *
 
 rng = np.random.default_rng(SEED)
 region = "south-central-tx"
-H = pd.read_csv(f"{LANE}/ext/hays_table1.csv")
+H = pd.read_csv(f"{REPO_ROOT}/ext/hays_table1.csv")
 H.columns = ["rank", "name", "houses", "exits", "ratio", "fire_level", "lon", "lat"]
 H["lon"] = H.lon.astype(str).str.replace("\u2212", "-").astype(float); H["lat"] = H.lat.astype(float)
 tf = pyproj.Transformer.from_crs("EPSG:4326", CRS_M, always_xy=True)

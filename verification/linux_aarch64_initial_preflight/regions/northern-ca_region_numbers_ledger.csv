@@ -1,0 +1,64 @@
+id,printed,recomputed,tolerance,status,source,draft_text
+F1.10,10.7,10.653136729100533,0.05,OK,tables/northern-ca_drv_A_summary.csv (eq),N. California 10.7 %
+REPRO.s30,10.65,10.653136729100533,0.005,OK,tables/northern-ca_drv_A_summary.csv (eq),N-CA S30 10.65%
+SENS.01.spof,32.6,32.59992138658138,0.05,OK,tables/northern-ca_drvplus_A_summary.csv (eq),northern-ca | +service+track | A: motorway..secondary | none | ACS dwellings | single route 32.6%
+SENS.01.s30,7.7,7.660836496185897,0.05,OK,tables/northern-ca_drvplus_A_summary.csv (eq),northern-ca | +service+track | A: motorway..secondary | none | ACS dwellings | S30 7.7%
+SENS.01.s100,2.7,2.6843394401153122,0.05,OK,tables/northern-ca_drvplus_A_summary.csv (eq),northern-ca | +service+track | A: motorway..secondary | none | ACS dwellings | S100 2.7%
+SENS.01.s300,0.41,0.4110040026031671,0.005,OK,tables/northern-ca_drvplus_A_summary.csv (eq),northern-ca | +service+track | A: motorway..secondary | none | ACS dwellings | S300 0.41%
+SENS.02.spof,33.5,33.486720164029165,0.05,OK,tables/northern-ca_drvplus_A_summary.csv (ar),northern-ca | +service+track | A: motorway..secondary | none | area-weighted dwellings | single route 33.5%
+SENS.02.s30,8.4,8.409818900632006,0.05,OK,tables/northern-ca_drvplus_A_summary.csv (ar),northern-ca | +service+track | A: motorway..secondary | none | area-weighted dwellings | S30 8.4%
+SENS.02.s100,2.5,2.5494925032286258,0.05,OK,tables/northern-ca_drvplus_A_summary.csv (ar),northern-ca | +service+track | A: motorway..secondary | none | area-weighted dwellings | S100 2.5%
+SENS.02.s300,0.4,0.40002597964074876,0.005,OK,tables/northern-ca_drvplus_A_summary.csv (ar),northern-ca | +service+track | A: motorway..secondary | none | area-weighted dwellings | S300 0.40%
+SENS.03.spof,36.1,36.08646732216747,0.05,OK,tables/northern-ca_drvplus_A_summary.csv (str),northern-ca | +service+track | A: motorway..secondary | none | structure count | single route 36.1%
+SENS.03.s30,9.2,9.194432070246663,0.05,OK,tables/northern-ca_drvplus_A_summary.csv (str),northern-ca | +service+track | A: motorway..secondary | none | structure count | S30 9.2%
+SENS.03.s100,3.0,2.9593978332652116,0.05,OK,tables/northern-ca_drvplus_A_summary.csv (str),northern-ca | +service+track | A: motorway..secondary | none | structure count | S100 3.0%
+SENS.03.s300,0.56,0.5618447096860117,0.005,OK,tables/northern-ca_drvplus_A_summary.csv (str),northern-ca | +service+track | A: motorway..secondary | none | structure count | S300 0.56%
+SENS.04.spof,32.6,32.60848557148052,0.05,OK,tables/northern-ca_drvplus_B_summary.csv (eq),"northern-ca | +service+track | B: motorway,trunk | none | ACS dwellings | single route 32.6%"
+SENS.04.s30,7.7,7.67913527614858,0.05,OK,tables/northern-ca_drvplus_B_summary.csv (eq),"northern-ca | +service+track | B: motorway,trunk | none | ACS dwellings | S30 7.7%"
+SENS.04.s100,2.7,2.7022645818253004,0.05,OK,tables/northern-ca_drvplus_B_summary.csv (eq),"northern-ca | +service+track | B: motorway,trunk | none | ACS dwellings | S100 2.7%"
+SENS.04.s300,0.41,0.4110040026031671,0.005,OK,tables/northern-ca_drvplus_B_summary.csv (eq),"northern-ca | +service+track | B: motorway,trunk | none | ACS dwellings | S300 0.41%"
+SENS.05.spof,33.5,33.49150695400208,0.05,OK,tables/northern-ca_drvplus_B_summary.csv (ar),"northern-ca | +service+track | B: motorway,trunk | none | area-weighted dwellings | single route 33.5%"
+SENS.05.s30,8.4,8.422785333656119,0.05,OK,tables/northern-ca_drvplus_B_summary.csv (ar),"northern-ca | +service+track | B: motorway,trunk | none | area-weighted dwellings | S30 8.4%"
+SENS.05.s100,2.6,2.5589977872173777,0.05,OK,tables/northern-ca_drvplus_B_summary.csv (ar),"northern-ca | +service+track | B: motorway,trunk | none | area-weighted dwellings | S100 2.6%"
+SENS.05.s300,0.4,0.40002597964074876,0.005,OK,tables/northern-ca_drvplus_B_summary.csv (ar),"northern-ca | +service+track | B: motorway,trunk | none | area-weighted dwellings | S300 0.40%"
+SENS.06.spof,36.1,36.097121889164946,0.05,OK,tables/northern-ca_drvplus_B_summary.csv (str),"northern-ca | +service+track | B: motorway,trunk | none | structure count | single route 36.1%"
+SENS.06.s30,9.2,9.21390420993171,0.05,OK,tables/northern-ca_drvplus_B_summary.csv (str),"northern-ca | +service+track | B: motorway,trunk | none | structure count | S30 9.2%"
+SENS.06.s100,3.0,2.9795129209587277,0.05,OK,tables/northern-ca_drvplus_B_summary.csv (str),"northern-ca | +service+track | B: motorway,trunk | none | structure count | S100 3.0%"
+SENS.06.s300,0.59,0.5938084106784479,0.005,OK,tables/northern-ca_drvplus_B_summary.csv (str),"northern-ca | +service+track | B: motorway,trunk | none | structure count | S300 0.59%"
+SENS.07.spof,27.3,27.34706493816524,0.05,OK,tables/northern-ca_drv_A_summary.csv (eq),northern-ca | scored classes | A: motorway..secondary | none | ACS dwellings | single route 27.3%
+SENS.07.s30,10.7,10.653136729100533,0.05,OK,tables/northern-ca_drv_A_summary.csv (eq),northern-ca | scored classes | A: motorway..secondary | none | ACS dwellings | S30 10.7%
+SENS.07.s100,4.3,4.314465002816505,0.05,OK,tables/northern-ca_drv_A_summary.csv (eq),northern-ca | scored classes | A: motorway..secondary | none | ACS dwellings | S100 4.3%
+SENS.07.s300,1.24,1.235674475998514,0.005,OK,tables/northern-ca_drv_A_summary.csv (eq),northern-ca | scored classes | A: motorway..secondary | none | ACS dwellings | S300 1.24%
+SENS.08.spof,27.4,27.352869497359332,0.05,OK,tables/northern-ca_drv_A_summary.csv (ar),northern-ca | scored classes | A: motorway..secondary | none | area-weighted dwellings | single route 27.4%
+SENS.08.s30,11.1,11.084913797327452,0.05,OK,tables/northern-ca_drv_A_summary.csv (ar),northern-ca | scored classes | A: motorway..secondary | none | area-weighted dwellings | S30 11.1%
+SENS.08.s100,4.2,4.164660581040279,0.05,OK,tables/northern-ca_drv_A_summary.csv (ar),northern-ca | scored classes | A: motorway..secondary | none | area-weighted dwellings | S100 4.2%
+SENS.08.s300,1.15,1.1470896487594557,0.005,OK,tables/northern-ca_drv_A_summary.csv (ar),northern-ca | scored classes | A: motorway..secondary | none | area-weighted dwellings | S300 1.15%
+SENS.09.spof,30.3,30.330392412256753,0.05,OK,tables/northern-ca_drv_A_summary.csv (str),northern-ca | scored classes | A: motorway..secondary | none | structure count | single route 30.3%
+SENS.09.s30,13.1,13.072744920444949,0.05,OK,tables/northern-ca_drv_A_summary.csv (str),northern-ca | scored classes | A: motorway..secondary | none | structure count | S30 13.1%
+SENS.09.s100,5.0,5.039645420775442,0.05,OK,tables/northern-ca_drv_A_summary.csv (str),northern-ca | scored classes | A: motorway..secondary | none | structure count | S100 5.0%
+SENS.09.s300,1.46,1.4568637612208175,0.005,OK,tables/northern-ca_drv_A_summary.csv (str),northern-ca | scored classes | A: motorway..secondary | none | structure count | S300 1.46%
+SENS.10.spof,26.3,26.272060735775405,0.05,OK,tables/northern-ca_drv_A_r25_summary.csv (eq),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | single route 26.3%
+SENS.10.s30,9.8,9.84455114701997,0.05,OK,tables/northern-ca_drv_A_r25_summary.csv (eq),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S30 9.8%
+SENS.10.s100,3.8,3.843793923792004,0.05,OK,tables/northern-ca_drv_A_r25_summary.csv (eq),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S100 3.8%
+SENS.10.s300,1.11,1.1101806148641886,0.005,OK,tables/northern-ca_drv_A_r25_summary.csv (eq),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S300 1.11%
+SENS.11.spof,26.4,26.357447547373337,0.05,OK,tables/northern-ca_drv_A_r25_summary.csv (ar),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | single route 26.4%
+SENS.11.s30,10.3,10.323316847373206,0.05,OK,tables/northern-ca_drv_A_r25_summary.csv (ar),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S30 10.3%
+SENS.11.s100,3.8,3.7856324220739723,0.05,OK,tables/northern-ca_drv_A_r25_summary.csv (ar),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S100 3.8%
+SENS.11.s300,1.09,1.0867351241045164,0.005,OK,tables/northern-ca_drv_A_r25_summary.csv (ar),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S300 1.09%
+SENS.12.spof,29.4,29.415761940210643,0.05,OK,tables/northern-ca_drv_A_r25_summary.csv (str),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | single route 29.4%
+SENS.12.s30,12.4,12.367628422331965,0.05,OK,tables/northern-ca_drv_A_r25_summary.csv (str),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S30 12.4%
+SENS.12.s100,4.8,4.7545766288089135,0.05,OK,tables/northern-ca_drv_A_r25_summary.csv (str),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S100 4.8%
+SENS.12.s300,1.38,1.3750049829097781,0.005,OK,tables/northern-ca_drv_A_r25_summary.csv (str),northern-ca | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S300 1.38%
+SENS.13.spof,27.4,27.386183668977033,0.05,OK,tables/northern-ca_drv_B_summary.csv (eq),"northern-ca | scored classes | B: motorway,trunk | none | ACS dwellings | single route 27.4%"
+SENS.13.s30,10.7,10.713727051326881,0.05,OK,tables/northern-ca_drv_B_summary.csv (eq),"northern-ca | scored classes | B: motorway,trunk | none | ACS dwellings | S30 10.7%"
+SENS.13.s100,4.3,4.346984215540151,0.05,OK,tables/northern-ca_drv_B_summary.csv (eq),"northern-ca | scored classes | B: motorway,trunk | none | ACS dwellings | S100 4.3%"
+SENS.13.s300,1.24,1.235674475998514,0.005,OK,tables/northern-ca_drv_B_summary.csv (eq),"northern-ca | scored classes | B: motorway,trunk | none | ACS dwellings | S300 1.24%"
+SENS.14.spof,27.4,27.40162966218277,0.05,OK,tables/northern-ca_drv_B_summary.csv (ar),"northern-ca | scored classes | B: motorway,trunk | none | area-weighted dwellings | single route 27.4%"
+SENS.14.s30,11.2,11.150988370426715,0.05,OK,tables/northern-ca_drv_B_summary.csv (ar),"northern-ca | scored classes | B: motorway,trunk | none | area-weighted dwellings | S30 11.2%"
+SENS.14.s100,4.2,4.200768821831119,0.05,OK,tables/northern-ca_drv_B_summary.csv (ar),"northern-ca | scored classes | B: motorway,trunk | none | area-weighted dwellings | S100 4.2%"
+SENS.14.s300,1.15,1.1470896487594557,0.005,OK,tables/northern-ca_drv_B_summary.csv (ar),"northern-ca | scored classes | B: motorway,trunk | none | area-weighted dwellings | S300 1.15%"
+SENS.15.spof,30.4,30.37303684942898,0.05,OK,tables/northern-ca_drv_B_summary.csv (str),"northern-ca | scored classes | B: motorway,trunk | none | structure count | single route 30.4%"
+SENS.15.s30,13.1,13.131983605995066,0.05,OK,tables/northern-ca_drv_B_summary.csv (str),"northern-ca | scored classes | B: motorway,trunk | none | structure count | S30 13.1%"
+SENS.15.s100,5.1,5.092116619556925,0.05,OK,tables/northern-ca_drv_B_summary.csv (str),"northern-ca | scored classes | B: motorway,trunk | none | structure count | S100 5.1%"
+SENS.15.s300,1.49,1.4939458805010166,0.005,OK,tables/northern-ca_drv_B_summary.csv (str),"northern-ca | scored classes | B: motorway,trunk | none | structure count | S300 1.49%"
+EXEC.required_steps,0.0,0.0,0.0,OK,quick rebuild command status,all required commands exited zero

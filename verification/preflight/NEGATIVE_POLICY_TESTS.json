@@ -1,0 +1,29 @@
+{
+  "test_fixtures_not_scientific_sources": true,
+  "wrong_documents": {
+    "computational_exit": 0,
+    "computed": 193,
+    "source_failed": 9
+  },
+  "wrong_computation": {
+    "raw_ledger_exit": 1,
+    "headline_exit": 1,
+    "computed_summary": {
+      "total": 193,
+      "passed": 192,
+      "failed": 1,
+      "unverified": 0,
+      "all_pass": false
+    },
+    "quoted_summary": {
+      "total": 9,
+      "passed": 0,
+      "failed": 0,
+      "unverified": 9,
+      "all_pass": false
+    },
+    "failing_ids": [
+      "F1.03"
+    ]
+  }
+}

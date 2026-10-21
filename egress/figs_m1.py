@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import PowerNorm
 import os as _os; sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 from common import *
-FIG = f"{LANE}/figs"
+FIG = f"{REPO_ROOT}/figs"
 import os; os.makedirs(FIG, exist_ok=True)
 plt.rcParams.update({"font.size": 9, "axes.spines.top": False, "axes.spines.right": False})
 
@@ -31,7 +31,7 @@ def region_map(region, label, fn, nlabel=8, ntop=40, bounds=None):
     fig.tight_layout(); fig.savefig(f"{FIG}/{fn}", dpi=170); plt.close(fig)
     print("wrote", fn)
 
-# fig1 maps (all five regions, incl. northern-ca) are now drawn by figs_regions.py (lead review 2026-10-14 21:15Z); this older region_map() is kept for reference only and is no longer called
+# fig1 maps (all five regions, incl. northern-ca) are now drawn by figs_regions.py (layout review 2026-10-14 21:15Z); this older region_map() is kept for reference only and is no longer called
 
 # ---------------- Fig 2: effect sizes forest -------------------------------------------------------------------------------------------------
 C = pd.read_csv(f"{OUT}/stats_contrasts_drv_A.csv")

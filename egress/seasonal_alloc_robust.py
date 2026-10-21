@@ -7,7 +7,7 @@ import sys, numpy as np, pandas as pd
 import os as _os; sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 from common import *
 C = pd.read_csv(f"{OUT}/seasonal_clusters.csv", dtype={"tract": str}); C = C[(C.load_dwell >= 100) & C.seas_share.notna() & (C.load_persons > 0)].copy()
-T = pd.read_parquet(f"{LANE}/ext/acs_b25004_seasonal.parquet")[["GEOID", "seasonal_units"]].rename(columns={"GEOID": "tract", "seasonal_units": "tract_seasonal_units"})
+T = pd.read_parquet(f"{REPO_ROOT}/ext/acs_b25004_seasonal.parquet")[["GEOID", "seasonal_units"]].rename(columns={"GEOID": "tract", "seasonal_units": "tract_seasonal_units"})
 T["tract"] = T.tract.astype(str).str[-11:]
 C = C.merge(T, on="tract", how="left")
 C["tract_hu"] = np.where(C.seas_share > 0, C.tract_seasonal_units / C.seas_share, np.nan)

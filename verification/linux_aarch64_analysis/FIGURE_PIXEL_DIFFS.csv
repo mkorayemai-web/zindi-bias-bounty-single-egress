@@ -1,0 +1,14 @@
+file,status,expected_size,computed_size,different_pixels,compared_canvas_pixels,max_channel_abs_diff
+fig1_eastern-ok_map.png,REBUILT,"[823, 760]","[823, 760]",36,625480,1
+fig1_eastern-wa_map.png,REBUILT,"[823, 818]","[823, 818]",1,673214,1
+fig1_maricopa-az_map.png,REBUILT,"[823, 826]","[823, 826]",0,679798,0
+fig1_northern-ca_map.png,REBUILT,"[823, 881]","[823, 881]",3,725063,1
+fig1_south-central-tx_map.png,REBUILT,"[823, 884]","[823, 884]",5,727532,1
+fig2_effects_forest.png,REBUILT,"[1201, 553]","[1201, 553]",0,664153,0
+fig3_validation.png,REBUILT,"[1564, 663]","[1564, 663]",0,1036932,0
+fig4_seasonal.png,REBUILT,"[882, 591]","[882, 591]",0,521262,0
+fig5_region_bars.png,REBUILT,"[1292, 714]","[1292, 714]",0,922488,0
+fig6_pinholes_sweep.png,REBUILT,"[2584, 748]","[2584, 748]",12759,1932832,253
+fig7_pinhole_cases.png,REBUILT,"[2244, 816]","[2244, 816]",0,1831104,0
+fig8_seasonal_load.png,REBUILT,"[2210, 850]","[2210, 850]",0,1878500,0
+fig9_resort_clusters.png,REBUILT,"[2550, 952]","[2550, 952]",10,2427600,1

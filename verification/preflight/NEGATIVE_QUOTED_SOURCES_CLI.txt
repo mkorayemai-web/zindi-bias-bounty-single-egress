@@ -1,0 +1,6 @@
+Full scope: every printed number computed from the data; quoted external documents are counted separately, never silently passed.
+Computed checks: 193 PASS; 0 FAIL; 0 UNVERIFIED. Every check: <scratch>/audit/finding_audit/EVERY_LEDGER_CHECK.md
+Quoted-document checks: <scratch>/audit/finding_audit/QUOTED_SOURCE_CHECKS.csv; PNG pixel differences: <scratch>/audit/finding_audit/FIGURE_PIXEL_DIFFS.csv
+HEADLINE (every printed number computed from the data): PASS 193/193
+FULL INTERMEDIATES (strict, informational): 44 of 206 files identical; differences explained in <scratch>/audit/finding_audit/FULL_INTERMEDIATES.md
+QUOTED SOURCES (not shipped; verify at the SOURCES.md URLs, or pass --sources DIR): 0 PASS; 9 FAIL; 0 SKIPPED (9 checks)

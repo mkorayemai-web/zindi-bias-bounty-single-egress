@@ -1,0 +1,52 @@
+id,printed,recomputed,tolerance,status,source,draft_text
+F1.13,10.5,10.546514074161328,0.05,OK,tables/south-central-tx_drv_A_summary.csv (eq),S-C Texas 10.5 %
+REPRO.s30,10.55,10.546514074161326,0.005,OK,tables/south-central-tx_drv_A_summary.csv (eq),S-C Texas S30 10.55%
+SENS.01.spof,26.4,26.426569283374647,0.05,OK,tables/south-central-tx_drvplus_A_summary.csv (eq),south-central-tx | +service+track | A: motorway..secondary | none | ACS dwellings | single route 26.4%
+SENS.01.s30,9.5,9.54236615491163,0.05,OK,tables/south-central-tx_drvplus_A_summary.csv (eq),south-central-tx | +service+track | A: motorway..secondary | none | ACS dwellings | S30 9.5%
+SENS.01.s100,4.4,4.432688080461972,0.05,OK,tables/south-central-tx_drvplus_A_summary.csv (eq),south-central-tx | +service+track | A: motorway..secondary | none | ACS dwellings | S100 4.4%
+SENS.01.s300,1.5,1.4968950445976232,0.005,OK,tables/south-central-tx_drvplus_A_summary.csv (eq),south-central-tx | +service+track | A: motorway..secondary | none | ACS dwellings | S300 1.50%
+SENS.02.spof,27.3,27.332970757100796,0.05,OK,tables/south-central-tx_drvplus_A_summary.csv (ar),south-central-tx | +service+track | A: motorway..secondary | none | area-weighted dwellings | single route 27.3%
+SENS.02.s30,10.2,10.195699264883418,0.05,OK,tables/south-central-tx_drvplus_A_summary.csv (ar),south-central-tx | +service+track | A: motorway..secondary | none | area-weighted dwellings | S30 10.2%
+SENS.02.s100,4.3,4.280347656689561,0.05,OK,tables/south-central-tx_drvplus_A_summary.csv (ar),south-central-tx | +service+track | A: motorway..secondary | none | area-weighted dwellings | S100 4.3%
+SENS.02.s300,1.15,1.1501771099467348,0.005,OK,tables/south-central-tx_drvplus_A_summary.csv (ar),south-central-tx | +service+track | A: motorway..secondary | none | area-weighted dwellings | S300 1.15%
+SENS.03.spof,30.0,30.018324623937108,0.05,OK,tables/south-central-tx_drvplus_A_summary.csv (str),south-central-tx | +service+track | A: motorway..secondary | none | structure count | single route 30.0%
+SENS.03.s30,9.9,9.918864325916026,0.05,OK,tables/south-central-tx_drvplus_A_summary.csv (str),south-central-tx | +service+track | A: motorway..secondary | none | structure count | S30 9.9%
+SENS.03.s100,4.5,4.4526478480331635,0.05,OK,tables/south-central-tx_drvplus_A_summary.csv (str),south-central-tx | +service+track | A: motorway..secondary | none | structure count | S100 4.5%
+SENS.03.s300,1.43,1.4305572691130997,0.005,OK,tables/south-central-tx_drvplus_A_summary.csv (str),south-central-tx | +service+track | A: motorway..secondary | none | structure count | S300 1.43%
+SENS.04.spof,20.8,20.82084150633816,0.05,OK,tables/south-central-tx_drv_A_summary.csv (eq),south-central-tx | scored classes | A: motorway..secondary | none | ACS dwellings | single route 20.8%
+SENS.04.s30,10.5,10.546514074161326,0.05,OK,tables/south-central-tx_drv_A_summary.csv (eq),south-central-tx | scored classes | A: motorway..secondary | none | ACS dwellings | S30 10.5%
+SENS.04.s100,5.3,5.346734750413314,0.05,OK,tables/south-central-tx_drv_A_summary.csv (eq),south-central-tx | scored classes | A: motorway..secondary | none | ACS dwellings | S100 5.3%
+SENS.04.s300,1.92,1.9224994230505725,0.005,OK,tables/south-central-tx_drv_A_summary.csv (eq),south-central-tx | scored classes | A: motorway..secondary | none | ACS dwellings | S300 1.92%
+SENS.05.spof,20.2,20.19164389961264,0.05,OK,tables/south-central-tx_drv_A_summary.csv (ar),south-central-tx | scored classes | A: motorway..secondary | none | area-weighted dwellings | single route 20.2%
+SENS.05.s30,10.5,10.450647086155104,0.05,OK,tables/south-central-tx_drv_A_summary.csv (ar),south-central-tx | scored classes | A: motorway..secondary | none | area-weighted dwellings | S30 10.5%
+SENS.05.s100,5.0,4.981038251141406,0.05,OK,tables/south-central-tx_drv_A_summary.csv (ar),south-central-tx | scored classes | A: motorway..secondary | none | area-weighted dwellings | S100 5.0%
+SENS.05.s300,1.54,1.5413328324745967,0.005,OK,tables/south-central-tx_drv_A_summary.csv (ar),south-central-tx | scored classes | A: motorway..secondary | none | area-weighted dwellings | S300 1.54%
+SENS.06.spof,23.1,23.08859703471321,0.05,OK,tables/south-central-tx_drv_A_summary.csv (str),south-central-tx | scored classes | A: motorway..secondary | none | structure count | single route 23.1%
+SENS.06.s30,11.7,11.689093477308125,0.05,OK,tables/south-central-tx_drv_A_summary.csv (str),south-central-tx | scored classes | A: motorway..secondary | none | structure count | S30 11.7%
+SENS.06.s100,5.6,5.599834984524062,0.05,OK,tables/south-central-tx_drv_A_summary.csv (str),south-central-tx | scored classes | A: motorway..secondary | none | structure count | S100 5.6%
+SENS.06.s300,1.92,1.9178458939442784,0.005,OK,tables/south-central-tx_drv_A_summary.csv (str),south-central-tx | scored classes | A: motorway..secondary | none | structure count | S300 1.92%
+SENS.07.spof,20.3,20.318513378220864,0.05,OK,tables/south-central-tx_drv_A_r25_summary.csv (eq),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | single route 20.3%
+SENS.07.s30,10.2,10.217253186488774,0.05,OK,tables/south-central-tx_drv_A_r25_summary.csv (eq),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S30 10.2%
+SENS.07.s100,5.1,5.137861744426645,0.05,OK,tables/south-central-tx_drv_A_r25_summary.csv (eq),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S100 5.1%
+SENS.07.s300,1.85,1.8499767724772802,0.005,OK,tables/south-central-tx_drv_A_r25_summary.csv (eq),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | ACS dwellings | S300 1.85%
+SENS.08.spof,19.7,19.713323658369582,0.05,OK,tables/south-central-tx_drv_A_r25_summary.csv (ar),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | single route 19.7%
+SENS.08.s30,10.1,10.137736576347843,0.05,OK,tables/south-central-tx_drv_A_r25_summary.csv (ar),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S30 10.1%
+SENS.08.s100,4.8,4.7992118549239375,0.05,OK,tables/south-central-tx_drv_A_r25_summary.csv (ar),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S100 4.8%
+SENS.08.s300,1.48,1.4808985674876407,0.005,OK,tables/south-central-tx_drv_A_r25_summary.csv (ar),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | area-weighted dwellings | S300 1.48%
+SENS.09.spof,22.6,22.640532586109803,0.05,OK,tables/south-central-tx_drv_A_r25_summary.csv (str),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | single route 22.6%
+SENS.09.s30,11.4,11.404208449278158,0.05,OK,tables/south-central-tx_drv_A_r25_summary.csv (str),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S30 11.4%
+SENS.09.s100,5.4,5.417663866267848,0.05,OK,tables/south-central-tx_drv_A_r25_summary.csv (str),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S100 5.4%
+SENS.09.s300,1.84,1.8448148792396744,0.005,OK,tables/south-central-tx_drv_A_r25_summary.csv (str),south-central-tx | scored classes | A: motorway..secondary | snap dead ends <=25 m | structure count | S300 1.84%
+SENS.10.spof,20.9,20.944255634686858,0.05,OK,tables/south-central-tx_drv_B_summary.csv (eq),"south-central-tx | scored classes | B: motorway,trunk | none | ACS dwellings | single route 20.9%"
+SENS.10.s30,10.7,10.68913159251266,0.05,OK,tables/south-central-tx_drv_B_summary.csv (eq),"south-central-tx | scored classes | B: motorway,trunk | none | ACS dwellings | S30 10.7%"
+SENS.10.s100,5.5,5.5047699874199925,0.05,OK,tables/south-central-tx_drv_B_summary.csv (eq),"south-central-tx | scored classes | B: motorway,trunk | none | ACS dwellings | S100 5.5%"
+SENS.10.s300,2.1,2.1034420743495037,0.005,OK,tables/south-central-tx_drv_B_summary.csv (eq),"south-central-tx | scored classes | B: motorway,trunk | none | ACS dwellings | S300 2.10%"
+SENS.11.spof,20.3,20.3240426075864,0.05,OK,tables/south-central-tx_drv_B_summary.csv (ar),"south-central-tx | scored classes | B: motorway,trunk | none | area-weighted dwellings | single route 20.3%"
+SENS.11.s30,10.6,10.601265317841436,0.05,OK,tables/south-central-tx_drv_B_summary.csv (ar),"south-central-tx | scored classes | B: motorway,trunk | none | area-weighted dwellings | S30 10.6%"
+SENS.11.s100,5.1,5.149123752874886,0.05,OK,tables/south-central-tx_drv_B_summary.csv (ar),"south-central-tx | scored classes | B: motorway,trunk | none | area-weighted dwellings | S100 5.1%"
+SENS.11.s300,1.73,1.729310951546412,0.005,OK,tables/south-central-tx_drv_B_summary.csv (ar),"south-central-tx | scored classes | B: motorway,trunk | none | area-weighted dwellings | S300 1.73%"
+SENS.12.spof,23.2,23.210579963032174,0.05,OK,tables/south-central-tx_drv_B_summary.csv (str),"south-central-tx | scored classes | B: motorway,trunk | none | structure count | single route 23.2%"
+SENS.12.s30,11.8,11.830201982346901,0.05,OK,tables/south-central-tx_drv_B_summary.csv (str),"south-central-tx | scored classes | B: motorway,trunk | none | structure count | S30 11.8%"
+SENS.12.s100,5.8,5.7641715024890505,0.05,OK,tables/south-central-tx_drv_B_summary.csv (str),"south-central-tx | scored classes | B: motorway,trunk | none | structure count | S100 5.8%"
+SENS.12.s300,2.09,2.0904064098987867,0.005,OK,tables/south-central-tx_drv_B_summary.csv (str),"south-central-tx | scored classes | B: motorway,trunk | none | structure count | S300 2.09%"
+EXEC.required_steps,0.0,0.0,0.0,OK,quick rebuild command status,all required commands exited zero

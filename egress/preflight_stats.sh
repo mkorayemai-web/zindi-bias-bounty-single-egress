@@ -3,20 +3,20 @@
 #   Level 1 = preflight.sh REGION  (graph build from the challenge package, about 1 minute for a small region)
 #   Level 2 = this script          (needs NO graph or building files; reads work/<region>_<tag>_tract.parquet, work/<region>_tracts.parquet, work/cb_<region>_*, work/<region>_drv_A_nodes.npz, tables/, ext/
 #                                   and the challenge data package for tract polygons / strata tables)
-# usage: PY=/path/to/python sh egress/preflight_stats.sh      scratch: $PREFLIGHT_DIR or $TMPDIR/preflight_stats; the lane / clone itself is never written
+# usage: PY=/path/to/python sh egress/preflight_stats.sh      scratch: $PREFLIGHT_DIR or $TMPDIR/preflight_stats; <repo> / clone itself is never written
 # Every output starts with an old time stamp; only files a step actually RE-WRITES are compared (a step that writes nothing is reported). PASS = all required steps exit 0 and every re-written file is byte-identical.
 set -u
-LANE=$(cd "$(dirname "$0")/.." && pwd); PY=${PY:-python3}; SCR=${PREFLIGHT_DIR:-${TMPDIR:-/tmp}/preflight_stats}
+REPO_ROOT=$(cd "$(dirname "$0")/.." && pwd); PY=${PY:-python3}; SCR=${PREFLIGHT_DIR:-${TMPDIR:-/tmp}/preflight_stats}
 cpc() { cp -c -R "$1" "$2" 2>/dev/null || cp -R "$1" "$2"; }
 rm -rf "$SCR"; mkdir -p "$SCR/work"
-for d in egress validation ext tables figs; do [ -d "$LANE/$d" ] && { cpc "$LANE/$d" "$SCR/$d" || { echo "PREFLIGHT-STATS FAIL: cannot copy $d"; exit 3; }; }; done
-for f in DISCOVERY_DRAFT.md SOURCES.md NOVELTY.md PREFLIGHT_eastern-wa.txt; do [ -f "$LANE/$f" ] && cp "$LANE/$f" "$SCR/$f"; done
-for f in "$LANE"/work/*_tract.parquet "$LANE"/work/*_tracts.parquet "$LANE"/work/cb_* "$LANE"/work/*_drv_A_nodes.npz; do [ -e "$f" ] && cpc "$f" "$SCR/work/"; done
+for d in egress validation ext tables figs verification; do [ -d "$REPO_ROOT/$d" ] && { cpc "$REPO_ROOT/$d" "$SCR/$d" || { echo "PREFLIGHT-STATS FAIL: cannot copy $d"; exit 3; }; }; done
+for f in DISCOVERY_DRAFT.md SOURCES.md NOVELTY.md; do [ -f "$REPO_ROOT/$f" ] && cp "$REPO_ROOT/$f" "$SCR/$f"; done
+for f in "$REPO_ROOT"/work/*_tract.parquet "$REPO_ROOT"/work/*_tracts.parquet "$REPO_ROOT"/work/cb_* "$REPO_ROOT"/work/*_drv_A_nodes.npz; do [ -e "$f" ] && cpc "$f" "$SCR/work/"; done
 rm -f "$SCR"/ext/*.dat                                   # the raw national Census files are not redistributed: the steps must run without them
-BIAS_BOUNTY_ROOT=${BIAS_BOUNTY_ROOT:-$(PYTHONDONTWRITEBYTECODE=1 "$PY" -c 'import sys; sys.path.insert(0, sys.argv[1]); import common; print(common.ROOT)' "$LANE/egress")} || { echo "PREFLIGHT-STATS FAIL: cannot locate the data root"; exit 3; }
+BIAS_BOUNTY_ROOT=${BIAS_BOUNTY_ROOT:-$(PYTHONDONTWRITEBYTECODE=1 "$PY" -c 'import sys; sys.path.insert(0, sys.argv[1]); import common; print(common.ROOT)' "$REPO_ROOT/egress")} || { echo "PREFLIGHT-STATS FAIL: cannot locate the data root"; exit 3; }
 export BIAS_BOUNTY_ROOT   # the copy derives its own repository root from its location; only the (unchanged) challenge data root is passed on
 find "$SCR/egress" "$SCR/validation" -name __pycache__ -type d -prune -exec rm -rf {} + 2>/dev/null
-LEFT=$(grep -rl "$LANE" "$SCR/egress" "$SCR/validation" 2>/dev/null | wc -l | tr -d ' '); echo "scripts in the copy that still point at the real lane: $LEFT"; [ "$LEFT" = "0" ] || { echo "PREFLIGHT-STATS FAIL: path patch incomplete"; exit 3; }
+LEFT=$(grep -rl "$REPO_ROOT" "$SCR/egress" "$SCR/validation" 2>/dev/null | wc -l | tr -d ' '); echo "scripts in the copy that still point at the <repo>: $LEFT"; [ "$LEFT" = "0" ] || { echo "PREFLIGHT-STATS FAIL: path patch incomplete"; exit 3; }
 find "$SCR/tables" "$SCR/figs" "$SCR/ext" -type f -exec touch -t 200001010000 {} + 2>/dev/null; touch -t 200001010000 "$SCR"/*.md 2>/dev/null
 echo "intermediates shipped for this run: $(ls "$SCR/work" | wc -l | tr -d ' ') files, $(du -sk "$SCR/work" | cut -f1) KB"
 : > "$SCR/totals.txt"; REQFAIL=0; OPTFAIL=0
@@ -64,9 +64,9 @@ echo "$STEPS" | while IFS= read -r line; do
   ( cd "$SCR/egress" && "$PY" "$scr" "$@" > "$SCR/log_${scr}_$$.txt" 2>&1 ); rc=$?
   t1=$(date +%s)
   SK=0; [ "$scr" = "numbers_ledger.py" ] && SK=$(grep -o 'SKIPPED-NO-SOURCE [0-9]*' "$SCR/log_${scr}_$$.txt" | awk '{print $2}'); SK=${SK:-0}
-  SCR="$SCR" LANE="$LANE" STEP="$scr $*" RC=$rc SECS=$((t1 - t0)) OPT=$OPT LEDGER_SKIPS=$SK "$PY" - <<'PYEOF'
+  SCR="$SCR" REPO_ROOT="$REPO_ROOT" STEP="$scr $*" RC=$rc SECS=$((t1 - t0)) OPT=$OPT LEDGER_SKIPS=$SK "$PY" - <<'PYEOF'
 import os, sys, hashlib
-S, L = os.environ["SCR"], os.environ["LANE"]; mark = os.path.getmtime(f"{S}/.mark")
+S, L = os.environ["SCR"], os.environ["REPO_ROOT"]; mark = os.path.getmtime(f"{S}/.mark")
 new = []
 for top in ("tables", "figs", "ext"):
     for dp, _, fs in os.walk(f"{S}/{top}"):

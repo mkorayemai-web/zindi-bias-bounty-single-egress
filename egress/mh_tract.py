@@ -6,7 +6,7 @@ from common import *
 TAG = sys.argv[1]; B = int(sys.argv[2]) if len(sys.argv) > 2 else 2000
 rng = np.random.default_rng(SEED)
 pd.set_option("display.width", 250); pd.set_option("display.max_columns", 30)
-EXT = f"{LANE}/ext/acs_tract_ext.parquet"
+EXT = f"{REPO_ROOT}/ext/acs_tract_ext.parquet"
 A = pd.read_parquet(EXT)
 DS = []
 for region in regions_for(TAG):

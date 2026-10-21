@@ -9,7 +9,7 @@ B = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
 rng = np.random.default_rng(SEED)
 pd.set_option("display.width", 250); pd.set_option("display.max_columns", 30)
 import os
-RAW, PQ = f"{LANE}/ext/acsdt5y2024-b25004.dat", f"{LANE}/ext/acs_b25004_seasonal.parquet"
+RAW, PQ = f"{REPO_ROOT}/ext/acsdt5y2024-b25004.dat", f"{REPO_ROOT}/ext/acs_b25004_seasonal.parquet"
 if os.path.exists(RAW):      # extraction from the national Census file (SOURCES.md row 8); the repository ships the extract (PQ) instead of the 100+ MB raw file
     keep = ("1400000US04", "1400000US06", "1400000US35", "1400000US40", "1400000US48", "1400000US53")
     out = []
@@ -20,7 +20,7 @@ if os.path.exists(RAW):      # extraction from the national Census file (SOURCES
     A = A[["GEOID", "vacant_total", "seasonal_units"]]; A.to_parquet(PQ)
 else:
     A = pd.read_parquet(PQ)
-cn = pd.read_csv(f"{LANE}/ext/national_county2020.txt", sep="|", dtype=str); cn["code"] = cn.STATEFP + cn.COUNTYFP
+cn = pd.read_csv(f"{REPO_ROOT}/ext/national_county2020.txt", sep="|", dtype=str); cn["code"] = cn.STATEFP + cn.COUNTYFP
 CNAME = dict(zip(cn.code, cn.COUNTYNAME + ", " + cn.STATE))
 DS = []
 for region in regions_for("drv_A"):

@@ -1,0 +1,16 @@
+{
+  "scope": "quick northern-ca: printed region draft / REPRODUCE / sensitivity cells ONLY; no pooled or other-region claim",
+  "region": "northern-ca",
+  "total": 63,
+  "passed": 63,
+  "failed": 0,
+  "unverified": 0,
+  "all_pass": true,
+  "required_configurations": [
+    "northern-ca_drv_A",
+    "northern-ca_drv_A_r25",
+    "northern-ca_drv_B",
+    "northern-ca_drvplus_A",
+    "northern-ca_drvplus_B"
+  ]
+}

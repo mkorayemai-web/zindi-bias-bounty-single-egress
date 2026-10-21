@@ -6,7 +6,7 @@ import sys, numpy as np, pandas as pd
 from scipy.spatial import cKDTree
 from common import *
 THR = 800.0
-A = pd.read_parquet(f"{LANE}/ext/acs_tract_ext.parquet").set_index("GEOID")
+A = pd.read_parquet(f"{REPO_ROOT}/ext/acs_tract_ext.parquet").set_index("GEOID")
 c = con(threads=2)
 rows = []
 for region in ALLREG:

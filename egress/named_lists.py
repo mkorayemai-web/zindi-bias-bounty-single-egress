@@ -4,7 +4,7 @@ Writes tables/named_<region>_<TAG>.md and prints it."""
 import sys, numpy as np, pandas as pd
 from common import *
 region, TAG = sys.argv[1], sys.argv[2]
-cn = pd.read_csv(f"{LANE}/ext/national_county2020.txt", sep="|", dtype=str)
+cn = pd.read_csv(f"{REPO_ROOT}/ext/national_county2020.txt", sep="|", dtype=str)
 cn["code"] = cn.STATEFP + cn.COUNTYFP
 CNAME = dict(zip(cn.code, cn.COUNTYNAME + ", " + cn.STATE))
 def county(g):

@@ -1,0 +1,35 @@
+START 2026-10-21T16:42:06Z acs_ext: <scratch>/full-rebuild/timed-python acs_ext.py
+END 2026-10-21T16:42:07Z acs_ext: exit=1 seconds=0.228 log=<scratch>/full-rebuild/logs/acs_ext.log
+START 2026-10-21T16:42:07Z stage_all: sh <scratch>/full-rebuild/egress/run_stage_all.sh
+END 2026-10-21T16:58:43Z stage_all: exit=0 seconds=996.818 log=<scratch>/full-rebuild/logs/stage_all.log
+START 2026-10-21T16:58:43Z stage_wa: sh <scratch>/full-rebuild/egress/run_stage_wa.sh
+END 2026-10-21T17:00:39Z stage_wa: exit=0 seconds=115.753 log=<scratch>/full-rebuild/logs/stage_wa.log
+START 2026-10-21T17:00:39Z finalize_m1: sh <scratch>/full-rebuild/egress/finalize_m1.sh
+END 2026-10-21T17:06:51Z finalize_m1: exit=0 seconds=371.632 log=<scratch>/full-rebuild/logs/finalize_m1.log
+START 2026-10-21T17:06:51Z validate_tehama: <scratch>/full-rebuild/timed-python ../validation/validate_tehama.py
+END 2026-10-21T17:07:03Z validate_tehama: exit=0 seconds=12.188 log=<scratch>/full-rebuild/logs/validate_tehama.log
+START 2026-10-21T17:07:03Z validate_hays: <scratch>/full-rebuild/timed-python ../validation/validate_hays.py
+END 2026-10-21T17:07:05Z validate_hays: exit=0 seconds=1.764 log=<scratch>/full-rebuild/logs/validate_hays.log
+START 2026-10-21T17:07:05Z coverage_northern-ca: <scratch>/full-rebuild/timed-python coverage_bridge.py northern-ca
+END 2026-10-21T17:07:15Z coverage_northern-ca: exit=0 seconds=10.590 log=<scratch>/full-rebuild/logs/coverage_northern-ca.log
+START 2026-10-21T17:07:15Z latent_northern-ca: <scratch>/full-rebuild/timed-python sens_nearmiss2.py northern-ca 50 100 250
+END 2026-10-21T17:08:05Z latent_northern-ca: exit=0 seconds=49.620 log=<scratch>/full-rebuild/logs/latent_northern-ca.log
+START 2026-10-21T17:08:05Z coverage_eastern-ok: <scratch>/full-rebuild/timed-python coverage_bridge.py eastern-ok
+END 2026-10-21T17:08:18Z coverage_eastern-ok: exit=0 seconds=13.435 log=<scratch>/full-rebuild/logs/coverage_eastern-ok.log
+START 2026-10-21T17:08:18Z latent_eastern-ok: <scratch>/full-rebuild/timed-python sens_nearmiss2.py eastern-ok 50 100 250
+END 2026-10-21T17:09:31Z latent_eastern-ok: exit=0 seconds=72.348 log=<scratch>/full-rebuild/logs/latent_eastern-ok.log
+START 2026-10-21T17:09:31Z coverage_maricopa-az: <scratch>/full-rebuild/timed-python coverage_bridge.py maricopa-az
+END 2026-10-21T17:09:47Z coverage_maricopa-az: exit=0 seconds=16.229 log=<scratch>/full-rebuild/logs/coverage_maricopa-az.log
+START 2026-10-21T17:09:47Z latent_maricopa-az: <scratch>/full-rebuild/timed-python sens_nearmiss2.py maricopa-az 50 100 250
+END 2026-10-21T17:11:41Z latent_maricopa-az: exit=0 seconds=113.841 log=<scratch>/full-rebuild/logs/latent_maricopa-az.log
+START 2026-10-21T17:11:41Z coverage_south-central-tx: <scratch>/full-rebuild/timed-python coverage_bridge.py south-central-tx
+END 2026-10-21T17:12:31Z coverage_south-central-tx: exit=0 seconds=50.289 log=<scratch>/full-rebuild/logs/coverage_south-central-tx.log
+START 2026-10-21T17:12:31Z latent_south-central-tx: <scratch>/full-rebuild/timed-python sens_nearmiss2.py south-central-tx 50 100 250
+END 2026-10-21T17:19:04Z latent_south-central-tx: exit=0 seconds=393.046 log=<scratch>/full-rebuild/logs/latent_south-central-tx.log
+START 2026-10-21T17:19:04Z coverage_eastern-wa: <scratch>/full-rebuild/timed-python coverage_bridge.py eastern-wa
+END 2026-10-21T17:19:13Z coverage_eastern-wa: exit=0 seconds=8.447 log=<scratch>/full-rebuild/logs/coverage_eastern-wa.log
+START 2026-10-21T17:19:13Z latent_eastern-wa: <scratch>/full-rebuild/timed-python sens_nearmiss2.py eastern-wa 50 100 250
+END 2026-10-21T17:19:55Z latent_eastern-wa: exit=0 seconds=42.678 log=<scratch>/full-rebuild/logs/latent_eastern-wa.log
+START 2026-10-21T17:19:55Z tx_plus: sh <scratch>/full-rebuild/egress/run_tx_plus.sh
+END 2026-10-21T17:28:26Z tx_plus: exit=0 seconds=510.315 log=<scratch>/full-rebuild/logs/tx_plus.log
+START 2026-10-21T17:28:26Z stats_drvplus_complete: <scratch>/full-rebuild/timed-python stats.py drvplus_A 2000 eq

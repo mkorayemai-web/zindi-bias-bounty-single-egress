@@ -1,0 +1,16 @@
+{
+  "scope": "quick eastern-ok: printed region draft / REPRODUCE / sensitivity cells ONLY; no pooled or other-region claim",
+  "region": "eastern-ok",
+  "total": 63,
+  "passed": 63,
+  "failed": 0,
+  "unverified": 0,
+  "all_pass": true,
+  "required_configurations": [
+    "eastern-ok_drv_A",
+    "eastern-ok_drv_A_r25",
+    "eastern-ok_drv_B",
+    "eastern-ok_drvplus_A",
+    "eastern-ok_drvplus_B"
+  ]
+}

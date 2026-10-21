@@ -1,5 +1,6 @@
 #!/bin/sh
 # Sequential batch over regions (memory-friendly: one region at a time). Smaller regions first; TX drvplus skipped (memory).
+set -e
 cd "$(dirname "$0")" || exit 1
 for R in northern-ca eastern-ok maricopa-az; do
   sh ./run_stage.sh $R > ../work/stage_$R.log 2>&1

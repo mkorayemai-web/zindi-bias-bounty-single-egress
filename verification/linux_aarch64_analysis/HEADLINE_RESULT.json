@@ -1,0 +1,224 @@
+{
+  "total": 202,
+  "passed": 193,
+  "failed": 0,
+  "unverified": 9,
+  "all_pass": false,
+  "statuses": {
+    "OK": 193,
+    "SKIPPED-NO-SOURCE": 9
+  },
+  "scope": "full existing draft ledger",
+  "ledger_exit": 0,
+  "fresh_ledger_source_tables": 31,
+  "raw_input_fallbacks": [
+    {
+      "step": "acs_ext",
+      "reason": "raw national ACS files absent; use documented shipped ACS extract as an INPUT, not a rebuilt output",
+      "log": "<scratch>/full-rebuild/logs/acs_ext.log"
+    }
+  ],
+  "figures": [
+    {
+      "file": "fig1_eastern-ok_map.png",
+      "status": "REBUILT",
+      "expected_size": [
+        823,
+        760
+      ],
+      "computed_size": [
+        823,
+        760
+      ],
+      "different_pixels": 36,
+      "compared_canvas_pixels": 625480,
+      "max_channel_abs_diff": 1
+    },
+    {
+      "file": "fig1_eastern-wa_map.png",
+      "status": "REBUILT",
+      "expected_size": [
+        823,
+        818
+      ],
+      "computed_size": [
+        823,
+        818
+      ],
+      "different_pixels": 1,
+      "compared_canvas_pixels": 673214,
+      "max_channel_abs_diff": 1
+    },
+    {
+      "file": "fig1_maricopa-az_map.png",
+      "status": "REBUILT",
+      "expected_size": [
+        823,
+        826
+      ],
+      "computed_size": [
+        823,
+        826
+      ],
+      "different_pixels": 0,
+      "compared_canvas_pixels": 679798,
+      "max_channel_abs_diff": 0
+    },
+    {
+      "file": "fig1_northern-ca_map.png",
+      "status": "REBUILT",
+      "expected_size": [
+        823,
+        881
+      ],
+      "computed_size": [
+        823,
+        881
+      ],
+      "different_pixels": 3,
+      "compared_canvas_pixels": 725063,
+      "max_channel_abs_diff": 1
+    },
+    {
+      "file": "fig1_south-central-tx_map.png",
+      "status": "REBUILT",
+      "expected_size": [
+        823,
+        884
+      ],
+      "computed_size": [
+        823,
+        884
+      ],
+      "different_pixels": 5,
+      "compared_canvas_pixels": 727532,
+      "max_channel_abs_diff": 1
+    },
+    {
+      "file": "fig2_effects_forest.png",
+      "status": "REBUILT",
+      "expected_size": [
+        1201,
+        553
+      ],
+      "computed_size": [
+        1201,
+        553
+      ],
+      "different_pixels": 0,
+      "compared_canvas_pixels": 664153,
+      "max_channel_abs_diff": 0
+    },
+    {
+      "file": "fig3_validation.png",
+      "status": "REBUILT",
+      "expected_size": [
+        1564,
+        663
+      ],
+      "computed_size": [
+        1564,
+        663
+      ],
+      "different_pixels": 0,
+      "compared_canvas_pixels": 1036932,
+      "max_channel_abs_diff": 0
+    },
+    {
+      "file": "fig4_seasonal.png",
+      "status": "REBUILT",
+      "expected_size": [
+        882,
+        591
+      ],
+      "computed_size": [
+        882,
+        591
+      ],
+      "different_pixels": 0,
+      "compared_canvas_pixels": 521262,
+      "max_channel_abs_diff": 0
+    },
+    {
+      "file": "fig5_region_bars.png",
+      "status": "REBUILT",
+      "expected_size": [
+        1292,
+        714
+      ],
+      "computed_size": [
+        1292,
+        714
+      ],
+      "different_pixels": 0,
+      "compared_canvas_pixels": 922488,
+      "max_channel_abs_diff": 0
+    },
+    {
+      "file": "fig6_pinholes_sweep.png",
+      "status": "REBUILT",
+      "expected_size": [
+        2584,
+        748
+      ],
+      "computed_size": [
+        2584,
+        748
+      ],
+      "different_pixels": 12759,
+      "compared_canvas_pixels": 1932832,
+      "max_channel_abs_diff": 253
+    },
+    {
+      "file": "fig7_pinhole_cases.png",
+      "status": "REBUILT",
+      "expected_size": [
+        2244,
+        816
+      ],
+      "computed_size": [
+        2244,
+        816
+      ],
+      "different_pixels": 0,
+      "compared_canvas_pixels": 1831104,
+      "max_channel_abs_diff": 0
+    },
+    {
+      "file": "fig8_seasonal_load.png",
+      "status": "REBUILT",
+      "expected_size": [
+        2210,
+        850
+      ],
+      "computed_size": [
+        2210,
+        850
+      ],
+      "different_pixels": 0,
+      "compared_canvas_pixels": 1878500,
+      "max_channel_abs_diff": 0
+    },
+    {
+      "file": "fig9_resort_clusters.png",
+      "status": "REBUILT",
+      "expected_size": [
+        2550,
+        952
+      ],
+      "computed_size": [
+        2550,
+        952
+      ],
+      "different_pixels": 10,
+      "compared_canvas_pixels": 2427600,
+      "max_channel_abs_diff": 1
+    }
+  ],
+  "full_intermediates": {
+    "files_compared": 206,
+    "bytes_identical": 44,
+    "strict_values_pass": 96,
+    "policy": "unchanged preflight_compare.py; exact counts/IDs; float rel 1e-9 / abs 1e-12; informational"
+  }
+}

@@ -1,0 +1,10 @@
+id,draft_text,quoted,recomputed,tolerance,source,status
+Q.01,4.0 persons per occupied second-home or visitor unit,,0.0,,Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9),MISMATCH
+Q.02,occupied 49 % of the year,,0.0,,Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9),MISMATCH
+Q.03,"34,265 persons",,0.0,,Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9),MISMATCH
+Q.04,"7,259 residents",,0.0,,Mammoth Lakes Eagle Lodge Draft EIR s3.8 (SOURCES.md row 9),MISMATCH
+Q.05,51-64 % for condominiums and 43-75 % for mobile homes,,0.0,,SW Florida RPC Hurricane Evacuation Study Update 1987 (SOURCES.md row 10),MISMATCH
+I.04,927 occupied housing units per egress lane,,0.0,,NIST TN 2252 (SOURCES.md row 5),MISMATCH
+Q.09,"(Eagle Lodge Draft EIR, 2006)",,0.0,,Mammoth EIR carries the year 2006,MISMATCH
+Q.10,A 1987 Southwest Florida hurricane evacuation study,,0.0,,HES document is the 1987 update,MISMATCH
+P.12,in the 2018 Camp Fire (NIST TN 2252),,0.0,,NIST TN 2252 is the 2018 Camp Fire case study,MISMATCH

@@ -1,0 +1,2 @@
+LEDGER: 202 checks | OK 193 | DRAFT-TEXT-MISSING 0 | MISMATCH 0 | SKIPPED-NO-SOURCE 9 | numeric tokens in the draft 304, uncovered 47 (REVIEW 25)
+Inventory metadata: 2 tokens registered, 0 mismatches; not measured-value checks
